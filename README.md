@@ -15,6 +15,26 @@ Integration
 
 Detailed integration steps can be found in the official [Carnival Mobile documentation](http://docs.carnivalmobile.com/android/).
 
+Android Studio
+-------
+
+If you are using the Carnival SDK in your Android Studio Project, the SDK can be simply imported with Gradle
+
+```Groovy
+repositories {
+    maven {
+        url "https://github.com/carnivalmobile/maven-repository/raw/master/"
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.carnival.sdk:carnival:2.+'
+    compile 'com.android.support:appcompat-v7:19.+'
+    compile 'com.google.android.gms:play-services:4.+'
+}
+```
+
 Required Libraries
 -------
 
