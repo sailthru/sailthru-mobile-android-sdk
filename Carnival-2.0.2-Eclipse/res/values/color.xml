@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="call_header_bg">#aa000000</color>
-    <color name="call_status_bg">#aa267c94</color>
-    <color name="call_accept">#a4c739</color>
-    <color name="call_decline">#96180a</color>
-    <color name="debug">#f0f</color>
-</resources>
