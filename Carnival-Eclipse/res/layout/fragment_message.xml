@@ -25,13 +25,13 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="25dp"
-        android:textSize="14sp"
+        android:textSize="14dp"
         android:textStyle="bold"
-        android:background="@android:color/white"
+        android:background="@drawable/bg_view_all"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black"
-        android:text="View All Messages" />
+        android:text="@string/view_all_message" />
 
     <ImageView
         android:id="@+id/imageView1"
