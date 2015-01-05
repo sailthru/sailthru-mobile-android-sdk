@@ -27,21 +27,14 @@
         android:layout_height="25dp"
         android:textSize="14dp"
         android:textStyle="bold"
+        android:textAllCaps="false"
         android:background="@drawable/bg_view_all"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:textColor="@android:color/black"
         android:text="@string/view_all_message" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:scaleType="centerCrop"
-        android:contentDescription="Message Image"
-        android:layout_alignParentTop="true"
-        android:src="@null" />
+
 
     <TextView
         android:id="@+id/textView2"
@@ -56,6 +49,17 @@
         android:text=""
         android:textColor="@android:color/white"
         android:textSize="10sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="Message Image"
+        android:layout_alignParentTop="true"
+        android:background="@color/debug"
+        android:src="@null" />
 
     <Button
         android:id="@+id/button2"
