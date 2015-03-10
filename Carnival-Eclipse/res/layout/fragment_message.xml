@@ -1,85 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="#1a1c1f"
-    android:layout_height="80dp" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignWithParentIfMissing="true"
-        android:layout_marginLeft="7dp"
-        android:layout_marginTop="7dp"
-        android:layout_toLeftOf="@+id/closeButton"
-        android:layout_toRightOf="@+id/imageView1"
-        android:ellipsize="end"
-        android:gravity="center_vertical"
-        android:lines="1"
-        android:text=""
-        android:textColor="#20ccf7"
-        android:textSize="13sp" />
-
-    <Button
-        android:id="@+id/button1"
+    android:padding="5dp"
+    android:background="@drawable/shadow"
+    android:layout_height="93dp">
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:textSize="14dp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:background="@drawable/bg_view_all"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:textColor="@android:color/black"
-        android:text="@string/view_all_message" />
+        android:background="@drawable/bg_notification"
+        android:layout_height="wrap_content" >
 
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/closeButton"
+            android:layout_toRightOf="@+id/imageView1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:lines="1"
+            android:text="Your first engaging message"
+            android:textColor="#3c3c3c"
+            android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/closeButton"
+            android:text="New mesages from Carnival will appear up here. Tap a message to read more, or view it later in the stream"
+            android:textColor="#3c3c3c"
+            android:textSize="14sp" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignLeft="@+id/textView1"
-        android:layout_alignWithParentIfMissing="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginBottom="7dp"
-        android:layout_toLeftOf="@+id/closeButton"
-        android:text=""
-        android:textColor="@android:color/white"
-        android:textSize="10sp" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:contentDescription="Message Image"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:src="@null" />
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:scaleType="centerCrop"
-        android:contentDescription="Message Image"
-        android:layout_alignParentTop="true"
-        android:background="@color/debug"
-        android:src="@null" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/closeButton"
+            android:background="@null"
+            android:text="" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/closeButton"
-        android:background="@null"
-        android:text="" />
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/close_button_white"
+            />
 
-    <Button
-        android:id="@+id/closeButton"
-        android:layout_width="27dp"
-        android:layout_height="27dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginRight="5dp"
-        android:background="@drawable/close_button_white"
-        />
-
+    </RelativeLayout>
 </RelativeLayout>
