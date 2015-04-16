@@ -16,5 +16,7 @@
     <string name="decline_call">Decline Call</string>
     <string name="call_error">Cannot connect call</string>
     <string name="view_all_message">View All Messages</string>
+    <string name="messages">Messages</string>
+    <string name="message">Message</string>
 
 </resources>
