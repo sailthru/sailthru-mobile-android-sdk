@@ -19,7 +19,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/optionsContainer"
         android:id="@+id/gradientImageView"
-        android:src="@drawable/bg_gadient"
+        android:src="@drawable/carnival_bg_gadient"
         android:scaleType="fitXY" />
 
 
@@ -34,13 +34,13 @@
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
         android:paddingBottom="16dp"
-        android:background="@color/call_header_bg"
+        android:background="@color/carnival_call_header_bg"
         android:id="@+id/call_header_container">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/call_name_demo"
+            android:text="@string/carnival_call_name_demo"
             android:id="@+id/callerNameTextView"
             android:textSize="18sp"
             android:textColor="@android:color/white"
@@ -51,7 +51,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/call_subtitle"
+            android:text="@string/carnival_call_subtitle"
             android:id="@+id/callSubtitleTextView"
             android:textColor="@android:color/white"
             android:layout_marginTop="5dp"
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="right"
-        android:text="@string/call_status_incoming"
+        android:text="@string/carnival_call_status_incoming"
         android:textColor="@android:color/white"
         android:id="@+id/callStatusTextView"
         android:layout_below="@+id/call_header_container"
@@ -75,7 +75,7 @@
         android:paddingBottom="16dp"
         android:paddingLeft="24dp"
         android:paddingRight="24dp"
-        android:background="@color/call_status_bg"
+        android:background="@color/carnival_call_status_bg"
         android:typeface="normal" />
 
     <LinearLayout
@@ -86,39 +86,39 @@
         android:padding="24dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/bg_pinstripe"
+        android:background="@drawable/carnival_bg_pinstripe"
         android:id="@+id/optionsContainer">
 
         <ImageButton
-            android:src="@drawable/ic_action_dial_pad"
+            android:src="@drawable/carnival_ic_action_dial_pad"
             android:background="@null"
             android:padding="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
-            android:src="@drawable/ic_action_volume_on"
+            android:src="@drawable/carnival_ic_action_volume_on"
             android:background="@null"
             android:padding="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
-            android:src="@drawable/ic_action_mic_muted"
+            android:src="@drawable/carnival_ic_action_mic_muted"
             android:background="@null"
             android:padding="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
-            android:src="@drawable/ic_action_pause"
+            android:src="@drawable/carnival_ic_action_pause"
             android:background="@null"
             android:padding="6dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
-            android:src="@drawable/ic_action_add_person"
+            android:src="@drawable/carnival_ic_action_add_person"
             android:background="@null"
             android:padding="6dp"
             android:layout_width="wrap_content"
@@ -139,18 +139,18 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="64dp"
-            android:src="@drawable/ic_action_call"
-            android:contentDescription="@string/accept_call"
-            android:background="@color/call_accept"/>
+            android:src="@drawable/carnival_ic_action_call"
+            android:contentDescription="@string/carnival_accept_call"
+            android:background="@color/carnival_call_accept"/>
 
         <ImageButton
             android:id="@+id/callDeclineButton"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="64dp"
-            android:src="@drawable/ic_action_end_call"
-            android:contentDescription="@string/decline_call"
-            android:background="@color/call_decline"/>
+            android:src="@drawable/carnival_ic_action_end_call"
+            android:contentDescription="@string/carnival_decline_call"
+            android:background="@color/carnival_call_decline"/>
 
         </LinearLayout>
 

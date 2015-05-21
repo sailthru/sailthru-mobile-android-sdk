@@ -2,75 +2,70 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:padding="5dp"
-    android:background="@drawable/shadow"
+    android:background="@drawable/carnival_shadow"
     android:layout_height="93dp">
     <RelativeLayout
         android:layout_width="match_parent"
-        android:background="@drawable/bg_notification"
+        android:background="@drawable/carnival_bg_notification"
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/titleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignWithParentIfMissing="true"
             android:layout_marginLeft="7dp"
-            android:layout_marginTop="10dp"
-            android:layout_toLeftOf="@+id/closeButton"
-            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/thumbnailImageView"
+            android:layout_toEndOf="@+id/thumbnailImageView"
             android:ellipsize="end"
             android:gravity="center_vertical"
             android:textStyle="bold"
+            android:singleLine="true"
             android:lines="1"
             android:text="Your first engaging message"
             android:textColor="#3c3c3c"
             android:textSize="14sp" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/bodyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignLeft="@+id/titleTextView"
+            android:layout_alignStart="@+id/titleTextView"
             android:layout_alignWithParentIfMissing="true"
-            android:layout_below="@+id/textView1"
-            android:layout_marginBottom="10dp"
-            android:layout_toLeftOf="@+id/closeButton"
+            android:layout_below="@+id/titleTextView"
+            android:maxLines="3"
+            android:singleLine="false"
+            android:ellipsize="end"
             android:text="New mesages from Carnival will appear up here. Tap a message to read more, or view it later in the stream"
             android:textColor="#3c3c3c"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
             android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/thumbnailImageView"
             android:layout_width="84dp"
             android:layout_height="84dp"
             android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:scaleType="centerCrop"
-            android:contentDescription="Message Image"
+            android:contentDescription="@string/carnival_message_image"
             android:layout_alignParentTop="true"
             android:background="@android:color/transparent"
             android:src="@null" />
 
         <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
+            android:id="@+id/interactionButton"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_toLeftOf="@+id/closeButton"
             android:background="@null"
             android:text="" />
-
-        <Button
-            android:id="@+id/closeButton"
-            android:layout_width="27dp"
-            android:layout_height="27dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="5dp"
-            android:background="@drawable/close_button_white"
-            />
 
     </RelativeLayout>
 </RelativeLayout>
