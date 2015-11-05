@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Carnival" parent="@android:style/Theme.Material.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/carnival_action_bar</item>
+        <item name="android:colorPrimaryDark">@color/carnival_status_bar</item>
+    </style>
+
+</resources>
