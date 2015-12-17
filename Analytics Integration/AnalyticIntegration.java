@@ -13,13 +13,13 @@ import java.util.Map;
  */
 public class AnalyticIntegration {
 
-    private static final String SOURCE_GA = "ga";
-    private static final String SOURCE_MIXPANEL = "mixpanel";
-    private static final String SOURCE_FLURRY = "flurry";
-    private static final String SOURCE_LOCALYTICS = "localytics";
-    private static final String SOURCE_TAPLYTICS = "taplytics";
-    private static final String SOURCE_AMPLITUDE = "amplitude";
-    private static final String SOURCE_ADOBE = "adobe";
+    private static final String SOURCE_GA = "Google Analytics";
+    private static final String SOURCE_MIXPANEL = "Mixpanel";
+    private static final String SOURCE_FLURRY = "Flurry Analytics";
+    private static final String SOURCE_LOCALYTICS = "Localytics";
+    private static final String SOURCE_TAPLYTICS = "Taplytics";
+    private static final String SOURCE_AMPLITUDE = "Amplitude";
+    private static final String SOURCE_ADOBE = "Adobe Analytics";
 
     /**
      * Send a Google Analytics event to both Google Analytics and Carnival.
