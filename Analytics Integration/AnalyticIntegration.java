@@ -13,14 +13,6 @@ import java.util.Map;
  */
 public class AnalyticIntegration {
 
-    private static final String SOURCE_GA = "Google Analytics";
-    private static final String SOURCE_MIXPANEL = "Mixpanel";
-    private static final String SOURCE_FLURRY = "Flurry Analytics";
-    private static final String SOURCE_LOCALYTICS = "Localytics";
-    private static final String SOURCE_TAPLYTICS = "Taplytics";
-    private static final String SOURCE_AMPLITUDE = "Amplitude";
-    private static final String SOURCE_ADOBE = "Adobe Analytics";
-
     /**
      * Send a Google Analytics event to both Google Analytics and Carnival.
      * The event parsed in will be sent to Google Analytics as is and reformatted as "[category] - [action]" (without the square brackets) when sent to Carnival.
@@ -33,7 +25,7 @@ public class AnalyticIntegration {
         String category = event.get("&ec");
         String action = event.get("&ea");
 
-        Carnival.logEvent(SOURCE_GA, category + " - " + action);
+        Carnival.logEvent(EventSource.SOURCE_GA, category + " - " + action);
     }
 
     /**
@@ -44,7 +36,7 @@ public class AnalyticIntegration {
      */
 //    public static void mixpanelTrack(MixpanelAPI mixpanel, String eventName, Map<String, String> properties) {
 //        mixpanel.track(eventName, properties);
-//        Carnival.logEvent(SOURCE_MIXPANEL, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_MIXPANEL, eventName);
 //    }
 
     /**
@@ -54,7 +46,7 @@ public class AnalyticIntegration {
      */
 //    public static void flurryLogEvent(String eventName, Map<String, String> properties) {
 //        FlurryAgent.logEvent(eventName, properties);
-//        Carnival.logEvent(SOURCE_FLURRY, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_FLURRY, eventName);
 //    }
 
     /**
@@ -64,7 +56,7 @@ public class AnalyticIntegration {
      */
 //    public static void localyticsTagEvent(String eventName, Map<String, String> properties) {
 //        Localytics.tagEvent(eventName, properties);
-//        Carnival.logEvent(SOURCE_LOCALYTICS, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_LOCALYTICS, eventName);
 //    }
 
     /**
@@ -75,7 +67,7 @@ public class AnalyticIntegration {
      */
 //    public static void taplyticsLogEvent(String eventName, Number num, JSONObject properties) {
 //        Taplytics.logEvent(eventName, num, properties);
-//        Carnival.logEvent(SOURCE_TAPLYTICS, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_TAPLYTICS, eventName);
 //    }
 
     /**
@@ -84,7 +76,7 @@ public class AnalyticIntegration {
      */
 //    public static void amplitudeLogEvent(String eventName) {
 //        Amplitude.getInstance().logEvent(eventName);
-//        Carnival.logEvent(SOURCE_AMPLITUDE, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_AMPLITUDE, eventName);
 //    }
 
     /**
@@ -94,7 +86,7 @@ public class AnalyticIntegration {
      */
 //    public static void adobeTrackAction(String eventName, Map<String, Object> properties) {
 //        Analytics.trackAction(eventName, properties);
-//        Carnival.logEvent(SOURCE_ADOBE, eventName);
+//        Carnival.logEvent(EventSource.SOURCE_ADOBE, eventName);
 //    }
 
 }
