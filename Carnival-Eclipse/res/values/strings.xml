@@ -20,5 +20,7 @@
     <string name="carnival_delete_message">Delete Message</string>
     <string name="carnival_deleting_message">Deleting Message</string>
     <string name="carnival_delete_message_failed">There was a problem deleting this message</string>
+    <string name="carnival_something_went_wrong">Something went wrong and we\ncouldn\'t load the page you\nrequested.</string>
+    <string name="carnival_try_again">Try Again</string>
 
 </resources>
