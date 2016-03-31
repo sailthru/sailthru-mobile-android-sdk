@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="carnival_call_header_bg">#aa000000</color>
-    <color name="carnival_call_status_bg">#aa267c94</color>
-    <color name="carnival_call_accept">#a4c739</color>
-    <color name="carnival_call_decline">#96180a</color>
-    <color name="carnival_action_bar">#000</color>
-    <color name="carnival_status_bar">#000</color>
-</resources>

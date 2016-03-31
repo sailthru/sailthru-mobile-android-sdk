@@ -29,16 +29,8 @@ repositories {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.carnival.sdk:carnival:2.+'
+    compile 'com.carnival.sdk:carnival:3.+'
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.google.android.gms:play-services:4.+'
 }
 ```
-
-Required Libraries
--------
-
-The Carnival Mobile SDK requires the following libaries to be linked in your Eclipse project.
-
-- [Google Play Services](https://developer.android.com/google/play-services/setup.html)
-- [v7-appcompat Support Library](https://developer.android.com/tools/support-library/features.html#v7-appcompat)
