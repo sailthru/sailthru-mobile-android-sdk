@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  CarnivalMessageListener
+  CarnivalImpressionType
 
 
 | Carnival Android SDK - 3.1.0
@@ -168,7 +168,7 @@
       <ul>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/AttributeMap.html">AttributeMap</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/Carnival.html">Carnival</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/carnival/sdk/CarnivalMessageListener.html">CarnivalMessageListener</a></li>
+          <li class="api apilevel-"><a href="../../../com/carnival/sdk/CarnivalMessageListener.html">CarnivalMessageListener</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/Message.html">Message</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/MessageActivity.html">MessageActivity</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/NotificationConfig.html">NotificationConfig</a></li>
@@ -178,7 +178,7 @@
               
     <li><h2>Enums</h2>
       <ul>
-          <li class="api apilevel-"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/EventSource.html">EventSource</a></li>
       </ul>
     </li>
@@ -228,6 +228,25 @@
   
   
 
+  
+   
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+   
+  
+  
+  
+  
+
 
 <div class="sum-details-links">
 
@@ -237,13 +256,13 @@ Summary:
 
 
 
-
-
-
-
-
-  <a href="#pubctors">Ctors</a>
+  <a href="#enumconstants">Enums</a>
   
+
+
+
+
+
 
 
 
@@ -273,15 +292,19 @@ Summary:
 <div id="jd-header">
     public
      
-     
-    abstract
-    class
-<h1>CarnivalMessageListener</h1>
+    final 
+    
+    enum
+<h1>CarnivalImpressionType</h1>
 
 
 
   
-    extends <a href="http://d.android.com/reference/java/lang/Object.html">Object</a><br/>
+  
+  
+
+  
+    extends <a href="http://d.android.com/reference/java/lang/Enum.html">Enum</a>&lt;E&nbsp;extends&nbsp;<a href="http://d.android.com/reference/java/lang/Enum.html">Enum</a>&lt;E&gt;&gt;<br/>
   
   
   
@@ -301,7 +324,7 @@ Summary:
 
     <tr>
          	
-        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
+        <td colspan="3" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Object.html">java.lang.Object</a></td>
     </tr>
     
 
@@ -309,7 +332,17 @@ Summary:
         
             <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.carnival.sdk.CarnivalMessageListener</td>
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://d.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;E&nbsp;extends&nbsp;<a href="http://d.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>&lt;E&gt;&gt;</td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;</td>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.carnival.sdk.CarnivalImpressionType</td>
     </tr>
     
 
@@ -325,14 +358,15 @@ Summary:
 
 
 <h2>Class Overview</h2>
-<p>Message Listener exposes an interface that can be used to manage notification creation.
-
- Note: Direct to URI notifications using the <code>_u</code> parameter
- will not call <code><a href="../../../com/carnival/sdk/CarnivalMessageListener.html#onMessageReceived(android.content.Context, android.os.Bundle, com.carnival.sdk.Message)">onMessageReceived(Context, Bundle, Message)</a></code>.
-</p>
+<p>Impression type enum for Message impression events.</p>
 
 
 
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">See Also</h5>
+      <ul class="nolist"><li><code><a href="../../../com/carnival/sdk/Carnival.html#registerMessageImpression(com.carnival.sdk.CarnivalImpressionType, com.carnival.sdk.Message)">registerMessageImpression(CarnivalImpressionType, Message)</a></code></li>
+      </ul>
+  </div>
 
 
 </div><!-- jd-descr -->
@@ -367,41 +401,44 @@ Summary:
 
 
 
+<!-- =========== ENUM CONSTANT SUMMARY =========== -->
+<table id="enumconstants" class="jd-sumtable"><tr><th colspan="12">Enum Values</th></tr>
 
-
-
-
-
-
-
-
-
-
-
-
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
-
-
-
-	 
+    
     <tr class="alt-color api apilevel-" >
-        <td class="jd-typecol">
-            
-            
-            
-            
-            
-            
-        </td>
-        <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/carnival/sdk/CarnivalMessageListener.html#CarnivalMessageListener()">CarnivalMessageListener</a></span>()
-        
-  </td></tr>
-
-
-
+        <td class="jd-descrcol"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>&nbsp;</td>
+        <td class="jd-linkcol">IMPRESSION_TYPE_DETAIL_VIEW&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Message has been opened and viewed in detail.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class=" api apilevel-" >
+        <td class="jd-descrcol"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>&nbsp;</td>
+        <td class="jd-linkcol">IMPRESSION_TYPE_IN_APP_VIEW&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Message has been viewed as an In-App Notification.&nbsp;</td>
+    </tr>
+    
+    
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-descrcol"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>&nbsp;</td>
+        <td class="jd-linkcol">IMPRESSION_TYPE_STREAM_VIEW&nbsp;</td>
+        <td class="jd-descrcol" width="100%">Message has been viewed in the Message Stream.&nbsp;</td>
+    </tr>
+    
+    
 </table>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -416,18 +453,32 @@ Summary:
 	 
     <tr class="alt-color api apilevel-" >
         <td class="jd-typecol">
-            abstract
             
             
             
+            static
             
-            boolean
+            <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/carnival/sdk/CarnivalMessageListener.html#onMessageReceived(android.content.Context, android.os.Bundle, com.carnival.sdk.Message)">onMessageReceived</a></span>(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> bundle, <a href="../../../com/carnival/sdk/Message.html">Message</a> message)
+        <span class="sympad"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html#valueOf(java.lang.String)">valueOf</a></span>(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name)
         
-        <div class="jd-descrdiv">Called when a message is received.</div>
-  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            static
+            
+            <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType[]</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/carnival/sdk/CarnivalImpressionType.html#values()">values</a></span>()
+        
   </td></tr>
 
 
@@ -444,6 +495,176 @@ Summary:
 <table id="inhmethods" class="jd-sumtable"><tr><th>
   <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
   <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Enum" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Enum-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://d.android.com/reference/java/lang/Enum.html">java.lang.Enum</a>
+
+<div id="inherited-methods-java.lang.Enum">
+  <div id="inherited-methods-java.lang.Enum-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Enum-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(E arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">equals</span>(<a href="http://d.android.com/reference/java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;E&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getDeclaringClass</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">hashCode</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">name</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">ordinal</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://d.android.com/reference/java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">toString</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            static
+            &lt;T&nbsp;extends&nbsp;<a href="http://d.android.com/reference/java/lang/Enum.html">Enum</a>&lt;T&gt;&gt;
+            T
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">valueOf</span>(<a href="http://d.android.com/reference/java/lang/Class.html">Class</a>&lt;T&gt; arg0, <a href="http://d.android.com/reference/java/lang/String.html">String</a> arg1)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
 
 
 <tr class="api apilevel-" >
@@ -572,7 +793,7 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>()
+        <span class="sympad">wait</span>(long arg0, int arg1)
         
   </td></tr>
 
@@ -588,7 +809,7 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>(long arg0, int arg1)
+        <span class="sympad">wait</span>(long arg0)
         
   </td></tr>
 
@@ -604,7 +825,51 @@ From class
             void
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad">wait</span>(long arg0)
+        <span class="sympad">wait</span>()
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Comparable" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Comparable-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From interface
+
+  <a href="http://d.android.com/reference/java/lang/Comparable.html">java.lang.Comparable</a>
+
+<div id="inherited-methods-java.lang.Comparable">
+  <div id="inherited-methods-java.lang.Comparable-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Comparable-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">compareTo</span>(T arg0)
         
   </td></tr>
 
@@ -635,6 +900,106 @@ From class
 <!-- Enum Values -->
 
 
+<!-- ========= ENUM CONSTANTS DETAIL ======== -->
+<h2>Enum Values</h2>
+
+
+
+
+<a id="IMPRESSION_TYPE_DETAIL_VIEW"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>
+      </span>
+        IMPRESSION_TYPE_DETAIL_VIEW
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Message has been opened and viewed in detail.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="IMPRESSION_TYPE_IN_APP_VIEW"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>
+      </span>
+        IMPRESSION_TYPE_IN_APP_VIEW
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Message has been viewed as an In-App Notification.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="IMPRESSION_TYPE_STREAM_VIEW"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+        final 
+        <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>
+      </span>
+        IMPRESSION_TYPE_STREAM_VIEW
+    </h4>
+      <div class="api-level">
+        
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Message has been viewed in the Message Stream.
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+
 <!-- Constants -->
 
 
@@ -644,25 +1009,33 @@ From class
 <!-- Public ctors -->
 
 
+
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
-<h2>Public Constructors</h2>
+<!-- Protected ctors -->
 
 
 
-<a id="CarnivalMessageListener()"></a>
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+<h2>Public Methods</h2>
+
+
+
+<a id="valueOf(java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
          
          
          
-         
-        
+        <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType</a>
       </span>
-      <span class="sympad">CarnivalMessageListener</span>
-      <span class="normal">()</span>
+      <span class="sympad">valueOf</span>
+      <span class="normal">(<a href="http://d.android.com/reference/java/lang/String.html">String</a> name)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -680,35 +1053,20 @@ From class
 </div>
 
 
-
-
-
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<!-- Protected ctors -->
-
-
-
-<!-- ========= METHOD DETAIL ======== -->
-<!-- Public methdos -->
-
-<h2>Public Methods</h2>
-
-
-
-<a id="onMessageReceived(android.content.Context, android.os.Bundle, com.carnival.sdk.Message)"></a>
+<a id="values()"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
       <span class="normal">
         public 
+        static 
+        final 
          
          
-        abstract 
-         
-        boolean
+        <a href="../../../com/carnival/sdk/CarnivalImpressionType.html">CarnivalImpressionType[]</a>
       </span>
-      <span class="sympad">onMessageReceived</span>
-      <span class="normal">(<a href="http://d.android.com/reference/android/content/Context.html">Context</a> context, <a href="http://d.android.com/reference/android/os/Bundle.html">Bundle</a> bundle, <a href="../../../com/carnival/sdk/Message.html">Message</a> message)</span>
+      <span class="sympad">values</span>
+      <span class="normal">()</span>
     </h4>
       <div class="api-level">
         <div>
@@ -720,29 +1078,7 @@ From class
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>Called when a message is received.</p></div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Parameters</h5>
-      <table class="jd-tagtable">
-        <tr>
-          <th>context</th>
-          <td>The Application Context</td>
-        </tr>
-        <tr>
-          <th>bundle</th>
-          <td>message data as String key/value pairs.</td>
-        </tr>
-        <tr>
-          <th>message</th>
-          <td>Carnival message attached to this push message, null if no Carnival message was found.</td>
-        </tr>
-      </table>
-  </div>
-  <div class="jd-tagdata">
-      <h5 class="jd-tagtitle">Returns</h5>
-      <ul class="nolist"><li>True if this Notification has been handled, false if it has not and Carnival can generate the notification.
-</li></ul>
-  </div>
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
 
     </div>
 </div>
