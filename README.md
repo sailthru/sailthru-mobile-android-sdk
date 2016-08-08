@@ -13,7 +13,7 @@ This project contains the Carnival library, as well as an example project that y
 Integration
 ------
 
-Detailed integration steps can be found in the official [Carnival.io ocumentation](http://docs.carnival.io/docs/android-integration).
+Detailed integration steps can be found in the official [Carnival.io documentation](http://docs.carnival.io/docs/android-integration).
 
 Javadoc for the latest version of the SDK can be found [here](http://carnivalmobile.github.io/carnival-android-sdk/javadoc/latest/reference/com/carnival/sdk/package-summary.html).
 
