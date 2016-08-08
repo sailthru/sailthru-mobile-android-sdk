@@ -30,9 +30,7 @@ repositories {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    ...
     compile 'com.carnival.sdk:carnival:3.+'
-    compile 'com.android.support:appcompat-v7:19.+'
-    compile 'com.google.android.gms:play-services:4.+'
 }
 ```
