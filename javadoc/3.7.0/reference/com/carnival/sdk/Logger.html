@@ -57,7 +57,7 @@
 <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
 <title>
 
-  Carnival.TagsHandler
+  Logger
 
 
 | Carnival Android SDK - 3.7.0
@@ -160,8 +160,8 @@
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/Carnival.MessagesHandler.html">Carnival.MessagesHandler</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/Carnival.MessagesReadHandler.html">Carnival.MessagesReadHandler</a></li>
           <li class="api apilevel-"><a href="../../../com/carnival/sdk/Carnival.OnInAppNotificationDisplayListener.html">Carnival.OnInAppNotificationDisplayListener</a></li>
-          <li class="selected api apilevel-"><a href="../../../com/carnival/sdk/Carnival.TagsHandler.html">Carnival.TagsHandler</a></li>
-          <li class="api apilevel-"><a href="../../../com/carnival/sdk/Logger.html">Logger</a></li>
+          <li class="api apilevel-"><a href="../../../com/carnival/sdk/Carnival.TagsHandler.html">Carnival.TagsHandler</a></li>
+          <li class="selected api apilevel-"><a href="../../../com/carnival/sdk/Logger.html">Logger</a></li>
       </ul>
     </li>
               
@@ -243,11 +243,11 @@
 
 <div id="jd-header">
     public
-    static 
+     
      
     
     interface
-<h1>Carnival.TagsHandler</h1>
+<h1>Logger</h1>
 
 
 
@@ -266,7 +266,7 @@
 
     <tr>
          	
-        <td colspan="1" class="jd-inheritance-class-cell">com.carnival.sdk.Carnival.TagsHandler</td>
+        <td colspan="1" class="jd-inheritance-class-cell">com.carnival.sdk.Logger</td>
     </tr>
     
 
@@ -282,13 +282,13 @@
 
 
 <h2>Class Overview</h2>
-<p>Handler interface to get tags after set/get tags on the device</p>
+<p>Logging interface to capture logging coming from the Carnival SDK.</p>
 
 
 
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">See Also</h5>
-      <ul class="nolist"><li><code><a href="../../../com/carnival/sdk/Carnival.html#setTags(java.util.List<java.lang.String>)">setTags(List)</a></code></li><li><code><a href="../../../com/carnival/sdk/Carnival.html#getTags(com.carnival.sdk.Carnival.TagsHandler)">getTags(Carnival.TagsHandler)</a></code></li>
+      <ul class="nolist"><li><code><a href="../../../com/carnival/sdk/Carnival.html#setLogger(com.carnival.sdk.Logger)">setLogger(Logger)</a></code></li>
       </ul>
   </div>
 
@@ -354,12 +354,12 @@
             
             
             
-            void
+            int
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/carnival/sdk/Carnival.TagsHandler.html#onFailure(java.lang.Error)">onFailure</a></span>(Error error)
+        <span class="sympad"><a href="../../../com/carnival/sdk/Logger.html#d(java.lang.String, java.lang.String)">d</a></span>(String tag, String message)
         
-        <div class="jd-descrdiv">On a unsuccessful request <code>onFailure</code> is called with a descriptive error</div>
+        <div class="jd-descrdiv">Send a DEBUG log message.</div>
   
   </td></tr>
 
@@ -372,12 +372,66 @@
             
             
             
-            void
+            int
         </td>
         <td class="jd-linkcol" width="100%">
-        <span class="sympad"><a href="../../../com/carnival/sdk/Carnival.TagsHandler.html#onSuccess(java.util.List<java.lang.String>)">onSuccess</a></span>(List&lt;String&gt; tags)
+        <span class="sympad"><a href="../../../com/carnival/sdk/Logger.html#e(java.lang.String, java.lang.String)">e</a></span>(String tag, String message)
         
-        <div class="jd-descrdiv">On a successful request <code>onSuccess</code> is called with the device tags</div>
+        <div class="jd-descrdiv">Send an ERROR log message.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/carnival/sdk/Logger.html#i(java.lang.String, java.lang.String)">i</a></span>(String tag, String message)
+        
+        <div class="jd-descrdiv">Send an INFO log message.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/carnival/sdk/Logger.html#v(java.lang.String, java.lang.String)">v</a></span>(String tag, String message)
+        
+        <div class="jd-descrdiv">Send a VERBOSE log message.</div>
+  
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            abstract
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/carnival/sdk/Logger.html#w(java.lang.String, java.lang.String)">w</a></span>(String tag, String message)
+        
+        <div class="jd-descrdiv">Send a WARNING log message</div>
   
   </td></tr>
 
@@ -430,7 +484,7 @@
 
 
 
-<a id="onFailure(java.lang.Error)"></a>
+<a id="d(java.lang.String, java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -440,10 +494,10 @@
          
         abstract 
          
-        void
+        int
       </span>
-      <span class="sympad">onFailure</span>
-      <span class="normal">(Error error)</span>
+      <span class="sympad">d</span>
+      <span class="normal">(String tag, String message)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -455,23 +509,31 @@
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>On a unsuccessful request <code>onFailure</code> is called with a descriptive error</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Send a DEBUG log message.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>error</th>
-          <td>A description of the error
-</td>
+          <th>tag</th>
+          <td>Used to identify the source of a log message.</td>
+        </tr>
+        <tr>
+          <th>message</th>
+          <td>The message you would like logged.</td>
         </tr>
       </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Unused by Carnival
+</li></ul>
   </div>
 
     </div>
 </div>
 
 
-<a id="onSuccess(java.util.List<java.lang.String>)"></a>
+<a id="e(java.lang.String, java.lang.String)"></a>
 
 <div class="jd-details api apilevel-"> 
     <h4 class="jd-details-title">
@@ -481,10 +543,10 @@
          
         abstract 
          
-        void
+        int
       </span>
-      <span class="sympad">onSuccess</span>
-      <span class="normal">(List&lt;String&gt; tags)</span>
+      <span class="sympad">e</span>
+      <span class="normal">(String tag, String message)</span>
     </h4>
       <div class="api-level">
         <div>
@@ -496,16 +558,171 @@
       </div>
     <div class="jd-details-descr">
       
-  <div class="jd-tagdata jd-tagdescr"><p>On a successful request <code>onSuccess</code> is called with the device tags</p></div>
+  <div class="jd-tagdata jd-tagdescr"><p>Send an ERROR log message.</p></div>
   <div class="jd-tagdata">
       <h5 class="jd-tagtitle">Parameters</h5>
       <table class="jd-tagtable">
         <tr>
-          <th>tags</th>
-          <td>List of tags of the device
-</td>
+          <th>tag</th>
+          <td>Used to identify the source of a log message.</td>
+        </tr>
+        <tr>
+          <th>message</th>
+          <td>The message you would like logged.</td>
         </tr>
       </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Unused by Carnival
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="i(java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        int
+      </span>
+      <span class="sympad">i</span>
+      <span class="normal">(String tag, String message)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Send an INFO log message.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>tag</th>
+          <td>Used to identify the source of a log message.</td>
+        </tr>
+        <tr>
+          <th>message</th>
+          <td>The message you would like logged.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Unused by Carnival
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="v(java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        int
+      </span>
+      <span class="sympad">v</span>
+      <span class="normal">(String tag, String message)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Send a VERBOSE log message.</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>tag</th>
+          <td>Used to identify the source of a log message.</td>
+        </tr>
+        <tr>
+          <th>message</th>
+          <td>The message you would like logged.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Unused by Carnival
+</li></ul>
+  </div>
+
+    </div>
+</div>
+
+
+<a id="w(java.lang.String, java.lang.String)"></a>
+
+<div class="jd-details api apilevel-"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+        abstract 
+         
+        int
+      </span>
+      <span class="sympad">w</span>
+      <span class="normal">(String tag, String message)</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Send a WARNING log message</p></div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Parameters</h5>
+      <table class="jd-tagtable">
+        <tr>
+          <th>tag</th>
+          <td>Used to identify the source of a log message.</td>
+        </tr>
+        <tr>
+          <th>message</th>
+          <td>The message you would like logged.</td>
+        </tr>
+      </table>
+  </div>
+  <div class="jd-tagdata">
+      <h5 class="jd-tagtitle">Returns</h5>
+      <ul class="nolist"><li>Unused by Carnival
+</li></ul>
   </div>
 
     </div>

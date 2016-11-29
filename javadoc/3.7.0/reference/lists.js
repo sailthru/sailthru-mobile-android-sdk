@@ -13,8 +13,9 @@ var DATA = [
       { id:11, label:"com.carnival.sdk.CarnivalMessageListener", link:"com/carnival/sdk/CarnivalMessageListener.html", type:"class" },
       { id:12, label:"com.carnival.sdk.CarnivalNotificationExtender", link:"com/carnival/sdk/CarnivalNotificationExtender.html", type:"class" },
       { id:13, label:"com.carnival.sdk.EventSource", link:"com/carnival/sdk/EventSource.html", type:"class" },
-      { id:14, label:"com.carnival.sdk.Message", link:"com/carnival/sdk/Message.html", type:"class" },
-      { id:15, label:"com.carnival.sdk.MessageActivity", link:"com/carnival/sdk/MessageActivity.html", type:"class" },
-      { id:16, label:"com.carnival.sdk.NotificationConfig", link:"com/carnival/sdk/NotificationConfig.html", type:"class" }
+      { id:14, label:"com.carnival.sdk.Logger", link:"com/carnival/sdk/Logger.html", type:"class" },
+      { id:15, label:"com.carnival.sdk.Message", link:"com/carnival/sdk/Message.html", type:"class" },
+      { id:16, label:"com.carnival.sdk.MessageActivity", link:"com/carnival/sdk/MessageActivity.html", type:"class" },
+      { id:17, label:"com.carnival.sdk.NotificationConfig", link:"com/carnival/sdk/NotificationConfig.html", type:"class" }
 
     ];
