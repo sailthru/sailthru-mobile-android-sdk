@@ -1,0 +1,2382 @@
+<api>
+<package name="com.carnival.sdk"
+>
+<class name="AttributeMap"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="AttributeMap"
+ type="com.carnival.sdk.AttributeMap"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="AttributeMap"
+ type="com.carnival.sdk.AttributeMap"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="jsonAttributes" type="org.json.JSONObject">
+</parameter>
+</constructor>
+<method name="clear"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="containsKey"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="get"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getBoolean"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="boolean">
+</parameter>
+</method>
+<method name="getBooleanArray"
+ return="java.util.ArrayList&lt;java.lang.Boolean&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getDate"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getDateArray"
+ return="java.util.ArrayList&lt;java.util.Date&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getFloat"
+ return="float"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="float">
+</parameter>
+</method>
+<method name="getFloatArray"
+ return="java.util.ArrayList&lt;java.lang.Float&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getInt"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="defaultValue" type="int">
+</parameter>
+</method>
+<method name="getIntArray"
+ return="java.util.ArrayList&lt;java.lang.Integer&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getMergeRules"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getString"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="getStringArray"
+ return="java.util.ArrayList&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="isEmpty"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="keySet"
+ return="java.util.Set&lt;java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="putBoolean"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="boolean">
+</parameter>
+</method>
+<method name="putBooleanArray"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="array" type="java.util.ArrayList&lt;java.lang.Boolean&gt;">
+</parameter>
+</method>
+<method name="putDate"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.util.Date">
+</parameter>
+</method>
+<method name="putDateArray"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="array" type="java.util.ArrayList&lt;java.util.Date&gt;">
+</parameter>
+</method>
+<method name="putFloat"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="float">
+</parameter>
+</method>
+<method name="putFloatArray"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="array" type="java.util.ArrayList&lt;java.lang.Float&gt;">
+</parameter>
+</method>
+<method name="putInt"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="int">
+</parameter>
+</method>
+<method name="putIntArray"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="array" type="java.util.ArrayList&lt;java.lang.Integer&gt;">
+</parameter>
+</method>
+<method name="putString"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="putStringArray"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="array" type="java.util.ArrayList&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="remove"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="setMergeRules"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="mergeRule" type="int">
+</parameter>
+</method>
+<method name="size"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="RULE_REPLACE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="RULE_UPDATE"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="Carnival"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="addNotificationReceivedListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.carnival.sdk.NotificationReceivedListener">
+</parameter>
+</method>
+<method name="addNotificationTappedListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.carnival.sdk.NotificationTappedListener">
+</parameter>
+</method>
+<method name="clearDevice"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="options" type="int">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="deleteMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.MessageDeletedHandler">
+</parameter>
+</method>
+<method name="getDeviceId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="carnivalHandler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;java.lang.String&gt;">
+</parameter>
+</method>
+<method name="getMessage"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messageId" type="java.lang.String">
+</parameter>
+<parameter name="messageHandler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;com.carnival.sdk.Message&gt;">
+</parameter>
+</method>
+<method name="getMessages"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messagesHandler" type="com.carnival.sdk.Carnival.MessagesHandler">
+</parameter>
+</method>
+<method name="getUnreadMessageCount"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+</method>
+<method name="getUnreadMessageCount"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="carnivalHandler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;java.lang.Integer&gt;">
+</parameter>
+</method>
+<method name="logEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="logEvent"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="source" type="com.carnival.sdk.EventSource">
+</parameter>
+<parameter name="value" type="java.lang.String">
+</parameter>
+</method>
+<method name="registerMessageImpression"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="type" type="com.carnival.sdk.CarnivalImpressionType">
+</parameter>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+<method name="removeAttribute"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+</method>
+<method name="removeAttribute"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.AttributesHandler">
+</parameter>
+</method>
+<method name="setAttributes"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="attributeMap" type="com.carnival.sdk.AttributeMap">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.AttributesHandler">
+</parameter>
+</method>
+<method name="setGeoIpTrackingEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabledGeoIp" type="boolean">
+</parameter>
+</method>
+<method name="setInAppNotificationsEnabled"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="enabled" type="boolean">
+</parameter>
+</method>
+<method name="setLogger"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="logger" type="com.carnival.sdk.Logger">
+</parameter>
+</method>
+<method name="setMessageRead"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.MessagesReadHandler">
+</parameter>
+</method>
+<method name="setMessageReceivedListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="java.lang.Class&lt;? extends com.carnival.sdk.CarnivalMessageListener&gt;">
+</parameter>
+</method>
+<method name="setMessagesRead"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messages" type="java.util.List&lt;com.carnival.sdk.Message&gt;">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.MessagesReadHandler">
+</parameter>
+</method>
+<method name="setNotificationConfig"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationConfig" type="com.carnival.sdk.NotificationConfig">
+</parameter>
+</method>
+<method name="setNotificationIcon"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="iconID" type="int">
+</parameter>
+</method>
+<method name="setNotificationResponder"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+<method name="setOnInAppNotificationDisplayListener"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="listener" type="com.carnival.sdk.Carnival.OnInAppNotificationDisplayListener">
+</parameter>
+</method>
+<method name="setUserEmail"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="userEmail" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="setUserId"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="userId" type="java.lang.String">
+</parameter>
+<parameter name="handler" type="com.carnival.sdk.Carnival.CarnivalHandler&lt;java.lang.Void&gt;">
+</parameter>
+</method>
+<method name="startEngine"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="appKey" type="java.lang.String">
+</parameter>
+</method>
+<method name="updateLocation"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="location" type="android.location.Location">
+</parameter>
+</method>
+<field name="ACTION_MESSAGE_COUNT_UPDATE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.carnival.sdk.MESSAGE_COUNT_UPDATE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_MESSAGE_READ"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.carnival.sdk.MESSAGE_READ&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ACTION_NOTIFICATION_TAPPED"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.carnival.sdk.NOTIFICATION_TAPPED&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="ATTRIBUTES"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="1"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="CLEAR_ALL"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="7"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EVENTS"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="4"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_MESSAGE_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.carnival.sdk.MESSAGE_ID&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_MESSAGE_TYPE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;com.carnival.sdk.MESSAGE_TYPE&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_UNREAD_MESSAGE_COUNT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;UNREAD_MESSAGE_COUNT&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="MESSAGE_STREAM"
+ type="int"
+ transient="false"
+ volatile="false"
+ value="2"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<interface name="Carnival.AttributesHandler"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="error" type="java.lang.Error">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="Carnival.CarnivalHandler"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="error" type="java.lang.Error">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="value" type="T">
+</parameter>
+</method>
+</interface>
+<interface name="Carnival.MessageDeletedHandler"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="error" type="java.lang.Error">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="Carnival.MessagesHandler"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="error" type="java.lang.Error">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="messages" type="java.util.ArrayList&lt;com.carnival.sdk.Message&gt;">
+</parameter>
+</method>
+</interface>
+<interface name="Carnival.MessagesReadHandler"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onFailure"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="error" type="java.lang.Error">
+</parameter>
+</method>
+<method name="onSuccess"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</interface>
+<interface name="Carnival.OnInAppNotificationDisplayListener"
+ abstract="true"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="shouldPresentInAppNotification"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+</interface>
+<class name="CarnivalImpressionType"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.carnival.sdk.CarnivalImpressionType"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.carnival.sdk.CarnivalImpressionType[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<class name="CarnivalMessageListener"
+ extends="java.lang.Object"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<constructor name="CarnivalMessageListener"
+ type="com.carnival.sdk.CarnivalMessageListener"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onMessageReceived"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+</class>
+<class name="CarnivalNotificationExtender"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="CarnivalNotificationExtender"
+ type="com.carnival.sdk.CarnivalNotificationExtender"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<constructor name="CarnivalNotificationExtender"
+ type="com.carnival.sdk.CarnivalNotificationExtender"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+</constructor>
+<method name="extend"
+ return="NotificationCompat.Builder"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="builder" type="NotificationCompat.Builder">
+</parameter>
+</method>
+<method name="setMessage"
+ return="com.carnival.sdk.CarnivalNotificationExtender"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+</class>
+<interface name="ContentIntentBuilder"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="build"
+ return="android.app.PendingIntent"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+</interface>
+<class name="EventSource"
+ extends="java.lang.Enum"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="valueOf"
+ return="com.carnival.sdk.EventSource"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="name" type="java.lang.String">
+</parameter>
+</method>
+<method name="values"
+ return="com.carnival.sdk.EventSource[]"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+</class>
+<interface name="Logger"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="d"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="e"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="i"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="v"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+<method name="w"
+ return="int"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="tag" type="java.lang.String">
+</parameter>
+<parameter name="message" type="java.lang.String">
+</parameter>
+</method>
+</interface>
+<class name="Message"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<implements name="java.lang.Comparable">
+</implements>
+<implements name="android.os.Parcelable">
+</implements>
+<method name="compareTo"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="another" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+<method name="describeContents"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAttributes"
+ return="java.util.HashMap&lt;java.lang.String, java.lang.String&gt;"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getContentURL"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCreatedAt"
+ return="java.util.Date"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getHtmlText"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getImageURL"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMediaURL"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMessageID"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getText"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getTitle"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getType"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isRead"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="isShareable"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="writeToParcel"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="dest" type="android.os.Parcel">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<field name="CREATOR"
+ type="android.os.Parcelable.Creator"
+ transient="false"
+ volatile="false"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_FAKE_CALL_MESSAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;fake_call_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_IMAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;image_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_LINK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;link_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_PUSH"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;push_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_TEXT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;text_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="TYPE_VIDEO"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;video_message&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="MessageActivity"
+ extends="android.app.Activity"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="MessageActivity"
+ type="com.carnival.sdk.MessageActivity"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="intentForMessage"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+<parameter name="message" type="com.carnival.sdk.Message">
+</parameter>
+</method>
+<method name="intentForMessage"
+ return="android.content.Intent"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+<parameter name="messageId" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class name="NotificationBundle"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NotificationBundle"
+ type="com.carnival.sdk.NotificationBundle"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</constructor>
+<method name="build"
+ return="com.carnival.sdk.NotificationBundle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="generateAndroidNotificationID"
+ return="int"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getAlert"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBadge"
+ return="java.lang.Object"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getBundle"
+ return="android.os.Bundle"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getCategory"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getDeepLink"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getImageUrlFromPayload"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getMessageIdFromPayload"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getNotificationId"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<method name="getSound"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="defaultValue" type="java.lang.String">
+</parameter>
+</method>
+<method name="getStringFromPayload"
+ return="java.lang.String"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="true"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="key" type="java.lang.String">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+<method name="isDeepLinkNotification"
+ return="boolean"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</method>
+<field name="BUNDLE_KEY_ALERT"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;alert&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_BADGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;badge&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_CATEGORY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;category&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_CHANNEL_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_channel_id&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_COLLAPSE_KEY"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;collapse_key&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_DEEP_LINK"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_u&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_PAYLOAD"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_st&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_PAYLOAD_IMAGE"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;image_url&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_PAYLOAD_MID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;mid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="BUNDLE_KEY_SOUND"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;sound&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+<field name="EXTRA_NOTIFICATION_ID"
+ type="java.lang.String"
+ transient="false"
+ volatile="false"
+ value="&quot;_nid&quot;"
+ static="true"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</field>
+</class>
+<class name="NotificationConfig"
+ extends="java.lang.Object"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NotificationConfig"
+ type="com.carnival.sdk.NotificationConfig"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="addAction"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<parameter name="icon" type="int">
+</parameter>
+<parameter name="title" type="java.lang.CharSequence">
+</parameter>
+<parameter name="actionIntent" type="android.content.Intent">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method name="addAction"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="category" type="java.lang.String">
+</parameter>
+<parameter name="icon" type="int">
+</parameter>
+<parameter name="title" type="java.lang.CharSequence">
+</parameter>
+<parameter name="actionIntent" type="android.content.Intent">
+</parameter>
+<parameter name="remoteInput" type="RemoteInput">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method name="addNotificationExtender"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="extender" type="NotificationCompat.Extender">
+</parameter>
+</method>
+<method name="setColor"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="argb" type="int">
+</parameter>
+</method>
+<method name="setContentIntentBuilder"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="contentIntentBuilder" type="com.carnival.sdk.ContentIntentBuilder">
+</parameter>
+</method>
+<method name="setDefaultContentIntent"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="deprecated"
+ visibility="public"
+>
+<parameter name="contentIntent" type="android.app.PendingIntent">
+</parameter>
+</method>
+<method name="setDefaultContentIntent"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="contentIntent" type="android.content.Intent">
+</parameter>
+<parameter name="requestCode" type="int">
+</parameter>
+<parameter name="flags" type="int">
+</parameter>
+</method>
+<method name="setDefaultNotificationChannel"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationChannel" type="android.app.NotificationChannel">
+</parameter>
+</method>
+<method name="setDefaults"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="defaults" type="int">
+</parameter>
+</method>
+<method name="setLargeIcon"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="largeIcon" type="int">
+</parameter>
+</method>
+<method name="setLights"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="argb" type="int">
+</parameter>
+<parameter name="onMs" type="int">
+</parameter>
+<parameter name="offMs" type="int">
+</parameter>
+</method>
+<method name="setSilencer"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="notificationSilencer" type="com.carnival.sdk.NotificationSilencer">
+</parameter>
+</method>
+<method name="setSmallIcon"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="icon" type="int">
+</parameter>
+</method>
+<method name="setSound"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="sound" type="android.net.Uri">
+</parameter>
+</method>
+<method name="setVibrate"
+ return="com.carnival.sdk.NotificationConfig"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="pattern" type="long[]">
+</parameter>
+</method>
+</class>
+<interface name="NotificationReceivedListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNotificationReceived"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+</interface>
+<class name="NotificationReceivedService"
+ extends="GcmListenerService"
+ abstract="false"
+ static="false"
+ final="true"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NotificationReceivedService"
+ type="com.carnival.sdk.NotificationReceivedService"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onMessageReceived"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="from" type="java.lang.String">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+</class>
+<interface name="NotificationSilencer"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="isSilent"
+ return="boolean"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+</interface>
+<interface name="NotificationTappedListener"
+ abstract="true"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<method name="onNotificationTapped"
+ return="void"
+ abstract="true"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="bundle" type="android.os.Bundle">
+</parameter>
+</method>
+</interface>
+<class name="NotificationTappedReceiver"
+ extends="android.content.BroadcastReceiver"
+ abstract="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<constructor name="NotificationTappedReceiver"
+ type="com.carnival.sdk.NotificationTappedReceiver"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+</constructor>
+<method name="onReceive"
+ return="void"
+ abstract="false"
+ native="false"
+ synchronized="false"
+ static="false"
+ final="false"
+ deprecated="not deprecated"
+ visibility="public"
+>
+<parameter name="context" type="android.content.Context">
+</parameter>
+<parameter name="intent" type="android.content.Intent">
+</parameter>
+</method>
+</class>
+</package>
+</api>
