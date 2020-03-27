@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationSilencer - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="./index.html">NotificationSilencer</a><br/>
+<br/>
+<h1>NotificationSilencer</h1>
+<code><span class="keyword">interface </span><span class="identifier">NotificationSilencer</span></code>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented by Carnival  Note: Direct to URI notifications using the <code>_u</code> parameter will never call <code><a href="is-silent.html">#isSilent(Context, Bundle)</a></code>  You could use this to silence notifications from other providers or Receive a notification to start a special background service  Example of usage to silent notifications when the custom key `silent` is present.  Create your implementation: <pre><code>
+       class MyNotificationSilencer implements NotificationSilencer {
+           @Override
+           boolean isSilent(Context context, Bundle bundle) {
+               return bundle.containsKey("silent")
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="../-notification-config/set-silencer.html">NotificationConfig#setSilencer(NotificationSilencer)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       NotificationConfig notificationConfig = new NotificationConfig();
+       notificationConfig.setSilencer(new MyNotificationSilencer());
+       Carnival.setNotificationConfig(notificationConfig);
+       ...
+  
+  </code></pre></p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-silent.html">isSilent</a></h4>
+</td>
+<td>
+<p>Return true to silence a Notification. Silent notifications will not be presented to the user.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isSilent</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationSilencer$isSilent(android.content.Context, android.os.Bundle)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.NotificationSilencer$isSilent(android.content.Context, android.os.Bundle)/bundle">bundle</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.sailthru.mobile.sdk.interfaces/-notification-silencer.html">NotificationSilencer</a></h4>
+</td>
+<td>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented
+by Carnival</p>
+<code><span class="keyword">interface </span><span class="identifier">NotificationSilencer</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">NotificationSilencer</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

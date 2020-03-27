@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Purchase.setVars - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="index.html">Purchase</a>&nbsp;/&nbsp;<a href="./set-vars.html">setVars</a><br/>
+<br/>
+<h1>setVars</h1>
+<a name="com.carnival.sdk.Purchase$setVars(org.json.JSONObject)"></a>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setVars</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$setVars(org.json.JSONObject)/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Any number of custom variables to attach to the order. These are commonly used with the Audience Builder “Purchase Order Var Is” query. For example, you could specify the shipping address, estimated delivery date given, credit card type used, whether a deal was used, the promo code used, etc.Note that a vars object may also exist at the item level. See the example code, and the items definition in this table.You may use any custom order variable name(s). Note that the following variable name is reserved at the order level, for a particular purpose: st_cost – The client’s cost for the items in the purchase, in cents. The value should be an integer, and is recommended if you are using Retention Analytics in order to report net revenue.</p>
+<h3>Parameters</h3>
+<p><a name="vars"></a>
+<code>vars</code> - <a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">:</span> map containing the custom fields for the purchase.</p>
+</BODY>
+</HTML>

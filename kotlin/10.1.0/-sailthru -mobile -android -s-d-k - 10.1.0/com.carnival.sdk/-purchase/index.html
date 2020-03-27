@@ -1,0 +1,159 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Purchase - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="./index.html">Purchase</a><br/>
+<br/>
+<h1>Purchase</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Purchase</span></code>
+<p>A purchase to log to the platform.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Create a Purchase instance with the required fields. This constructor can add PurchaseItem or ContentItem instances, other objects will be discarded.</p>
+<code><span class="identifier">Purchase</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$<init>(java.util.ArrayList((kotlin.Any)))/purchaseItems">purchaseItems</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">)</span></code><code><span class="identifier">Purchase</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$<init>(org.json.JSONObject)/apiResponse">apiResponse</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-j-s-o-n_-k-e-y_-i-n-c-o-m-p-l-e-t-e.html">JSON_KEY_INCOMPLETE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">JSON_KEY_INCOMPLETE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-j-s-o-n_-k-e-y_-i-t-e-m-s.html">JSON_KEY_ITEMS</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">JSON_KEY_ITEMS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-j-s-o-n_-k-e-y_-m-e-s-s-a-g-e_-i-d.html">JSON_KEY_MESSAGE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">JSON_KEY_MESSAGE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-j-s-o-n_-k-e-y_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html">JSON_KEY_NOTIFICATION_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">JSON_KEY_NOTIFICATION_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-j-s-o-n_-k-e-y_-v-a-r-s.html">JSON_KEY_VARS</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">JSON_KEY_VARS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-var.html">addVar</a></h4>
+</td>
+<td>
+<p>Add a custom key value pair to the purchase item.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addVar</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$addVar(kotlin.String, kotlin.Any)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Purchase$addVar(kotlin.String, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="equals.html">equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message-id.html">getMessageId</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getMessageId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-purchase-items.html">getPurchaseItems</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getPurchaseItems</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../-purchase-item/index.html"><span class="identifier">PurchaseItem</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-vars.html">getVars</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getVars</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash-code.html">hashCode</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-message-id.html">setMessageId</a></h4>
+</td>
+<td>
+<p>Set the message ID associated with the purchase. This is required to have revenue data matched to email sends in Sailthru. Pass the identifying message_id of the email the user is coming from; this will be the value stored in the sailthru_bid cookie for your domain.Note: In some client libraries message_id should be passed as a string. The message attribution will be displayed in your Campaign Summary, Transactional Report, Purchase Log, and in Lifecycle Optimizer Metrics.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setMessageId</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$setMessageId(kotlin.String)/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-vars.html">setVars</a></h4>
+</td>
+<td>
+<p>Any number of custom variables to attach to the order. These are commonly used with the Audience Builder “Purchase Order Var Is” query. For example, you could specify the shipping address, estimated delivery date given, credit card type used, whether a deal was used, the promo code used, etc.Note that a vars object may also exist at the item level. See the example code, and the items definition in this table.You may use any custom order variable name(s). Note that the following variable name is reserved at the order level, for a particular purpose: st_cost – The client’s cost for the items in the purchase, in cents. The value should be an integer, and is recommended if you are using Retention Analytics in order to report net revenue.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setVars</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Purchase$setVars(org.json.JSONObject)/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-j-s-o-n.html">toJSON</a></h4>
+</td>
+<td>
+<p>Converts Purchase to JSON.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toJSON</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.sailthru.mobile.sdk.model/-purchase/index.html">Purchase</a></h4>
+</td>
+<td>
+<p>A purchase to log to the platform.</p>
+<code><span class="keyword">class </span><span class="identifier">Purchase</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">Purchase</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

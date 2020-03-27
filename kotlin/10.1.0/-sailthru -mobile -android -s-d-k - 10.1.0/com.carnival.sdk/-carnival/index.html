@@ -1,0 +1,627 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Carnival - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="./index.html">Carnival</a><br/>
+<br/>
+<h1>Carnival</h1>
+<code><span class="keyword">class </span><span class="identifier">Carnival</span></code>
+<p>Keeps track of necessary environment variables provided by the developer or google. Also provides the entry point into Carnival for the developer to retrieve device information.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-attributes-handler/index.html">AttributesHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for setting custom attributes on the device</p>
+<code><span class="keyword">interface </span><span class="identifier">AttributesHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-carnival-handler/index.html">CarnivalHandler</a></h4>
+</td>
+<td>
+<p>Generic handler for async calls to the Carnival SDK.</p>
+<code><span class="keyword">interface </span><span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-deleted-handler/index.html">MessageDeletedHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for deleting a Message.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessageDeletedHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-messages-handler/index.html">MessagesHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for getting Messages for this device.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessagesHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-messages-read-handler/index.html">MessagesReadHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for setting messages as read.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessagesReadHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-on-in-app-notification-display-listener/index.html">OnInAppNotificationDisplayListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnInAppNotificationDisplayListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-recommendations-handler/index.html">RecommendationsHandler</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">RecommendationsHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-track-handler/index.html">TrackHandler</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">TrackHandler</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-m-e-s-s-a-g-e_-c-o-u-n-t_-u-p-d-a-t-e.html">ACTION_MESSAGE_COUNT_UPDATE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ACTION_MESSAGE_COUNT_UPDATE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-m-e-s-s-a-g-e_-r-e-a-d.html">ACTION_MESSAGE_READ</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ACTION_MESSAGE_READ</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-n-o-t-i-f-i-c-a-t-i-o-n_-a-c-t-i-o-n_-t-a-p-p-e-d.html">ACTION_NOTIFICATION_ACTION_TAPPED</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ACTION_NOTIFICATION_ACTION_TAPPED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-n-o-t-i-f-i-c-a-t-i-o-n_-t-a-p-p-e-d.html">ACTION_NOTIFICATION_TAPPED</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ACTION_NOTIFICATION_TAPPED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-t-t-r-i-b-u-t-e-s.html">ATTRIBUTES</a></h4>
+</td>
+<td>
+<p>Clears all attributes on a device when used with <code><a href="clear-device.html">#clearDevice(int, CarnivalHandler)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">ATTRIBUTES</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-l-e-a-r_-a-l-l.html">CLEAR_ALL</a></h4>
+</td>
+<td>
+<p>Clears all attributes, messages, and events on a device when used with <code><a href="clear-device.html">#clearDevice(int, CarnivalHandler)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">CLEAR_ALL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-v-e-n-t-s.html">EVENTS</a></h4>
+</td>
+<td>
+<p>Clears all events on a device when used with <code><a href="clear-device.html">#clearDevice(int, CarnivalHandler)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EVENTS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-m-e-s-s-a-g-e_-i-d.html">EXTRA_MESSAGE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EXTRA_MESSAGE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-m-e-s-s-a-g-e_-t-y-p-e.html">EXTRA_MESSAGE_TYPE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EXTRA_MESSAGE_TYPE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-p-a-r-c-e-l-a-b-l-e_-m-e-s-s-a-g-e.html">EXTRA_PARCELABLE_MESSAGE</a></h4>
+</td>
+<td>
+<p>Now for internal use only. Protected to prevent users expecting this to be there when it is no longer reliable after the addition of <code>mid</code> to the push payload.</p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EXTRA_PARCELABLE_MESSAGE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-u-n-r-e-a-d_-m-e-s-s-a-g-e_-c-o-u-n-t.html">EXTRA_UNREAD_MESSAGE_COUNT</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EXTRA_UNREAD_MESSAGE_COUNT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-m-e-s-s-a-g-e_-s-t-r-e-a-m.html">MESSAGE_STREAM</a></h4>
+</td>
+<td>
+<p>Clears all messages on a device when used with <code><a href="clear-device.html">#clearDevice(int, CarnivalHandler)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">MESSAGE_STREAM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o-t-i-f-i-c-a-t-i-o-n_-i-c-o-n.html">NOTIFICATION_ICON</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NOTIFICATION_ICON</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-notification-action-tapped-listener.html">addNotificationActionTappedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification action is tapped. This method should be called after <code><a href="start-engine.html">#startEngine(Context, String)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">addNotificationActionTappedListener</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$addNotificationActionTappedListener(com.carnival.sdk.NotificationActionTappedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../-notification-action-tapped-listener/index.html"><span class="identifier">NotificationActionTappedListener</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-notification-received-listener.html">addNotificationReceivedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification is received. This method should be called after <code><a href="start-engine.html">#startEngine(Context, String)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">addNotificationReceivedListener</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$addNotificationReceivedListener(com.carnival.sdk.NotificationReceivedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../-notification-received-listener/index.html"><span class="identifier">NotificationReceivedListener</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-notification-tapped-listener.html">addNotificationTappedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification is tapped. This method should be called after <code><a href="start-engine.html">#startEngine(Context, String)</a></code></p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">addNotificationTappedListener</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$addNotificationTappedListener(com.carnival.sdk.NotificationTappedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../-notification-tapped-listener/index.html"><span class="identifier">NotificationTappedListener</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-device.html">clearDevice</a></h4>
+</td>
+<td>
+<p>Clear device data.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">clearDevice</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$clearDevice(kotlin.Int, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$clearDevice(kotlin.Int, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-message-cache.html">clearMessageCache</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearMessageCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="delete-message.html">deleteMessage</a></h4>
+</td>
+<td>
+<p>Removes a Message from appearing in a device's message stream. Does nothing if <code>message</code> is null.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">deleteMessage</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$deleteMessage(com.carnival.sdk.Message, com.carnival.sdk.Carnival.MessageDeletedHandler)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$deleteMessage(com.carnival.sdk.Message, com.carnival.sdk.Carnival.MessageDeletedHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessageDeletedHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-app-key.html">getAppKey</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAppKey</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-application-context.html">getApplicationContext</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getApplicationContext</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-cached-message.html">getCachedMessage</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCachedMessage</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getCachedMessage(kotlin.String)/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-category-manager.html">getCategoryManager</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getCategoryManager</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">CategoryManager</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-device-id.html">getDeviceId</a></h4>
+</td>
+<td>
+<p>Gets this devices ID on the Carnival Platform.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getDeviceId</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getDeviceId(com.carnival.sdk.Carnival.CarnivalHandler((kotlin.String)))/carnivalHandler">carnivalHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-instance.html">getInstance</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getInstance</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Carnival</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-logger.html">getLogger</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getLogger</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-logger/index.html"><span class="identifier">Logger</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message.html">getMessage</a></h4>
+</td>
+<td>
+<p>Retrieves a Message for a given Message ID.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getMessage</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getMessage(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((com.carnival.sdk.Message)))/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$getMessage(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((com.carnival.sdk.Message)))/messageHandler">messageHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-messages.html">getMessages</a></h4>
+</td>
+<td>
+<p>Retrieve all Messages visible for this device.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getMessages</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getMessages(com.carnival.sdk.Carnival.MessagesHandler)/messagesHandler">messagesHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-config.html">getNotificationConfig</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNotificationConfig</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../-notification-config/index.html"><span class="identifier">NotificationConfig</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-received-manager.html">getNotificationReceivedManager</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNotificationReceivedManager</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NotificationReceivedManager</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-tapped-manager.html">getNotificationTappedManager</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNotificationTappedManager</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">NotificationTappedManager</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-on-in-app-notification-display-listener.html">getOnInAppNotificationDisplayListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOnInAppNotificationDisplayListener</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">OnInAppNotificationDisplayListener</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-profile-vars.html">getProfileVars</a></h4>
+</td>
+<td>
+<p>Retrieve the profile vars set on the server.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getProfileVars</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getProfileVars(com.carnival.sdk.Carnival.CarnivalHandler((org.json.JSONObject)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-recommendations.html">getRecommendations</a></h4>
+</td>
+<td>
+<p>Returns the output from a Site Personalization Manager section, an array of recommendations for the given user. It is suggested you use this in conjunction with <code><a href="set-user-email.html">#setUserEmail(String, CarnivalHandler)</a></code> to identify the user to Sailthru.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getRecommendations</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getRecommendations(kotlin.String, com.carnival.sdk.Carnival.RecommendationsHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$getRecommendations(kotlin.String, com.carnival.sdk.Carnival.RecommendationsHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">RecommendationsHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-session-tracker.html">getSessionTracker</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSessionTracker</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SessionTracker</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-spm-request-builder.html">getSpmRequestBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSpmRequestBuilder</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">SPMRequestBuilder</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-unread-message-count.html">getUnreadMessageCount</a></h4>
+</td>
+<td>
+<p>Asynchronously returns the total number of unread messages in the message stream.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getUnreadMessageCount</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$getUnreadMessageCount(com.carnival.sdk.Carnival.CarnivalHandler((kotlin.Int)))/carnivalHandler">carnivalHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-notification.html">handleNotification</a></h4>
+</td>
+<td>
+<p>Pass received notification to Carnival SDK. NOTE: This method should only be called if the app implements its own FirebaseMessagingService instance, in which case it must be called in order to provide FCM notifications to the Carnival SDK for processing. Otherwise this will be handled automatically by the Carnival SDK.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">handleNotification</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$handleNotification(com.google.firebase.messaging.RemoteMessage)/remoteMessage">remoteMessage</span><span class="symbol">:</span>&nbsp;<span class="identifier">RemoteMessage</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-sailthru-link.html">handleSailthruLink</a></h4>
+</td>
+<td>
+<p>If you're using Sailthru email with universal links, your application will open with an encoded Sailthru link url. This method will decode the link URL and return its canonical location (ie https://link.sailthru.com/blahblah will redirect to https://www.sailthru.com/careers/list/, the link's canonical location), as well as making sure that the clickthrough metrics for this link are correctly attributed in the Sailthru platform. This method should be called from your receiving activity's <code>onStart()</code> method, and handle the starting intent's link data</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">handleSailthruLink</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$handleSailthruLink(android.net.Uri, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/uri">uri</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$handleSailthruLink(android.net.Uri, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="init.html">init</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">init</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$init(android.content.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$init(android.content.Context, kotlin.String)/appKey">appKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Carnival</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-geo-i-p-tracking-default-enabled.html">isGeoIPTrackingDefaultEnabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isGeoIPTrackingDefaultEnabled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-in-app-notifications-enabled.html">isInAppNotificationsEnabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isInAppNotificationsEnabled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-started.html">isStarted</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isStarted</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-abandoned-cart.html">logAbandonedCart</a></h4>
+</td>
+<td>
+<p>Logs a cart abandonment with the Sailthru platform. Use this to initiate cart abandoned flows.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">logAbandonedCart</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logAbandonedCart(com.carnival.sdk.Purchase, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/purchase">purchase</span><span class="symbol">:</span>&nbsp;<a href="../-purchase/index.html"><span class="identifier">Purchase</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$logAbandonedCart(com.carnival.sdk.Purchase, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-event.html">logEvent</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(com.carnival.sdk.Event)/event">event</span><span class="symbol">:</span>&nbsp;<span class="identifier">Event</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Log a Carnival event. If value is null or an empty string, no event will be generated.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Log a Carnival event with associated vars. If value is null or an empty string, no event will be generated.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(kotlin.String, org.json.JSONObject)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(kotlin.String, org.json.JSONObject)/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Log an event from a third party source. If value is null or an empty string, no event will be generated.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(com.carnival.sdk.EventSource, kotlin.String)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../-event-source/index.html"><span class="identifier">EventSource</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$logEvent(com.carnival.sdk.EventSource, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-purchase.html">logPurchase</a></h4>
+</td>
+<td>
+<p>Logs a purchase with the Sailthru platform. This can be used for mobile purchase attribution.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">logPurchase</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$logPurchase(com.carnival.sdk.Purchase, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/purchase">purchase</span><span class="symbol">:</span>&nbsp;<a href="../-purchase/index.html"><span class="identifier">Purchase</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$logPurchase(com.carnival.sdk.Purchase, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-cached-message.html">putCachedMessage</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">putCachedMessage</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$putCachedMessage(com.carnival.sdk.Message)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="register-message-impression.html">registerMessageImpression</a></h4>
+</td>
+<td>
+<p>Creates an impression for a message for a given interaction type.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">registerMessageImpression</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$registerMessageImpression(com.carnival.sdk.CarnivalImpressionType, com.carnival.sdk.Message)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../-carnival-impression-type/index.html"><span class="identifier">CarnivalImpressionType</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$registerMessageImpression(com.carnival.sdk.CarnivalImpressionType, com.carnival.sdk.Message)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-attribute.html">removeAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">removeAttribute</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$removeAttribute(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Remove a currently set attribute from this Device. If attribute is not currently set, does nothing.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">removeAttribute</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$removeAttribute(kotlin.String, com.carnival.sdk.Carnival.AttributesHandler)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$removeAttribute(kotlin.String, com.carnival.sdk.Carnival.AttributesHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributesHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attributes.html">setAttributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setAttributes</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setAttributes(com.carnival.sdk.AttributeMap, com.carnival.sdk.Carnival.AttributesHandler)/attributeMap">attributeMap</span><span class="symbol">:</span>&nbsp;<a href="../-attribute-map/index.html"><span class="identifier">AttributeMap</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setAttributes(com.carnival.sdk.AttributeMap, com.carnival.sdk.Carnival.AttributesHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributesHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-token.html">setDeviceToken</a></h4>
+</td>
+<td>
+<p>Pass the FCM token into the Carnival SDK. NOTE: This method should only be called if the app implements its own FirebaseMessagingService instance, in which case it must be called in order to provide the FCM token to the Carnival Platform. Otherwise this will be handled automatically by the Carnival SDK.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setDeviceToken</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setDeviceToken(kotlin.String)/token">token</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geo-ip-tracking-default.html">setGeoIpTrackingDefault</a></h4>
+</td>
+<td>
+<p>Set whether location tracking based on IP Address will be enabled or disabled by default when a device is created. This method must be called before startEngine.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setGeoIpTrackingDefault</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setGeoIpTrackingDefault(kotlin.Boolean)/enabledGeoIp">enabledGeoIp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geo-ip-tracking-enabled.html">setGeoIpTrackingEnabled</a></h4>
+</td>
+<td>
+<p>Enabled location tracking based on IP Address. Tracking location tracking is enabled by default. Use this method for users who may not want to have their location tracked at all.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setGeoIpTrackingEnabled</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setGeoIpTrackingEnabled(kotlin.Boolean)/enabledGeoIp">enabledGeoIp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code><br/>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setGeoIpTrackingEnabled</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setGeoIpTrackingEnabled(kotlin.Boolean, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/enabledGeoIp">enabledGeoIp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setGeoIpTrackingEnabled(kotlin.Boolean, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-in-app-notifications-enabled.html">setInAppNotificationsEnabled</a></h4>
+</td>
+<td>
+<p>Enables or disables the display of In-App Notifications. Must be called before <code><a href="start-engine.html">#startEngine(Context, String)</a></code>. In-App Notifications are enabled by default.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setInAppNotificationsEnabled</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setInAppNotificationsEnabled(kotlin.Boolean)/enabled">enabled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-logger.html">setLogger</a></h4>
+</td>
+<td>
+<p>All logging within Carnival is routed through this Logger.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setLogger</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setLogger(com.carnival.sdk.Logger)/logger">logger</span><span class="symbol">:</span>&nbsp;<a href="../-logger/index.html"><span class="identifier">Logger</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-message-read.html">setMessageRead</a></h4>
+</td>
+<td>
+<p>Convenience method for <code>setMessagesRead()</code>.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setMessageRead</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setMessageRead(com.carnival.sdk.Message, com.carnival.sdk.Carnival.MessagesReadHandler)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setMessageRead(com.carnival.sdk.Message, com.carnival.sdk.Carnival.MessagesReadHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesReadHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-messages-read.html">setMessagesRead</a></h4>
+</td>
+<td>
+<p>Marks all given messages as read and triggers an update broadcast to the unread messages count.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setMessagesRead</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setMessagesRead(kotlin.collections.MutableList((com.carnival.sdk.Message)), com.carnival.sdk.Carnival.MessagesReadHandler)/messages">messages</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="../-message/index.html"><span class="identifier">Message</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setMessagesRead(kotlin.collections.MutableList((com.carnival.sdk.Message)), com.carnival.sdk.Carnival.MessagesReadHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesReadHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-notification-config.html">setNotificationConfig</a></h4>
+</td>
+<td>
+<p>Sets the configuration of notifications built by Carnival.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setNotificationConfig</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setNotificationConfig(com.carnival.sdk.NotificationConfig)/notificationConfig">notificationConfig</span><span class="symbol">:</span>&nbsp;<a href="../-notification-config/index.html"><span class="identifier">NotificationConfig</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-on-in-app-notification-display-listener.html">setOnInAppNotificationDisplayListener</a></h4>
+</td>
+<td>
+<p>Set the listener to handle In-App notification on display callbacks.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setOnInAppNotificationDisplayListener</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setOnInAppNotificationDisplayListener(com.carnival.sdk.Carnival.OnInAppNotificationDisplayListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnInAppNotificationDisplayListener</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-profile-vars.html">setProfileVars</a></h4>
+</td>
+<td>
+<p>Set the profile vars through the SDK.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setProfileVars</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setProfileVars(org.json.JSONObject, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setProfileVars(org.json.JSONObject, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-spm-request-builder.html">setSpmRequestBuilder</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setSpmRequestBuilder</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setSpmRequestBuilder(com.carnival.sdk.SPMRequestBuilder)/spmRequestBuilder">spmRequestBuilder</span><span class="symbol">:</span>&nbsp;<span class="identifier">SPMRequestBuilder</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-email.html">setUserEmail</a></h4>
+</td>
+<td>
+<p>Set the User's Email.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setUserEmail</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setUserEmail(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/userEmail">userEmail</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setUserEmail(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-id.html">setUserId</a></h4>
+</td>
+<td>
+<p>Set an arbitrary external User ID.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">setUserId</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$setUserId(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$setUserId(kotlin.String, com.carnival.sdk.Carnival.CarnivalHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">CarnivalHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-engine.html">startEngine</a></h4>
+</td>
+<td>
+<p>Initialises The Carnival SDK. See documentation <a href="http://docs.carnival.io/docs/android-integration#section-connecting-to-carnival">Connecting to Carnival</a> for usage.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">startEngine</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$startEngine(android.content.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$startEngine(android.content.Context, kotlin.String)/appKey">appKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="stop-engine.html">stopEngine</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">stopEngine</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-click.html">trackClick</a></h4>
+</td>
+<td>
+<p>Asynchronously registers with Sailthru SPM that a section has been clicked/tapped on, transitioning the user to a detail view</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">trackClick</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$trackClick(kotlin.String, java.net.URI, com.carnival.sdk.Carnival.TrackHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackClick(kotlin.String, java.net.URI, com.carnival.sdk.Carnival.TrackHandler)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackClick(kotlin.String, java.net.URI, com.carnival.sdk.Carnival.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-impression.html">trackImpression</a></h4>
+</td>
+<td>
+<p>Asynchronously registers an impression - a reasonable expectation that a user has seen a piece of content - with Sailthru SPM. Can be used in conjunction with <code>RecyclerView.Adapter#onViewAttachedToWindow</code> or similar to know when a particular content item has entered the user's viewport.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">trackImpression</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$trackImpression(kotlin.String, kotlin.collections.MutableList((java.net.URI)), com.carnival.sdk.Carnival.TrackHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackImpression(kotlin.String, kotlin.collections.MutableList((java.net.URI)), com.carnival.sdk.Carnival.TrackHandler)/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackImpression(kotlin.String, kotlin.collections.MutableList((java.net.URI)), com.carnival.sdk.Carnival.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-pageview.html">trackPageview</a></h4>
+</td>
+<td>
+<p>Asynchronously registers that the given "page" has been viewed with Sailthru SPM. Note that a Content View here directly corresponds to a page view in SPM.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">trackPageview</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$trackPageview(java.net.URI, kotlin.collections.MutableList((kotlin.String)), com.carnival.sdk.Carnival.TrackHandler)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackPageview(java.net.URI, kotlin.collections.MutableList((kotlin.String)), com.carnival.sdk.Carnival.TrackHandler)/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Carnival$trackPageview(java.net.URI, kotlin.collections.MutableList((kotlin.String)), com.carnival.sdk.Carnival.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-location.html">updateLocation</a></h4>
+</td>
+<td>
+<p>Updates Carnival with this device's location.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">updateLocation</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Carnival$updateLocation(android.location.Location)/location">location</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/location/Location.html"><span class="identifier">Location</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-messages-cache.html">updateMessagesCache</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">updateMessagesCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

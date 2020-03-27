@@ -1,0 +1,306 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.carnival.sdk - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="./index.html">com.carnival.sdk</a><br/>
+<br/>
+<h2>Package com.carnival.sdk</h2>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-attribute-map/index.html">AttributeMap</a></h4>
+</td>
+<td>
+<p>A map containing the attributes to set on a device.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">AttributeMap</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-carnival/index.html">Carnival</a></h4>
+</td>
+<td>
+<p>Keeps track of necessary environment variables provided by the developer or google. Also provides the entry point into Carnival for the developer to retrieve device information.</p>
+<code><span class="keyword">class </span><span class="identifier">Carnival</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-carnival-impression-type/index.html">CarnivalImpressionType</a></h4>
+</td>
+<td>
+<p>Impression type enum for Message impression events.</p>
+<code><span class="keyword">class </span><span class="identifier">CarnivalImpressionType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-carnival-notification-category/index.html">CarnivalNotificationCategory</a></h4>
+</td>
+<td>
+<p>Defines Notification Categories that can be passed to the SDK to show actions on push notifications.</p>
+<code><span class="keyword">class </span><span class="identifier">CarnivalNotificationCategory</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-carnival-notification-extender/index.html">CarnivalNotificationExtender</a></h4>
+</td>
+<td>
+<p>Styles a standard Carnival Notification, optionally with a given Message.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">CarnivalNotificationExtender</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html"><span class="identifier">Extender</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-content-intent-builder/index.html">ContentIntentBuilder</a></h4>
+</td>
+<td>
+<p>Implement this interface to build a custom intent to be executed when the notification is tapped  Note: Direct to URI notifications using the <code>_u</code> parameter will never call <code><a href="-content-intent-builder/build.html">#build(Context, Bundle)</a></code>  Example of usage directing users to <code>SaleActivity</code> when a notification has the custom field `special_price` defined. <pre><code>
+   public class SaleContentIntentBuilder implements ContentIntentBuilder {
+       @Nullable
+       @Override
+       public PendingIntent build(Context context, Bundle bundle) {
+           if(bundle.containsKey("special_price")) {
+               Intent intent = new Intent(context, SaleActivity.class);
+               return PendingIntent.getActivity(context, 12345, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+           }
+ 
+           // return null to keep the default behavior
+           return null;
+       }
+   }
+  
+  </code></pre> Add your implementation using <code><a href="-notification-config/set-content-intent-builder.html">NotificationConfig#setContentIntentBuilder(ContentIntentBuilder)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       NotificationConfig notificationConfig = new NotificationConfig();
+       notificationConfig.setContentIntentBuilder(new SaleContentIntentBuilder());
+       Carnival.setNotificationConfig(notificationConfig);
+       ...
+  
+  </code></pre></p>
+<code><span class="keyword">interface </span><span class="identifier">ContentIntentBuilder</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-content-item/index.html">ContentItem</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">ContentItem</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html"><span class="identifier">Serializable</span></a><span class="symbol">, </span><a href="https://developer.android.com/reference/android/os/Parcelable.html"><span class="identifier">Parcelable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-device/index.html">Device</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">Device</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PreferenceStore</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-dummy-activity/index.html">DummyActivity</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">DummyActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-event-source/index.html">EventSource</a></h4>
+</td>
+<td>
+<p>All valid Source values for <code>logEvent()</code></p>
+<code><span class="keyword">class </span><span class="identifier">EventSource</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-fcm-service/index.html">FcmService</a></h4>
+</td>
+<td>
+<p>Service responsible to handle updates and notifications received from FCM</p>
+<code><span class="keyword">class </span><span class="identifier">FcmService</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">FirebaseMessagingService</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-j-s-o-n-mapper/index.html">JSONMapper</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">JSONMapper</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-logger/index.html">Logger</a></h4>
+</td>
+<td>
+<p>Logging interface to capture logging coming from the Carnival SDK.</p>
+<code><span class="keyword">interface </span><span class="identifier">Logger</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message/index.html">Message</a></h4>
+</td>
+<td>
+<p>Carnival Message representation</p>
+<code><span class="keyword">class </span><span class="identifier">Message</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html"><span class="identifier">Comparable</span></a><span class="symbol">&lt;</span><a href="-message/index.html"><span class="identifier">Message</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">, </span><a href="https://developer.android.com/reference/android/os/Parcelable.html"><span class="identifier">Parcelable</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-activity/index.html">MessageActivity</a></h4>
+</td>
+<td>
+<p>Activity to display the detail content of a <code><a href="-message/index.html">Message</a></code>.</p>
+<code><span class="keyword">class </span><span class="identifier">MessageActivity</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-action-state/index.html">NotificationActionState</a></h4>
+</td>
+<td>
+<p>Enum to describe state that notification action interaction will be handled in.</p>
+<code><span class="keyword">class </span><span class="identifier">NotificationActionState</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-action-tapped-listener/index.html">NotificationActionTappedListener</a></h4>
+</td>
+<td>
+<p>Listener used to identify when a notification action was tapped  For example, if you want to log when a notification action with title 'OK' is tapped. You could implement a listener like this: <pre><code>
+       public class MyNotificationActionTappedListener implements NotificationActionTappedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationActionTapped(Context context, Bundle bundle, String title) {
+               if(title.equals("OK")) {
+                   Log.i(TAG, "OK action tapped!");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="-carnival/add-notification-action-tapped-listener.html">Carnival#addNotificationActionTappedListener(NotificationActionTappedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationActionTappedListener(new MyNotificationActionTappedListener());
+       ...
+  
+  </code></pre></p>
+<code><span class="keyword">interface </span><span class="identifier">NotificationActionTappedListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-bundle/index.html">NotificationBundle</a></h4>
+</td>
+<td>
+<p>Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">NotificationBundle</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-config/index.html">NotificationConfig</a></h4>
+</td>
+<td>
+<p>Configuration class for building Notifications. These setting will apply to all notifications generated by Carnival.</p>
+<code><span class="keyword">class </span><span class="identifier">NotificationConfig</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-received-listener/index.html">NotificationReceivedListener</a></h4>
+</td>
+<td>
+<p>Listener used to identify when a notification was received  For example, if we want to log when receiving notifications with the custom field 'special_price' present, you could implement a listener: <pre><code>
+       public class MyNotificationReceivedListener implements NotificationReceivedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationReceived(Context context, Bundle bundle) {
+               if(bundle.containsKey("special_price")) {
+                   Log.i(TAG, "Sale Notification received");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="-carnival/add-notification-received-listener.html">Carnival#addNotificationReceivedListener(NotificationReceivedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationReceivedListener(new MyNotificationReceivedListener());
+       ...
+  
+  </code></pre></p>
+<code><span class="keyword">interface </span><span class="identifier">NotificationReceivedListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-silencer/index.html">NotificationSilencer</a></h4>
+</td>
+<td>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented by Carnival  Note: Direct to URI notifications using the <code>_u</code> parameter will never call <code><a href="-notification-silencer/is-silent.html">#isSilent(Context, Bundle)</a></code>  You could use this to silence notifications from other providers or Receive a notification to start a special background service  Example of usage to silent notifications when the custom key `silent` is present.  Create your implementation: <pre><code>
+       class MyNotificationSilencer implements NotificationSilencer {
+           @Override
+           boolean isSilent(Context context, Bundle bundle) {
+               return bundle.containsKey("silent")
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="-notification-config/set-silencer.html">NotificationConfig#setSilencer(NotificationSilencer)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       NotificationConfig notificationConfig = new NotificationConfig();
+       notificationConfig.setSilencer(new MyNotificationSilencer());
+       Carnival.setNotificationConfig(notificationConfig);
+       ...
+  
+  </code></pre></p>
+<code><span class="keyword">interface </span><span class="identifier">NotificationSilencer</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-tapped-listener/index.html">NotificationTappedListener</a></h4>
+</td>
+<td>
+<p>Listener used to identify when a notification was tapped  For example, if you want to log when a notification with the custom field 'special_price' present is tapped. You could implement a listener like this: <pre><code>
+       public class MyNotificationTappedListener implements NotificationTappedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationTapped(Context context, Bundle bundle) {
+               if(bundle.containsKey("special_price")) {
+                   Log.i(TAG, "Sale Notification tapped! That's a good push!");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="-carnival/add-notification-tapped-listener.html">Carnival#addNotificationTappedListener(NotificationTappedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationTappedListener(new MyNotificationTappedListener());
+       ...
+  
+  </code></pre></p>
+<code><span class="keyword">interface </span><span class="identifier">NotificationTappedListener</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-notification-tapped-receiver/index.html">NotificationTappedReceiver</a></h4>
+</td>
+<td>
+<p>Receiver called when notifications are Tapped</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">NotificationTappedReceiver</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/BroadcastReceiver.html"><span class="identifier">BroadcastReceiver</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-purchase/index.html">Purchase</a></h4>
+</td>
+<td>
+<p>A purchase to log to the platform.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">Purchase</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-purchase-item/index.html">PurchaseItem</a></h4>
+</td>
+<td>
+<p>An item being purchased.</p>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">PurchaseItem</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

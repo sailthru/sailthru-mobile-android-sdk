@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationConfig.addNotificationExtender - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="index.html">NotificationConfig</a>&nbsp;/&nbsp;<a href="./add-notification-extender.html">addNotificationExtender</a><br/>
+<br/>
+<h1>addNotificationExtender</h1>
+<a name="com.sailthru.mobile.sdk.NotificationConfig$addNotificationExtender(androidx.core.app.NotificationCompat.Extender)"></a>
+<code><span class="keyword">fun </span><span class="identifier">addNotificationExtender</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationConfig$addNotificationExtender(androidx.core.app.NotificationCompat.Extender)/extender">extender</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html"><span class="identifier">Extender</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">NotificationConfig</span></a></code>
+<p>Add your own notification extender to customise the look of received notifications
+
+To customise the appearance or content of a notification, implement as many <a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html">NotificationCompat.Extender</a>s
+as you like
+
+Having access to the <a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Builder.html">NotificationCompat.Builder</a> means you can change pretty much whatever you like about the style and content of the notification. Check out the Android Developer docs here for more info.
+
+Note that if any extenders are added, they will by default override Sailthru’s notification extender.
+If you’d like us to still do our default notification extension, you can manually re-extend using
+<a href="../-notification-extender/index.html">NotificationExtender</a>
+
+For example, if you want to change the title of push notifications with the custom field
+<code>special_price</code>, you could implement the following <a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html">NotificationCompat.Extender</a>:</p>
+<p>
+Then add it to our <a href="index.html">NotificationConfig</a> using:
+<code>notificationConfig.addNotificationExtender(SaleNotificationExtender())</code>
+
+<strong>Note:</strong> Please don't set a <code>PendingIntent</code> using <code>setContentIntent</code> directly, as it's defined
+by Sailthru so we can track opens properly. If you want to change the <code>Intent</code> to be executed when
+a notification is tapped use <a href="../../com.sailthru.mobile.sdk.interfaces/-content-intent-builder.html">ContentIntentBuilder</a></p>
+<h3>Parameters</h3>
+<p><a name="extender"></a>
+<code>extender</code> - your Notification Extender</p>
+<p><strong>Return</strong><br/>
+The same NotificationConfig.</p>
+<p><strong>Link</strong><br/>
+https://developer.android.com/guide/topics/ui/notifiers/notifications</p>
+</BODY>
+</HTML>

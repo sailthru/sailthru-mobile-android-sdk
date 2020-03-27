@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationBundle - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="./index.html">NotificationBundle</a><br/>
+<br/>
+<h1>NotificationBundle</h1>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">NotificationBundle</span></code>
+<p>Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Construct a new instance of <code>NotificationBundle</code>, backed by the given bundle</p>
+<code><span class="identifier">NotificationBundle</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationBundle$<init>(android.os.Bundle)/bundle">bundle</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">!</span><span class="symbol">)</span></code>
+<p>Construct a new instance of <code>NotificationBundle</code>, from the provided RemoteMessage</p>
+<code><span class="identifier">NotificationBundle</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationBundle$<init>(com.google.firebase.messaging.RemoteMessage)/remoteMessage">remoteMessage</span><span class="symbol">:</span>&nbsp;<span class="identifier">RemoteMessage</span><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-a-c-t-i-o-n-s.html">BUNDLE_KEY_ACTIONS</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_ACTIONS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-a-l-e-r-t.html">BUNDLE_KEY_ALERT</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_ALERT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-b-a-d-g-e.html">BUNDLE_KEY_BADGE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_BADGE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-c-a-t-e-g-o-r-y.html">BUNDLE_KEY_CATEGORY</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_CATEGORY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-c-h-a-n-n-e-l_-i-d.html">BUNDLE_KEY_CHANNEL_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_CHANNEL_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-c-o-l-l-a-p-s-e_-k-e-y.html">BUNDLE_KEY_COLLAPSE_KEY</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_COLLAPSE_KEY</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-d-e-e-p_-l-i-n-k.html">BUNDLE_KEY_DEEP_LINK</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_DEEP_LINK</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-p-a-y-l-o-a-d.html">BUNDLE_KEY_PAYLOAD</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_PAYLOAD</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-p-a-y-l-o-a-d_-i-m-a-g-e.html">BUNDLE_KEY_PAYLOAD_IMAGE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_PAYLOAD_IMAGE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-p-a-y-l-o-a-d_-m-i-d.html">BUNDLE_KEY_PAYLOAD_MID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_PAYLOAD_MID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-p-a-y-l-o-a-d_-v-i-d-e-o.html">BUNDLE_KEY_PAYLOAD_VIDEO</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_PAYLOAD_VIDEO</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-s-o-u-n-d.html">BUNDLE_KEY_SOUND</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_SOUND</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-u-n-d-l-e_-k-e-y_-t-i-t-l-e.html">BUNDLE_KEY_TITLE</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">BUNDLE_KEY_TITLE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-n-o-t-i-f-i-c-a-t-i-o-n_-i-d.html">EXTRA_NOTIFICATION_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">EXTRA_NOTIFICATION_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="generate-android-notification-action-i-d.html">generateAndroidNotificationActionID</a></h4>
+</td>
+<td>
+<p>Generates unique IDs for Notification Actions to so that unique PendingIntents can be created for them.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">generateAndroidNotificationActionID</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationBundle$generateAndroidNotificationActionID(kotlin.String)/actionName">actionName</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="generate-android-notification-i-d.html">generateAndroidNotificationID</a></h4>
+</td>
+<td>
+<p>Build an id to be used to identify the notification while calling <code><a href="https://developer.android.com/reference/android/app/NotificationManager.html#notify(int, android.app.Notification)">android.app.NotificationManager#notify(int, Notification)</a></code>. This ID is used by the Android OS to collapse notifications, if necessary.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">generateAndroidNotificationID</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-actions.html">getActions</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getActions</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-alert.html">getAlert</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getAlert</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-badge.html">getBadge</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBadge</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-bundle.html">getBundle</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getBundle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-category.html">getCategory</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getCategory</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-channel-id.html">getChannelId</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getChannelId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-deep-link.html">getDeepLink</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getDeepLink</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-image-url-from-payload.html">getImageUrlFromPayload</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getImageUrlFromPayload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message-id-from-payload.html">getMessageIdFromPayload</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getMessageIdFromPayload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-id.html">getNotificationId</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getNotificationId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-remote-input-bundle.html">getRemoteInputBundle</a></h4>
+</td>
+<td>
+<p>Return bundle containing remote input results.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getRemoteInputBundle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-sound.html">getSound</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getSound</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationBundle$getSound(kotlin.String)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-title.html">getTitle</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getTitle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-video-url-from-payload.html">getVideoUrlFromPayload</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">getVideoUrlFromPayload</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-deep-link-notification.html">isDeepLinkNotification</a></h4>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">isDeepLinkNotification</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-remote-input-bundle.html">setRemoteInputBundle</a></h4>
+</td>
+<td>
+<p>Set the bundle containing the remote input results.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">setRemoteInputBundle</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationBundle$setRemoteInputBundle(android.os.Bundle)/remoteInputBundle">remoteInputBundle</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="../../com.sailthru.mobile.sdk/-notification-bundle/index.html">NotificationBundle</a></h4>
+</td>
+<td>
+<p>Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p>
+<code><span class="keyword">class </span><span class="identifier">NotificationBundle</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="./index.html"><span class="identifier">NotificationBundle</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationConfig.addNotificationExtender - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="index.html">NotificationConfig</a>&nbsp;/&nbsp;<a href="./add-notification-extender.html">addNotificationExtender</a><br/>
+<br/>
+<h1>addNotificationExtender</h1>
+<a name="com.carnival.sdk.NotificationConfig$addNotificationExtender(androidx.core.app.NotificationCompat.Extender)"></a>
+<code><span class="keyword">fun </span><span class="identifier">addNotificationExtender</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.NotificationConfig$addNotificationExtender(androidx.core.app.NotificationCompat.Extender)/extender">extender</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html"><span class="identifier">Extender</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">NotificationConfig</span></a><span class="symbol">!</span></code>
+<p>Add your own notification extender to custimise the look of received notifications  To customise the appearance or content of a notification, implement as many <code><a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html">NotificationCompat.Extender</a></code>s as you like  Having access to the `NotificationCompat.Builder` means you can change pretty much whatever you like about the style and content of the notification. Check out the Android Developer docs here for more info.  Note that if any extenders are added, they will by default override Carnival’s notification extender. If you’d like us to still do our default notification extension, you can manually re-extend using <code><a href="../-carnival-notification-extender/index.html">CarnivalNotificationExtender</a></code>  For example, if you want to change the title of push notifications with the custom field `special_price`, you could implement the following `NotificationCompat.Extender`: <pre><code>
+           class SaleNotificationExtender implements NotificationCompat.Extender {
+               @Override
+               public NotificationCompat.Builder extend(NotificationCompat.Builder builder) {
+                   Bundle bundle = builder.getExtras();
+                   Context context = builder.mContext;
+                   if(bundle.containsKey("special_price")) {
+                       builder.setContentTitle("SALE")
+                           .setContentText(bundle.getString("alert"));
+                   } else {
+                       // keeping Carnival default behavior
+                       return builder.extend(new CarnivalNotificationExtender(context));
+                   }
+     
+                   return builder;
+               }
+           }
+      
+      </code></pre>  Then add it to our `NotificationConfig` using: <code>notificationConfig.addNotificationExtender(new SaleNotificationExtender());</code>  <strong>Note:</strong> Please don't set a <code>PendingIntent</code> using <code>setContentIntent</code> directly, as it's defined by Carnival so we can track opens properly. If you want to change the `Intent` to be executed when a notification is tapped use <code><a href="../-content-intent-builder/index.html">ContentIntentBuilder</a></code></p>
+<h3>Parameters</h3>
+<p><a name="extender"></a>
+<code>extender</code> - <a href="https://developer.android.com/reference/kotlin/androidx/core/app/NotificationCompat/Extender.html"><span class="identifier">Extender</span></a><span class="symbol">!</span><span class="symbol">:</span> your Notification Extender</p>
+<p><strong>Return</strong><br/>
+<a href="index.html"><span class="identifier">NotificationConfig</span></a><span class="symbol">!</span><span class="symbol">:</span> The same NotificationConfig.</p>
+<p><strong>Link</strong><br/>
+https://developer.android.com/guide/topics/ui/notifiers/notifications</p>
+</BODY>
+</HTML>

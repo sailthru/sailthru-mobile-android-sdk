@@ -1,0 +1,480 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Device - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.carnival.sdk</a>&nbsp;/&nbsp;<a href="./index.html">Device</a><br/>
+<br/>
+<h1>Device</h1>
+<code><span class="keyword">class </span><span class="identifier">Device</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">PreferenceStore</span></code>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-array-attribute/index.html">ArrayAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ArrayAttribute</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Attribute</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/ArrayList.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-attribute/index.html">Attribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">Attribute</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-content-type/index.html">ContentType</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">ContentType</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-date-attribute/index.html">DateAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">DateAttribute</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Attribute</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">!</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-generic-attribute/index.html">GenericAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">GenericAttribute</span><span class="symbol">&lt;</span><span class="identifier">T</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">Attribute</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<code><span class="identifier">Device</span><span class="symbol">(</span><span class="symbol">)</span></code><br/>
+<code><span class="identifier">Device</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$<init>(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-n-o-t-i-f-i-c-a-t-i-o-n-s_-d-i-s-a-b-l-e-d.html">NOTIFICATIONS_DISABLED</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NOTIFICATIONS_DISABLED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o-t-i-f-i-c-a-t-i-o-n-s_-e-n-a-b-l-e-d.html">NOTIFICATIONS_ENABLED</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NOTIFICATIONS_ENABLED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-n-o-t-i-f-i-c-a-t-i-o-n-s_-q-u-i-e-t.html">NOTIFICATIONS_QUIET</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">val </span><span class="identifier">NOTIFICATIONS_QUIET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-attributes.html">addAttributes</a></h4>
+</td>
+<td>
+<p>Add attributes to current map.</p>
+<code><span class="keyword">fun </span><span class="identifier">addAttributes</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$addAttributes(com.carnival.sdk.AttributeMap)/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="../-attribute-map/index.html"><span class="identifier">AttributeMap</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="cache.html">cache</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">cache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Device</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-attributes.html">clearAttributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">clearAttributes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-cache.html">clearCache</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">clearCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="from-cache.html">fromCache</a></h4>
+</td>
+<td>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">fromCache</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="./index.html"><span class="identifier">Device</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-app-version.html">getAppVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAppVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-attribute.html">getAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAttribute</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$getAttribute(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Attribute</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-attributes.html">getAttributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getAttributes</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html"><span class="identifier">MutableMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">,</span>&nbsp;<span class="identifier">Attribute</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-badge.html">getBadge</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getBadge</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-device-id.html">getDeviceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getDeviceId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-hardware-name.html">getHardwareName</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHardwareName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-hardware-version.html">getHardwareVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getHardwareVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-in-app-message-path.html">getInAppMessagePath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getInAppMessagePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-locale.html">getLocale</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getLocale</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message-path.html">getMessagePath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMessagePath</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$getMessagePath(kotlin.String)/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-messages-path.html">getMessagesPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMessagesPath</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$getMessagesPath(com.carnival.sdk.Device.ContentType)/format">format</span><span class="symbol">:</span>&nbsp;<span class="identifier">ContentType</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code><br/>
+<code><span class="keyword">fun </span><span class="identifier">getMessagesPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message-unread-count-path.html">getMessageUnreadCountPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getMessageUnreadCountPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-channels.html">getNotificationChannels</a></h4>
+</td>
+<td>
+<p>Retrieves list of notification channels for this app.</p>
+<code><span class="keyword">static</span> <span class="keyword">fun </span><span class="identifier">getNotificationChannels</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html"><span class="identifier">MutableList</span></a><span class="symbol">&lt;</span><a href="https://developer.android.com/reference/android/app/NotificationChannel.html"><span class="identifier">NotificationChannel</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notification-message-path.html">getNotificationMessagePath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getNotificationMessagePath</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$getNotificationMessagePath(kotlin.String)/notificationID">notificationID</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-notifications-enabled.html">getNotificationsEnabled</a></h4>
+</td>
+<td>
+<p>Checks if this device's application has notifications enabled.</p>
+<code><span class="keyword">fun </span><span class="identifier">getNotificationsEnabled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-os-name.html">getOsName</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOsName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-os-version.html">getOsVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getOsVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-path.html">getPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-push-platform.html">getPushPlatform</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getPushPlatform</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-recommendations-path.html">getRecommendationsPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getRecommendationsPath</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$getRecommendationsPath(kotlin.String)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-sdk-version.html">getSdkVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSdkVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-time-zone.html">getTimeZone</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTimeZone</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-token.html">getToken</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getToken</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-track-path.html">getTrackPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getTrackPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-user-email.html">getUserEmail</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserEmail</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-user-id.html">getUserId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getUserId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-wrapper-name.html">getWrapperName</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getWrapperName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-wrapper-version.html">getWrapperVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getWrapperVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="has-device-id.html">hasDeviceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hasDeviceId</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-geo-ip-tracking-disabled.html">isGeoIpTrackingDisabled</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">isGeoIpTrackingDisabled</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-device-clear-path.html">postDeviceClearPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postDeviceClearPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-location-path.html">postLocationPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postLocationPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-message-mark-as-read-path.html">postMessageMarkAsReadPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postMessageMarkAsReadPath</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$postMessageMarkAsReadPath(kotlin.String)/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-messages-mark-as-read-path.html">postMessagesMarkAsReadPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postMessagesMarkAsReadPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-path.html">postPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="post-session-path.html">postSessionPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">postSessionPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="purchase-path.html">purchasePath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">purchasePath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-path.html">putPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">putPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attribute.html">setAttribute</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAttribute</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setAttribute(kotlin.String, com.carnival.sdk.Device.Attribute((kotlin.Any)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">, </span><span class="identifier" id="com.carnival.sdk.Device$setAttribute(kotlin.String, com.carnival.sdk.Device.Attribute((kotlin.Any)))/attribute">attribute</span><span class="symbol">:</span>&nbsp;<span class="identifier">Attribute</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">!</span><span class="symbol">&gt;</span><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attributes.html">setAttributes</a></h4>
+</td>
+<td>
+<p>Replace attributes with map.</p>
+<code><span class="keyword">fun </span><span class="identifier">setAttributes</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setAttributes(com.carnival.sdk.AttributeMap)/attributes">attributes</span><span class="symbol">:</span>&nbsp;<a href="../-attribute-map/index.html"><span class="identifier">AttributeMap</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-badge.html">setBadge</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setBadge</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setBadge(kotlin.Int)/badge">badge</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-id.html">setDeviceId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDeviceId</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setDeviceId(kotlin.String)/id">id</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-disabled-geo-ip-tracking.html">setDisabledGeoIpTracking</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setDisabledGeoIpTracking</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setDisabledGeoIpTracking(kotlin.Boolean)/disabledGeoIpTracking">disabledGeoIpTracking</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-token.html">setToken</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setToken</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setToken(kotlin.String)/token">token</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-email.html">setUserEmail</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUserEmail</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setUserEmail(kotlin.String)/userEmail">userEmail</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-id.html">setUserId</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUserId</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setUserId(kotlin.String)/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-wrapper-name.html">setWrapperName</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setWrapperName</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setWrapperName(kotlin.String)/name">name</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-wrapper-version.html">setWrapperVersion</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setWrapperVersion</span><span class="symbol">(</span><span class="identifier" id="com.carnival.sdk.Device$setWrapperVersion(kotlin.String)/version">version</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">!</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vars-path.html">varsPath</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">varsPath</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

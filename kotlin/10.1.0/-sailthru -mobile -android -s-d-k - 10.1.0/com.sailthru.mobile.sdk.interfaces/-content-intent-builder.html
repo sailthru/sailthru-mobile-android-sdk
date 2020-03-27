@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ContentIntentBuilder - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">Sailthru Mobile Android SDK - 10.1.0</a>&nbsp;/&nbsp;<a href="index.html">com.sailthru.mobile.sdk.interfaces</a>&nbsp;/&nbsp;<a href="./-content-intent-builder.html">ContentIntentBuilder</a><br/>
+<br/>
+<h1>ContentIntentBuilder</h1>
+<code><span class="keyword">interface </span><span class="identifier">ContentIntentBuilder</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../com.carnival.sdk/-content-intent-builder/index.html"><span class="identifier">ContentIntentBuilder</span></a></code>
+<p>Implement this interface to build a custom intent to be executed when the notification is tapped
+
+Note: Direct to URI notifications using the _u parameter
+will never call {@link #build(Context, Bundle)}</p>
+<p>Example of usage directing users to SaleActivity when a notification has the custom
+field <code>special_price</code> defined.</p>
+<p>Add your implementation using {@link NotificationConfig#setContentIntentBuilder(ContentIntentBuilder)}</p>
+</BODY>
+</HTML>

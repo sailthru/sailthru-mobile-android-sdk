@@ -1,0 +1,296 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - Sailthru Mobile Android SDK - 10.1.0</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../com.carnival.sdk/-attribute-map/index.html">com.carnival.sdk.AttributeMap</a></h5>
+<p>A map containing the attributes to set on a device.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.model/-attribute-map/index.html">com.sailthru.mobile.sdk.model.AttributeMap</a></h5>
+<p>A map containing the attributes to set on a device.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-carnival/index.html">com.carnival.sdk.Carnival</a></h5>
+<p>Keeps track of necessary environment variables provided by the developer or google. Also provides the entry point into Carnival for the developer to retrieve device information.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-carnival-impression-type/index.html">com.carnival.sdk.CarnivalImpressionType</a></h5>
+<p>Impression type enum for Message impression events.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-carnival-notification-category/index.html">com.carnival.sdk.CarnivalNotificationCategory</a></h5>
+<p>Defines Notification Categories that can be passed to the SDK to show actions on push notifications.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-carnival-notification-extender/index.html">com.carnival.sdk.CarnivalNotificationExtender</a></h5>
+<p>Styles a standard Carnival Notification, optionally with a given Message.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-content-intent-builder/index.html">com.carnival.sdk.ContentIntentBuilder</a></h5>
+<p>Implement this interface to build a custom intent to be executed when the notification is tapped  Note: Direct to URI notifications using the <code>_u</code> parameter will never call <code><a href="../com.carnival.sdk/-content-intent-builder/build.html">#build(Context, Bundle)</a></code>  Example of usage directing users to <code>SaleActivity</code> when a notification has the custom field `special_price` defined. <pre><code>
+   public class SaleContentIntentBuilder implements ContentIntentBuilder {
+       @Nullable
+       @Override
+       public PendingIntent build(Context context, Bundle bundle) {
+           if(bundle.containsKey("special_price")) {
+               Intent intent = new Intent(context, SaleActivity.class);
+               return PendingIntent.getActivity(context, 12345, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+           }
+ 
+           // return null to keep the default behavior
+           return null;
+       }
+   }
+  
+  </code></pre> Add your implementation using <code><a href="../com.carnival.sdk/-notification-config/set-content-intent-builder.html">NotificationConfig#setContentIntentBuilder(ContentIntentBuilder)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       NotificationConfig notificationConfig = new NotificationConfig();
+       notificationConfig.setContentIntentBuilder(new SaleContentIntentBuilder());
+       Carnival.setNotificationConfig(notificationConfig);
+       ...
+  
+  </code></pre></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-content-intent-builder.html">com.sailthru.mobile.sdk.interfaces.ContentIntentBuilder</a></h5>
+<p>Implement this interface to build a custom intent to be executed when the notification is tapped
+
+Note: Direct to URI notifications using the _u parameter
+will never call {@link #build(Context, Bundle)}</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-content-item/index.html">com.carnival.sdk.ContentItem</a></h5>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.model/-content-item/index.html">com.sailthru.mobile.sdk.model.ContentItem</a></h5>
+<p>Class representing recommendation items from the Sailthru platform.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-device/index.html">com.carnival.sdk.Device</a></h5>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-dummy-activity/index.html">com.carnival.sdk.DummyActivity</a></h5>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-event-source/index.html">com.carnival.sdk.EventSource</a></h5>
+<p>All valid Source values for <code>logEvent()</code></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.enums/-event-source/index.html">com.sailthru.mobile.sdk.enums.EventSource</a></h5>
+<p>All valid Source values for <a href="#">SailthruMobile.logEvent</a></p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-fcm-service/index.html">com.carnival.sdk.FcmService</a></h5>
+<p>Service responsible to handle updates and notifications received from FCM</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.enums/-impression-type/index.html">com.sailthru.mobile.sdk.enums.ImpressionType</a></h5>
+<p>Impression type enum for Message impression events.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-j-s-o-n-mapper/index.html">com.carnival.sdk.JSONMapper</a></h5>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-logger/index.html">com.carnival.sdk.Logger</a></h5>
+<p>Logging interface to capture logging coming from the Carnival SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-logger.html">com.sailthru.mobile.sdk.interfaces.Logger</a></h5>
+<p>Logging interface to capture logging coming from the Carnival SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-message/index.html">com.carnival.sdk.Message</a></h5>
+<p>Carnival Message representation</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.model/-message/index.html">com.sailthru.mobile.sdk.model.Message</a></h5>
+<p>Carnival Message representation</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-message-activity/index.html">com.carnival.sdk.MessageActivity</a></h5>
+<p>Activity to display the detail content of a <code><a href="../com.carnival.sdk/-message/index.html">Message</a></code>.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-message-activity/index.html">com.sailthru.mobile.sdk.MessageActivity</a></h5>
+<p>Activity to display the detail content of a <a href="../com.sailthru.mobile.sdk.model/-message/index.html">Message</a>.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-message-stream/index.html">com.sailthru.mobile.sdk.MessageStream</a></h5>
+<p>Class to handle interactions with in-app message stream.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-action-state/index.html">com.carnival.sdk.NotificationActionState</a></h5>
+<p>Enum to describe state that notification action interaction will be handled in.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.enums/-notification-action-state/index.html">com.sailthru.mobile.sdk.enums.NotificationActionState</a></h5>
+<p>Enum to describe state that notification action interaction will be handled in.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-action-tapped-listener/index.html">com.carnival.sdk.NotificationActionTappedListener</a></h5>
+<p>Listener used to identify when a notification action was tapped  For example, if you want to log when a notification action with title 'OK' is tapped. You could implement a listener like this: <pre><code>
+       public class MyNotificationActionTappedListener implements NotificationActionTappedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationActionTapped(Context context, Bundle bundle, String title) {
+               if(title.equals("OK")) {
+                   Log.i(TAG, "OK action tapped!");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="../com.carnival.sdk/-carnival/add-notification-action-tapped-listener.html">Carnival#addNotificationActionTappedListener(NotificationActionTappedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationActionTappedListener(new MyNotificationActionTappedListener());
+       ...
+  
+  </code></pre></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-notification-action-tapped-listener/index.html">com.sailthru.mobile.sdk.interfaces.NotificationActionTappedListener</a></h5>
+<p>Listener used to identify when a notification action was tapped
+</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-bundle/index.html">com.carnival.sdk.NotificationBundle</a></h5>
+<p>Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-notification-bundle/index.html">com.sailthru.mobile.sdk.NotificationBundle</a></h5>
+<p>Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-notification-category/index.html">com.sailthru.mobile.sdk.NotificationCategory</a></h5>
+<p>Defines Notification Categories that can be passed to the SDK to show actions on push notifications.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-config/index.html">com.carnival.sdk.NotificationConfig</a></h5>
+<p>Configuration class for building Notifications. These setting will apply to all notifications generated by Carnival.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-notification-config/index.html">com.sailthru.mobile.sdk.NotificationConfig</a></h5>
+<p>Configuration class for building Notifications.
+These setting will apply to all notifications generated by Sailthru.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-notification-extender/index.html">com.sailthru.mobile.sdk.NotificationExtender</a></h5>
+<p>Styles a standard Carnival Notification, optionally with a given Message.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-received-listener/index.html">com.carnival.sdk.NotificationReceivedListener</a></h5>
+<p>Listener used to identify when a notification was received  For example, if we want to log when receiving notifications with the custom field 'special_price' present, you could implement a listener: <pre><code>
+       public class MyNotificationReceivedListener implements NotificationReceivedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationReceived(Context context, Bundle bundle) {
+               if(bundle.containsKey("special_price")) {
+                   Log.i(TAG, "Sale Notification received");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="../com.carnival.sdk/-carnival/add-notification-received-listener.html">Carnival#addNotificationReceivedListener(NotificationReceivedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationReceivedListener(new MyNotificationReceivedListener());
+       ...
+  
+  </code></pre></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-notification-received-listener.html">com.sailthru.mobile.sdk.interfaces.NotificationReceivedListener</a></h5>
+<p>Listener used to identify when a notification was received
+</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-silencer/index.html">com.carnival.sdk.NotificationSilencer</a></h5>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented by Carnival  Note: Direct to URI notifications using the <code>_u</code> parameter will never call <code><a href="../com.carnival.sdk/-notification-silencer/is-silent.html">#isSilent(Context, Bundle)</a></code>  You could use this to silence notifications from other providers or Receive a notification to start a special background service  Example of usage to silent notifications when the custom key `silent` is present.  Create your implementation: <pre><code>
+       class MyNotificationSilencer implements NotificationSilencer {
+           @Override
+           boolean isSilent(Context context, Bundle bundle) {
+               return bundle.containsKey("silent")
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="../com.carnival.sdk/-notification-config/set-silencer.html">NotificationConfig#setSilencer(NotificationSilencer)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       NotificationConfig notificationConfig = new NotificationConfig();
+       notificationConfig.setSilencer(new MyNotificationSilencer());
+       Carnival.setNotificationConfig(notificationConfig);
+       ...
+  
+  </code></pre></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-notification-silencer.html">com.sailthru.mobile.sdk.interfaces.NotificationSilencer</a></h5>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented
+by Carnival</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-tapped-listener/index.html">com.carnival.sdk.NotificationTappedListener</a></h5>
+<p>Listener used to identify when a notification was tapped  For example, if you want to log when a notification with the custom field 'special_price' present is tapped. You could implement a listener like this: <pre><code>
+       public class MyNotificationTappedListener implements NotificationTappedListener {
+           private static final String TAG = "NotificationLogger";
+ 
+           @Override
+           public void onNotificationTapped(Context context, Bundle bundle) {
+               if(bundle.containsKey("special_price")) {
+                   Log.i(TAG, "Sale Notification tapped! That's a good push!");
+               }
+           }
+       }
+  
+  </code></pre> Add your implementation using <code><a href="../com.carnival.sdk/-carnival/add-notification-tapped-listener.html">Carnival#addNotificationTappedListener(NotificationTappedListener)</a></code> <pre><code>
+       ...
+       Carnival.startEngine(getApplicationContext(), "your sdk key");
+       Carnival.addNotificationTappedListener(new MyNotificationTappedListener());
+       ...
+  
+  </code></pre></p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.interfaces/-notification-tapped-listener.html">com.sailthru.mobile.sdk.interfaces.NotificationTappedListener</a></h5>
+<p>Listener used to identify when a notification was tapped
+</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-notification-tapped-receiver/index.html">com.carnival.sdk.NotificationTappedReceiver</a></h5>
+<p>Receiver called when notifications are Tapped</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-purchase/index.html">com.carnival.sdk.Purchase</a></h5>
+<p>A purchase to log to the platform.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.model/-purchase/index.html">com.sailthru.mobile.sdk.model.Purchase</a></h5>
+<p>A purchase to log to the platform.</p>
+</tr>
+<tr>
+<h5><a href="../com.carnival.sdk/-purchase-item/index.html">com.carnival.sdk.PurchaseItem</a></h5>
+<p>An item being purchased.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk.model/-purchase-item/index.html">com.sailthru.mobile.sdk.model.PurchaseItem</a></h5>
+<p>An item being purchased.</p>
+</tr>
+<tr>
+<h5><a href="../com.sailthru.mobile.sdk/-sailthru-mobile/index.html">com.sailthru.mobile.sdk.SailthruMobile</a></h5>
+<p>Keeps track of necessary environment variables provided by the developer or google.
+Also provides the entry point into Sailthru Mobile for the developer to retrieve device information.</p>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
