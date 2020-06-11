@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SailthruMobile.trackImpression - Sailthru Mobile Android SDK - 11.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 11.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="index.html">SailthruMobile</a>&nbsp;/&nbsp;<a href="./track-impression.html">trackImpression</a><br/>
+<br/>
+<h1>trackImpression</h1>
+<a name="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)"></a>
+<code><span class="keyword">fun </span><span class="identifier">trackImpression</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Asynchronously registers an impression - a reasonable expectation that a user has seen a piece of content - with
+Sailthru SPM. Can be used in conjunction with <code>RecyclerView.Adapter#onViewAttachedToWindow</code>
+or similar to know when a particular content item has entered the user's viewport.</p>
+<h3>Parameters</h3>
+<p><a name="sectionId"></a>
+<code>sectionId</code> - the Section ID on Sailthru SPM corresponding to the section being viewed. Must not be null.</p>
+<p><a name="urls"></a>
+<code>urls</code> - a List of the URLs of the items contained within this section. Useful if multiple items
+of content are contained within a section, otherwise just pass a single-item array.
+May be null.</p>
+<p><a name="handler"></a>
+<code>handler</code> - an instance of <a href="-track-handler/index.html">TrackHandler</a>. May be null, in which case <code>onSuccess</code>
+and <code>onFailure</code> callbacks won't be fired.</p>
+</BODY>
+</HTML>

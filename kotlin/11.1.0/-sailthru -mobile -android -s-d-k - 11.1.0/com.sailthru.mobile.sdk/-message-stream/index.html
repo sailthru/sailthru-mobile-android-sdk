@@ -1,0 +1,173 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MessageStream - Sailthru Mobile Android SDK - 11.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 11.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="./index.html">MessageStream</a><br/>
+<br/>
+<h1>MessageStream</h1>
+<code><span class="keyword">class </span><span class="identifier">MessageStream</span></code>
+<p>Class to handle interactions with in-app message stream.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-message-deleted-handler/index.html">MessageDeletedHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for deleting a Message.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessageDeletedHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-messages-handler/index.html">MessagesHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for getting Messages for this device.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessagesHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-messages-read-handler/index.html">MessagesReadHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for setting messages as read.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessagesReadHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-message-stream-handler/index.html">MessageStreamHandler</a></h4>
+</td>
+<td>
+<p>Generic handler for async calls to the Sailthru Mobile SDK.</p>
+<code><span class="keyword">interface </span><span class="identifier">MessageStreamHandler</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-on-in-app-notification-display-listener/index.html">OnInAppNotificationDisplayListener</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">OnInAppNotificationDisplayListener</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Class to handle interactions with in-app message stream.</p>
+<code><span class="identifier">MessageStream</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="delete-message.html">deleteMessage</a></h4>
+</td>
+<td>
+<p>Removes a Message from appearing in a device's message stream. Does nothing if <code>message</code> is null.</p>
+<code><span class="keyword">fun </span><span class="identifier">deleteMessage</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$deleteMessage(com.sailthru.mobile.sdk.model.Message, com.sailthru.mobile.sdk.MessageStream.MessageDeletedHandler)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$deleteMessage(com.sailthru.mobile.sdk.model.Message, com.sailthru.mobile.sdk.MessageStream.MessageDeletedHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessageDeletedHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-message.html">getMessage</a></h4>
+</td>
+<td>
+<p>Retrieves a Message for a given Message ID.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMessage</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$getMessage(kotlin.String, com.sailthru.mobile.sdk.MessageStream.MessageStreamHandler((com.sailthru.mobile.sdk.model.Message)))/messageId">messageId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$getMessage(kotlin.String, com.sailthru.mobile.sdk.MessageStream.MessageStreamHandler((com.sailthru.mobile.sdk.model.Message)))/messageHandler">messageHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessageStreamHandler</span><span class="symbol">&lt;</span><a href="../../com.sailthru.mobile.sdk.model/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-messages.html">getMessages</a></h4>
+</td>
+<td>
+<p>Retrieve all Messages visible for this device.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMessages</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$getMessages(com.sailthru.mobile.sdk.MessageStream.MessagesHandler)/messagesHandler">messagesHandler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-unread-message-count.html">getUnreadMessageCount</a></h4>
+</td>
+<td>
+<p>Asynchronously returns the total number of unread messages in the message stream.</p>
+<code><span class="keyword">fun </span><span class="identifier">getUnreadMessageCount</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$getUnreadMessageCount(com.sailthru.mobile.sdk.MessageStream.MessageStreamHandler((kotlin.Int)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessageStreamHandler</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="register-message-impression.html">registerMessageImpression</a></h4>
+</td>
+<td>
+<p>Creates an impression for a message for a given interaction type.</p>
+<code><span class="keyword">fun </span><span class="identifier">registerMessageImpression</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$registerMessageImpression(com.sailthru.mobile.sdk.enums.ImpressionType, com.sailthru.mobile.sdk.model.Message)/type">type</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.enums/-impression-type/index.html"><span class="identifier">ImpressionType</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$registerMessageImpression(com.sailthru.mobile.sdk.enums.ImpressionType, com.sailthru.mobile.sdk.model.Message)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-message-read.html">setMessageRead</a></h4>
+</td>
+<td>
+<p>Convenience method for <code>setMessagesRead()</code>.</p>
+<code><span class="keyword">fun </span><span class="identifier">setMessageRead</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setMessageRead(com.sailthru.mobile.sdk.model.Message, com.sailthru.mobile.sdk.MessageStream.MessagesReadHandler)/message">message</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setMessageRead(com.sailthru.mobile.sdk.model.Message, com.sailthru.mobile.sdk.MessageStream.MessagesReadHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesReadHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-messages-read.html">setMessagesRead</a></h4>
+</td>
+<td>
+<p>Marks all given messages as read and triggers an update broadcast to the unread messages count.</p>
+<code><span class="keyword">fun </span><span class="identifier">setMessagesRead</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setMessagesRead(kotlin.collections.List((com.sailthru.mobile.sdk.model.Message)), com.sailthru.mobile.sdk.MessageStream.MessagesReadHandler)/messages">messages</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.sailthru.mobile.sdk.model/-message/index.html"><span class="identifier">Message</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setMessagesRead(kotlin.collections.List((com.sailthru.mobile.sdk.model.Message)), com.sailthru.mobile.sdk.MessageStream.MessagesReadHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">MessagesReadHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-on-in-app-notification-display-listener.html">setOnInAppNotificationDisplayListener</a></h4>
+</td>
+<td>
+<p>Set the listener to handle In-App notification on display callbacks.</p>
+<code><span class="keyword">fun </span><span class="identifier">setOnInAppNotificationDisplayListener</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setOnInAppNotificationDisplayListener(com.sailthru.mobile.sdk.MessageStream.OnInAppNotificationDisplayListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<span class="identifier">OnInAppNotificationDisplayListener</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-unread-message-count.html">setUnreadMessageCount</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setUnreadMessageCount</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.MessageStream$setUnreadMessageCount(kotlin.Int)/unreadMessageCount">unreadMessageCount</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-m-e-s-s-a-g-e_-i-d.html">EXTRA_MESSAGE_ID</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">EXTRA_MESSAGE_ID</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-m-e-s-s-a-g-e_-t-y-p-e.html">EXTRA_MESSAGE_TYPE</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">EXTRA_MESSAGE_TYPE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-x-t-r-a_-u-n-r-e-a-d_-m-e-s-s-a-g-e_-c-o-u-n-t.html">EXTRA_UNREAD_MESSAGE_COUNT</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">EXTRA_UNREAD_MESSAGE_COUNT</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
