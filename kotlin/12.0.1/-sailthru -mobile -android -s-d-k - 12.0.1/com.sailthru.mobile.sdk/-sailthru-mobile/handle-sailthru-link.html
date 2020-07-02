@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SailthruMobile.handleSailthruLink - Sailthru Mobile Android SDK - 12.0.1</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 12.0.1</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="index.html">SailthruMobile</a>&nbsp;/&nbsp;<a href="./handle-sailthru-link.html">handleSailthruLink</a><br/>
+<br/>
+<h1>handleSailthruLink</h1>
+<a name="com.sailthru.mobile.sdk.SailthruMobile$handleSailthruLink(android.net.Uri, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))"></a>
+<code><span class="keyword">fun </span><span class="identifier">handleSailthruLink</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$handleSailthruLink(android.net.Uri, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/uri">uri</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$handleSailthruLink(android.net.Uri, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a></code>
+<p>If you're using Sailthru email with universal links, your application will open with an encoded Sailthru link url.
+This method will decode the link URL and return its canonical location (ie https://link.sailthru.com/blahblah will redirect to https://www.sailthru.com/careers/list/, the link's canonical location),
+as well as making sure that the clickthrough metrics for this link are correctly attributed in the Sailthru platform.
+This method should be called from your receiving activity's <code>onStart()</code> method, and handle
+the starting intent's link data</p>
+<h3>Exceptions</h3>
+<p><a name="IllegalArgumentException"></a>
+<code>IllegalArgumentException</code> - when the URI given isn't a Sailthru link</p>
+<h3>Parameters</h3>
+<p><a name="uri"></a>
+<code>uri</code> - the Sailthru Link to be unrolled</p>
+<p><strong>Return</strong><br/>
+the destination that the Sailthru link points to</p>
+</BODY>
+</HTML>
