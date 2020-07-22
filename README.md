@@ -31,6 +31,6 @@ repositories {
 
 dependencies {
     ...
-    compile 'com.carnival.sdk:sailthru-mobile:12.+'
+    compile 'com.sailthru.mobile.sdk:sailthru-mobile:12.+'
 }
 ```
