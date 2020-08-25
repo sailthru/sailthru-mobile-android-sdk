@@ -1,0 +1,26 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SailthruMobile.trackPageview - Sailthru Mobile Android SDK - 12.0.2</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 12.0.2</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="index.html">SailthruMobile</a>&nbsp;/&nbsp;<a href="./track-pageview.html">trackPageview</a><br/>
+<br/>
+<h1>trackPageview</h1>
+<a name="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)"></a>
+<code><span class="keyword">fun </span><span class="identifier">trackPageview</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Asynchronously registers that the given "page" has been viewed with Sailthru SPM.
+Note that a Content View here directly corresponds to a page view in SPM.</p>
+<h3>Parameters</h3>
+<p><a name="url"></a>
+<code>url</code> - The URL of the page we're tracking a view of. Must be a valid URL with protocol (eg. http:// or https://) -
+this generally should correspond to the web link of the content being tracked, and the
+stored URL in the Sailthru content collection. This must not be null.</p>
+<p><a name="tags"></a>
+<code>tags</code> - Tags for this page. May be null.</p>
+<p><a name="handler"></a>
+<code>handler</code> - an instance of <a href="-track-handler/index.html">TrackHandler</a>. May be null, in which case <code>onSuccess</code>
+and <code>onFailure</code> callbacks won't be fired.</p>
+</BODY>
+</HTML>
