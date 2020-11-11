@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationSilencer - Sailthru Mobile Android SDK - 13.0.1</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 13.0.1</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk.interfaces</a>&nbsp;/&nbsp;<a href="./index.html">NotificationSilencer</a><br/>
+<br/>
+<h1>NotificationSilencer</h1>
+<code><span class="keyword">interface </span><span class="identifier">NotificationSilencer</span></code>
+<p>Implement NotificationSilencer if you want to suppress any received notification to be presented
+by Sailthru Mobile</p>
+<p>
+Note: Direct to URI notifications using the <code>_u</code> parameter
+will never call <a href="is-silent.html">isSilent</a></p>
+<p>
+You could use this to silence notifications from other providers
+or Receive a notification to start a special background service</p>
+<p>
+Example of usage to silent notifications when the custom key <code>silent</code> is present.</p>
+<p>
+Create your implementation:</p>
+<p>Add your implementation using <a href="../../com.sailthru.mobile.sdk/-notification-config/set-silencer.html">NotificationConfig.setSilencer</a></p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="is-silent.html">isSilent</a></h4>
+</td>
+<td>
+<p>Return true to silence a Notification. Silent notifications will not be presented to the user.</p>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">isSilent</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.interfaces.NotificationSilencer$isSilent(android.content.Context, android.os.Bundle)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.interfaces.NotificationSilencer$isSilent(android.content.Context, android.os.Bundle)/bundle">bundle</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/Bundle.html"><span class="identifier">Bundle</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
