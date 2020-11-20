@@ -1,0 +1,382 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>SailthruMobile - Sailthru Mobile Android SDK - 13.0.2</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 13.0.2</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="./index.html">SailthruMobile</a><br/>
+<br/>
+<h1>SailthruMobile</h1>
+<code><span class="keyword">class </span><span class="identifier">SailthruMobile</span></code>
+<p>Keeps track of necessary environment variables provided by the developer or google.
+Also provides the entry point into Sailthru Mobile for the developer to retrieve device information.</p>
+<h3>Types</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-attributes-handler/index.html">AttributesHandler</a></h4>
+</td>
+<td>
+<p>Handler interface for setting custom attributes on the device</p>
+<code><span class="keyword">interface </span><span class="identifier">AttributesHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-recommendations-handler/index.html">RecommendationsHandler</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">RecommendationsHandler</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-sailthru-mobile-handler/index.html">SailthruMobileHandler</a></h4>
+</td>
+<td>
+<p>Generic handler for async calls to the Sailthru Mobile SDK.</p>
+<code><span class="keyword">interface </span><span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><span class="identifier">T</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-track-handler/index.html">TrackHandler</a></h4>
+</td>
+<td>
+<code><span class="keyword">interface </span><span class="identifier">TrackHandler</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Keeps track of necessary environment variables provided by the developer or google.
+Also provides the entry point into Sailthru Mobile for the developer to retrieve device information.</p>
+<code><span class="identifier">SailthruMobile</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-notification-action-tapped-listener.html">addNotificationActionTappedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification action is tapped.
+This method should be called after <a href="start-engine.html">startEngine</a></p>
+<code><span class="keyword">fun </span><span class="identifier">addNotificationActionTappedListener</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$addNotificationActionTappedListener(com.sailthru.mobile.sdk.interfaces.NotificationActionTappedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.interfaces/-notification-action-tapped-listener/index.html"><span class="identifier">NotificationActionTappedListener</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-notification-received-listener.html">addNotificationReceivedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification is received.
+This method should be called after <a href="start-engine.html">startEngine</a></p>
+<code><span class="keyword">fun </span><span class="identifier">addNotificationReceivedListener</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$addNotificationReceivedListener(com.sailthru.mobile.sdk.interfaces.NotificationReceivedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.interfaces/-notification-received-listener/index.html"><span class="identifier">NotificationReceivedListener</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="add-notification-tapped-listener.html">addNotificationTappedListener</a></h4>
+</td>
+<td>
+<p>Adds listener to be called when a notification is tapped.
+This method should be called after <a href="start-engine.html">startEngine</a></p>
+<code><span class="keyword">fun </span><span class="identifier">addNotificationTappedListener</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$addNotificationTappedListener(com.sailthru.mobile.sdk.interfaces.NotificationTappedListener)/listener">listener</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.interfaces/-notification-tapped-listener/index.html"><span class="identifier">NotificationTappedListener</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="clear-device.html">clearDevice</a></h4>
+</td>
+<td>
+<p>Clear device data.</p>
+<code><span class="keyword">fun </span><span class="identifier">clearDevice</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$clearDevice(kotlin.Int, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/options">options</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$clearDevice(kotlin.Int, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-device-id.html">getDeviceId</a></h4>
+</td>
+<td>
+<p>Gets this devices ID on the Sailthru Mobile Platform.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDeviceId</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$getDeviceId(com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((kotlin.String)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-profile-vars.html">getProfileVars</a></h4>
+</td>
+<td>
+<p>Retrieve the profile vars set on the server.</p>
+<code><span class="keyword">fun </span><span class="identifier">getProfileVars</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$getProfileVars(com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((org.json.JSONObject)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-recommendations.html">getRecommendations</a></h4>
+</td>
+<td>
+<p>Returns the output from a Site Personalization Manager section, an array of recommendations for the given user.
+It is suggested you use this in conjunction with <a href="set-user-email.html">setUserEmail</a> to identify the user to Sailthru.</p>
+<code><span class="keyword">fun </span><span class="identifier">getRecommendations</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$getRecommendations(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.RecommendationsHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$getRecommendations(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.RecommendationsHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">RecommendationsHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-notification.html">handleNotification</a></h4>
+</td>
+<td>
+<p>Pass received notification to Sailthru Mobile SDK.
+NOTE: This method should only be called if the app implements its own FirebaseMessagingService
+instance, in which case it must be called in order to provide FCM notifications to the Sailthru Mobile
+SDK for processing. Otherwise this will be handled automatically by the Sailthru Mobile SDK.</p>
+<code><span class="keyword">fun </span><span class="identifier">handleNotification</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$handleNotification(com.google.firebase.messaging.RemoteMessage)/remoteMessage">remoteMessage</span><span class="symbol">:</span>&nbsp;<span class="identifier">RemoteMessage</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="handle-sailthru-link.html">handleSailthruLink</a></h4>
+</td>
+<td>
+<p>If you're using Sailthru email with universal links, your application will open with an encoded Sailthru link url.
+This method will decode the link URL and return its canonical location (ie https://link.sailthru.com/blahblah will redirect to https://www.sailthru.com/careers/list/, the link's canonical location),
+as well as making sure that the clickthrough metrics for this link are correctly attributed in the Sailthru platform.
+This method should be called from your receiving activity's <code>onStart()</code> method, and handle
+the starting intent's link data</p>
+<code><span class="keyword">fun </span><span class="identifier">handleSailthruLink</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$handleSailthruLink(android.net.Uri, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/uri">uri</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$handleSailthruLink(android.net.Uri, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/net/Uri.html"><span class="identifier">Uri</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-abandoned-cart.html">logAbandonedCart</a></h4>
+</td>
+<td>
+<p>Logs a cart abandonment with the Sailthru platform. Use this to initiate cart abandoned flows.</p>
+<code><span class="keyword">fun </span><span class="identifier">logAbandonedCart</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logAbandonedCart(com.sailthru.mobile.sdk.model.Purchase, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/purchase">purchase</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-purchase/index.html"><span class="identifier">Purchase</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logAbandonedCart(com.sailthru.mobile.sdk.model.Purchase, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-event.html">logEvent</a></h4>
+</td>
+<td>
+<p>Log a Sailthru Mobile event with associated vars. If value is null or an empty string, no event will
+be generated.</p>
+<code><span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logEvent(kotlin.String, org.json.JSONObject)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logEvent(kotlin.String, org.json.JSONObject)/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Log an event from a third party source. If value is null or an empty string, no event will be generated.</p>
+<code><span class="keyword">fun </span><span class="identifier">logEvent</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logEvent(com.sailthru.mobile.sdk.enums.EventSource, kotlin.String)/source">source</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.enums/-event-source/index.html"><span class="identifier">EventSource</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logEvent(com.sailthru.mobile.sdk.enums.EventSource, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="log-purchase.html">logPurchase</a></h4>
+</td>
+<td>
+<p>Logs a purchase with the Sailthru platform. This can be used for mobile purchase attribution.</p>
+<code><span class="keyword">fun </span><span class="identifier">logPurchase</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logPurchase(com.sailthru.mobile.sdk.model.Purchase, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/purchase">purchase</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-purchase/index.html"><span class="identifier">Purchase</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$logPurchase(com.sailthru.mobile.sdk.model.Purchase, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove-attribute.html">removeAttribute</a></h4>
+</td>
+<td>
+<p>Remove a currently set attribute from this Device. If attribute is not currently set, does nothing.</p>
+<code><span class="keyword">fun </span><span class="identifier">removeAttribute</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$removeAttribute(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.AttributesHandler)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$removeAttribute(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.AttributesHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributesHandler</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-attributes.html">setAttributes</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setAttributes</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setAttributes(com.sailthru.mobile.sdk.model.AttributeMap, com.sailthru.mobile.sdk.SailthruMobile.AttributesHandler)/attributeMap">attributeMap</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.model/-attribute-map/index.html"><span class="identifier">AttributeMap</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setAttributes(com.sailthru.mobile.sdk.model.AttributeMap, com.sailthru.mobile.sdk.SailthruMobile.AttributesHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributesHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-device-token.html">setDeviceToken</a></h4>
+</td>
+<td>
+<p>Pass the FCM token into the Sailthru Mobile SDK.
+NOTE: This method should only be called if the app implements its own FirebaseMessagingService
+instance, in which case it must be called in order to provide the FCM token to the Sailthru Mobile Platform.
+Otherwise this will be handled automatically by the Sailthru Mobile SDK.</p>
+<code><span class="keyword">fun </span><span class="identifier">setDeviceToken</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setDeviceToken(kotlin.String)/token">token</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geo-ip-tracking-default.html">setGeoIpTrackingDefault</a></h4>
+</td>
+<td>
+<p>Set whether location tracking based on IP Address will be enabled or disabled by default when a device is created.
+This method must be called before startEngine.</p>
+<code><span class="keyword">fun </span><span class="identifier">setGeoIpTrackingDefault</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setGeoIpTrackingDefault(kotlin.Boolean)/enabledGeoIp">enabledGeoIp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-geo-ip-tracking-enabled.html">setGeoIpTrackingEnabled</a></h4>
+</td>
+<td>
+<p>Enabled location tracking based on IP Address. Tracking location tracking is enabled by default.
+Use this method for users who may not want to have their location tracked at all.</p>
+<code><span class="keyword">fun </span><span class="identifier">setGeoIpTrackingEnabled</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setGeoIpTrackingEnabled(kotlin.Boolean, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/enabledGeoIp">enabledGeoIp</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setGeoIpTrackingEnabled(kotlin.Boolean, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-in-app-notifications-enabled.html">setInAppNotificationsEnabled</a></h4>
+</td>
+<td>
+<p>Enables or disables the display of In-App Notifications. Must be called before <a href="start-engine.html">startEngine</a>.
+In-App Notifications are enabled by default.</p>
+<code><span class="keyword">fun </span><span class="identifier">setInAppNotificationsEnabled</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setInAppNotificationsEnabled(kotlin.Boolean)/enabled">enabled</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-logger.html">setLogger</a></h4>
+</td>
+<td>
+<p>All logging within Sailthru Mobile is routed through this Logger.</p>
+<code><span class="keyword">fun </span><span class="identifier">setLogger</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setLogger(com.sailthru.mobile.sdk.interfaces.Logger)/logger">logger</span><span class="symbol">:</span>&nbsp;<a href="../../com.sailthru.mobile.sdk.interfaces/-logger/index.html"><span class="identifier">Logger</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-notification-config.html">setNotificationConfig</a></h4>
+</td>
+<td>
+<p>Sets the configuration of notifications built by SailthruMobile.</p>
+<code><span class="keyword">fun </span><span class="identifier">setNotificationConfig</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setNotificationConfig(com.sailthru.mobile.sdk.NotificationConfig)/notificationConfig">notificationConfig</span><span class="symbol">:</span>&nbsp;<a href="../-notification-config/index.html"><span class="identifier">NotificationConfig</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-profile-vars.html">setProfileVars</a></h4>
+</td>
+<td>
+<p>Set the profile vars through the SDK.</p>
+<code><span class="keyword">fun </span><span class="identifier">setProfileVars</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setProfileVars(org.json.JSONObject, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/vars">vars</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setProfileVars(org.json.JSONObject, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-email.html">setUserEmail</a></h4>
+</td>
+<td>
+<p>Set the User's Email.</p>
+<code><span class="keyword">fun </span><span class="identifier">setUserEmail</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setUserEmail(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/userEmail">userEmail</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setUserEmail(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-user-id.html">setUserId</a></h4>
+</td>
+<td>
+<p>Set an arbitrary external User ID.</p>
+<code><span class="keyword">fun </span><span class="identifier">setUserId</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setUserId(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/userId">userId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$setUserId(kotlin.String, com.sailthru.mobile.sdk.SailthruMobile.SailthruMobileHandler((java.lang.Void)))/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">SailthruMobileHandler</span><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="start-engine.html">startEngine</a></h4>
+</td>
+<td>
+<p>Initialises The Sailthru Mobile SDK.
+See documentation <a href="https://docs.mobile.sailthru.com/docs/android-integration#section-connecting-to-sailthru-mobile">Connecting to Sailthru Mobile</a> for usage.</p>
+<code><span class="keyword">fun </span><span class="identifier">startEngine</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$startEngine(android.content.Context, kotlin.String)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$startEngine(android.content.Context, kotlin.String)/appKey">appKey</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-click.html">trackClick</a></h4>
+</td>
+<td>
+<p>Asynchronously registers with Sailthru SPM that a section has been clicked/tapped on,
+transitioning the user to a detail view</p>
+<code><span class="keyword">fun </span><span class="identifier">trackClick</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackClick(kotlin.String, java.net.URI, com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackClick(kotlin.String, java.net.URI, com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackClick(kotlin.String, java.net.URI, com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-impression.html">trackImpression</a></h4>
+</td>
+<td>
+<p>Asynchronously registers an impression - a reasonable expectation that a user has seen a piece of content - with
+Sailthru SPM. Can be used in conjunction with <code>RecyclerView.Adapter#onViewAttachedToWindow</code>
+or similar to know when a particular content item has entered the user's viewport.</p>
+<code><span class="keyword">fun </span><span class="identifier">trackImpression</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/sectionId">sectionId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/urls">urls</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackImpression(kotlin.String, kotlin.collections.List((java.net.URI)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="track-pageview.html">trackPageview</a></h4>
+</td>
+<td>
+<p>Asynchronously registers that the given "page" has been viewed with Sailthru SPM.
+Note that a Content View here directly corresponds to a page view in SPM.</p>
+<code><span class="keyword">fun </span><span class="identifier">trackPageview</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/url">url</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/net/URI.html"><span class="identifier">URI</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/tags">tags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$trackPageview(java.net.URI, kotlin.collections.List((kotlin.String)), com.sailthru.mobile.sdk.SailthruMobile.TrackHandler)/handler">handler</span><span class="symbol">:</span>&nbsp;<span class="identifier">TrackHandler</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-location.html">updateLocation</a></h4>
+</td>
+<td>
+<p>Updates Sailthru with this device's location.</p>
+<code><span class="keyword">fun </span><span class="identifier">updateLocation</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.SailthruMobile$updateLocation(android.location.Location)/location">location</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/location/Location.html"><span class="identifier">Location</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-m-e-s-s-a-g-e_-c-o-u-n-t_-u-p-d-a-t-e.html">ACTION_MESSAGE_COUNT_UPDATE</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ACTION_MESSAGE_COUNT_UPDATE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-m-e-s-s-a-g-e_-r-e-a-d.html">ACTION_MESSAGE_READ</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ACTION_MESSAGE_READ</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-n-o-t-i-f-i-c-a-t-i-o-n_-a-c-t-i-o-n_-t-a-p-p-e-d.html">ACTION_NOTIFICATION_ACTION_TAPPED</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ACTION_NOTIFICATION_ACTION_TAPPED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-c-t-i-o-n_-n-o-t-i-f-i-c-a-t-i-o-n_-t-a-p-p-e-d.html">ACTION_NOTIFICATION_TAPPED</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ACTION_NOTIFICATION_TAPPED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-a-t-t-r-i-b-u-t-e-s.html">ATTRIBUTES</a></h4>
+</td>
+<td>
+<p>Clears all attributes on a device when used with <a href="clear-device.html">clearDevice</a></p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ATTRIBUTES</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-l-e-a-r_-a-l-l.html">CLEAR_ALL</a></h4>
+</td>
+<td>
+<p>Clears all attributes, messages, and events on a device when used with <a href="clear-device.html">clearDevice</a></p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">CLEAR_ALL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-v-e-n-t-s.html">EVENTS</a></h4>
+</td>
+<td>
+<p>Clears all events on a device when used with <a href="clear-device.html">clearDevice</a></p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">EVENTS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-m-e-s-s-a-g-e_-s-t-r-e-a-m.html">MESSAGE_STREAM</a></h4>
+</td>
+<td>
+<p>Clears all messages on a device when used with <a href="clear-device.html">clearDevice</a></p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">MESSAGE_STREAM</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
