@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NotificationCategory.addAction - Sailthru Mobile Android SDK - 13.0.3</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 13.0.3</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk</a>&nbsp;/&nbsp;<a href="index.html">NotificationCategory</a>&nbsp;/&nbsp;<a href="./add-action.html">addAction</a><br/>
+<br/>
+<h1>addAction</h1>
+<a name="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">addAction</span><span class="symbol">(</span><span class="identifier">@DrawableRes</span> <span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, kotlin.Int)/icon">icon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, kotlin.Int)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html"><span class="identifier">CharSequence</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, kotlin.Int)/actionIntent">actionIntent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Intent.html"><span class="identifier">Intent</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">NotificationCategory</span></a></code>
+<p>Adds an Action to an action category.
+Note: Actions with duplicate titles will be ignored</p>
+<h3>Parameters</h3>
+<p><a name="icon"></a>
+<code>icon</code> - icon to show for this action</p>
+<p><a name="title"></a>
+<code>title</code> - the title of the action</p>
+<p><a name="actionIntent"></a>
+<code>actionIntent</code> - the Intent to fire when users trigger this action</p>
+<p><a name="flags"></a>
+<code>flags</code> - May be FLAG_ONE_SHOT, FLAG_NO_CREATE, FLAG_CANCEL_CURRENT, FLAG_UPDATE_CURRENT, FLAG_IMMUTABLE or any of the flags as supported by Intent.fillIn() to control which unspecified parts of the intent that can be supplied when the actual send happens. Used for building the Action's PendingIntent.</p>
+<a name="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)"></a>
+<code><span class="keyword">fun </span><span class="identifier">addAction</span><span class="symbol">(</span><span class="identifier">@DrawableRes</span> <span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)/icon">icon</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html"><span class="identifier">CharSequence</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)/actionIntent">actionIntent</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Intent.html"><span class="identifier">Intent</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)/remoteInput">remoteInput</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/kotlin/androidx/core/app/RemoteInput.html"><span class="identifier">RemoteInput</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.NotificationCategory$addAction(kotlin.Int, kotlin.CharSequence, android.content.Intent, androidx.core.app.RemoteInput, kotlin.Int)/flags">flags</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="index.html"><span class="identifier">NotificationCategory</span></a></code>
+<p>Adds an Action to an action category.
+Note: Actions with duplicate titles will be ignored</p>
+<h3>Parameters</h3>
+<p><a name="icon"></a>
+<code>icon</code> - icon to show for this action</p>
+<p><a name="title"></a>
+<code>title</code> - the title of the action, must be unique per category</p>
+<p><a name="actionIntent"></a>
+<code>actionIntent</code> - the Intent to fire when users trigger this action</p>
+<p><a name="remoteInput"></a>
+<code>remoteInput</code> - a RemoteInput to add to the action</p>
+<p><a name="flags"></a>
+<code>flags</code> - May be FLAG_ONE_SHOT, FLAG_NO_CREATE, FLAG_CANCEL_CURRENT, FLAG_UPDATE_CURRENT, FLAG_IMMUTABLE or any of the flags as supported by Intent.fillIn() to control which unspecified parts of the intent that can be supplied when the actual send happens. Used for building the Action's PendingIntent.</p>
+</BODY>
+</HTML>
