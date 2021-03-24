@@ -1,0 +1,288 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>AttributeMap - Sailthru Mobile Android SDK - 14.0.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 14.0.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk.model</a>&nbsp;/&nbsp;<a href="./index.html">AttributeMap</a><br/>
+<br/>
+<h1>AttributeMap</h1>
+<code><span class="keyword">class </span><span class="identifier">AttributeMap</span></code>
+<p>A map containing the attributes to set on a device.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Constructs a new map containing the values described in a JSONObject.
+Only Number, String, Boolean, and Array types are supported. <code>null</code> values, nested arrays, and unsupported data types will be ignored.</p>
+<code><span class="identifier">AttributeMap</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$<init>(org.json.JSONObject)/jsonAttributes">jsonAttributes</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span><span class="symbol">)</span></code>
+<p>A map containing the attributes to set on a device.</p>
+<code><span class="identifier">AttributeMap</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="clear.html">clear</a></h4>
+</td>
+<td>
+<p>Removes all elements from this map.</p>
+<code><span class="keyword">fun </span><span class="identifier">clear</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="contains-key.html">containsKey</a></h4>
+</td>
+<td>
+<p>Returns true if the given key is contained in the map.</p>
+<code><span class="keyword">fun </span><span class="identifier">containsKey</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$containsKey(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get.html">get</a></h4>
+</td>
+<td>
+<p>Returns the entry with the given key as an object.</p>
+<code><span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">get</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$get(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-boolean.html">getBoolean</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBoolean</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getBoolean(kotlin.String, kotlin.Boolean)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getBoolean(kotlin.String, kotlin.Boolean)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-boolean-array.html">getBooleanArray</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getBooleanArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getBooleanArray(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-date.html">getDate</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDate</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getDate(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-date-array.html">getDateArray</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDateArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getDateArray(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-float.html">getFloat</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFloat</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getFloat(kotlin.String, kotlin.Float)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getFloat(kotlin.String, kotlin.Float)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-float-array.html">getFloatArray</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getFloatArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getFloatArray(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-int.html">getInt</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getInt</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getInt(kotlin.String, kotlin.Int)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getInt(kotlin.String, kotlin.Int)/defaultValue">defaultValue</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-int-array.html">getIntArray</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getIntArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getIntArray(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-merge-rules.html">getMergeRules</a></h4>
+</td>
+<td>
+<p>Returns the merge rules for this set of attributes.</p>
+<code><span class="keyword">fun </span><span class="identifier">getMergeRules</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-string.html">getString</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getString</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getString(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-string-array.html">getStringArray</a></h4>
+</td>
+<td>
+<p>Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p>
+<code><span class="keyword">fun </span><span class="identifier">getStringArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$getStringArray(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-empty.html">isEmpty</a></h4>
+</td>
+<td>
+<p>Test if mapping is empty.</p>
+<code><span class="keyword">fun </span><span class="identifier">isEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="key-set.html">keySet</a></h4>
+</td>
+<td>
+<p>Returns a Set containing the Strings used as keys in this map.</p>
+<code><span class="keyword">fun </span><span class="identifier">keySet</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-boolean.html">putBoolean</a></h4>
+</td>
+<td>
+<p>Inserts a boolean value into this map, replacing any existing value for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">putBoolean</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putBoolean(kotlin.String, kotlin.Boolean)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putBoolean(kotlin.String, kotlin.Boolean)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-boolean-array.html">putBooleanArray</a></h4>
+</td>
+<td>
+<p>Inserts a boolean array value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putBooleanArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putBooleanArray(kotlin.String, java.util.ArrayList((kotlin.Boolean)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putBooleanArray(kotlin.String, java.util.ArrayList((kotlin.Boolean)))/array">array</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-date.html">putDate</a></h4>
+</td>
+<td>
+<p>Inserts a Date value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putDate</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putDate(kotlin.String, java.util.Date)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putDate(kotlin.String, java.util.Date)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-date-array.html">putDateArray</a></h4>
+</td>
+<td>
+<p>Inserts a Date array value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putDateArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putDateArray(kotlin.String, java.util.ArrayList((java.util.Date)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putDateArray(kotlin.String, java.util.ArrayList((java.util.Date)))/array">array</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/Date.html"><span class="identifier">Date</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-float.html">putFloat</a></h4>
+</td>
+<td>
+<p>Inserts a float value into this map, replacing any existing value for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">putFloat</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putFloat(kotlin.String, kotlin.Float)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putFloat(kotlin.String, kotlin.Float)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-float-array.html">putFloatArray</a></h4>
+</td>
+<td>
+<p>Inserts a float array value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putFloatArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putFloatArray(kotlin.String, java.util.ArrayList((kotlin.Float)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putFloatArray(kotlin.String, java.util.ArrayList((kotlin.Float)))/array">array</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html"><span class="identifier">Float</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-int.html">putInt</a></h4>
+</td>
+<td>
+<p>Inserts an int value into this map, replacing any existing value for the given key.</p>
+<code><span class="keyword">fun </span><span class="identifier">putInt</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putInt(kotlin.String, kotlin.Int)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putInt(kotlin.String, kotlin.Int)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-int-array.html">putIntArray</a></h4>
+</td>
+<td>
+<p>Inserts a int array value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putIntArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putIntArray(kotlin.String, java.util.ArrayList((kotlin.Int)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putIntArray(kotlin.String, java.util.ArrayList((kotlin.Int)))/array">array</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-string.html">putString</a></h4>
+</td>
+<td>
+<p>Inserts a String value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putString</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putString(kotlin.String, kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putString(kotlin.String, kotlin.String)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="put-string-array.html">putStringArray</a></h4>
+</td>
+<td>
+<p>Inserts a String array value into this map, replacing any existing value for the given key. Value may be null.</p>
+<code><span class="keyword">fun </span><span class="identifier">putStringArray</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putStringArray(kotlin.String, java.util.ArrayList((kotlin.String)))/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$putStringArray(kotlin.String, java.util.ArrayList((kotlin.String)))/array">array</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="remove.html">remove</a></h4>
+</td>
+<td>
+<p>Removes any entry with the given key from this map.</p>
+<code><span class="keyword">fun </span><span class="identifier">remove</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$remove(kotlin.String)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="set-merge-rules.html">setMergeRules</a></h4>
+</td>
+<td>
+<p>Set the merge rules for the attributes in this map when they are saved to the device.</p>
+<code><span class="keyword">fun </span><span class="identifier">setMergeRules</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.AttributeMap$setMergeRules(kotlin.Int)/mergeRule">mergeRule</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="size.html">size</a></h4>
+</td>
+<td>
+<p>Returns the number of mappings contained in this map.</p>
+<code><span class="keyword">fun </span><span class="identifier">size</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Companion Object Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-r-u-l-e_-r-e-p-l-a-c-e.html">RULE_REPLACE</a></h4>
+</td>
+<td>
+<p>Replace all attributes on this device with the attributes contained in this map. This will erase all pre-existing attributes.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">RULE_REPLACE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-r-u-l-e_-u-p-d-a-t-e.html">RULE_UPDATE</a></h4>
+</td>
+<td>
+<p>Merge the attributes contained in this map with the existing attributes on this device.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">RULE_UPDATE</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
