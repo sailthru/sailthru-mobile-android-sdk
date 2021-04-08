@@ -1,0 +1,94 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>PurchaseAdjustment - Sailthru Mobile Android SDK - 14.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 14.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk.model</a>&nbsp;/&nbsp;<a href="./index.html">PurchaseAdjustment</a><br/>
+<br/>
+<h1>PurchaseAdjustment</h1>
+<code><span class="keyword">class </span><span class="identifier">PurchaseAdjustment</span></code>
+<p>Purchase Adjustments (positive or negative) that should be applied to the total order value. Title and price (in cents) are required.
+The amount should be negative to factor in a deduction to the final price, such as a discount; the amount should be positive
+to factor in an additional cost, such as shipping.</p>
+<p>Recommended keys:</p>
+<p>tax – Taxes applied to order</p>
+<p>shipping – Any shipping and/or handling fees applied to order</p>
+<p>discount – Discount off order from promotion code, coupon, etc.</p>
+<p>gift_card – Amount of order covered by gift card payment</p>
+<p>gift_wrap – Additional fee for gift wrapping.</p>
+<p>credits – Amount of order covered by account credit</p>
+<p>tip – Any gratuity added to purchase</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Purchase Adjustments (positive or negative) that should be applied to the total order value. Title and price (in cents) are required.
+The amount should be negative to factor in a deduction to the final price, such as a discount; the amount should be positive
+to factor in an additional cost, such as shipping.</p>
+<code><span class="identifier">PurchaseAdjustment</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.PurchaseAdjustment$<init>(kotlin.String, kotlin.Int)/title">title</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.PurchaseAdjustment$<init>(kotlin.String, kotlin.Int)/price">price</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="price.html">price</a></h4>
+</td>
+<td>
+<p>Price of adjustment, in cents (e.g. $10.99 is 1099).</p>
+<code><span class="keyword">var </span><span class="identifier">price</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="title.html">title</a></h4>
+</td>
+<td>
+<p>Short user-readable name/title of the adjustment (eg. shipping, discount).</p>
+<code><span class="keyword">var </span><span class="identifier">title</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="equals.html">equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.PurchaseAdjustment$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash-code.html">hashCode</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-j-s-o-n.html">toJSON</a></h4>
+</td>
+<td>
+<p>Converts PurchaseAdjustment to JSON.</p>
+<code><span class="keyword">fun </span><span class="identifier">toJSON</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Purchase - Sailthru Mobile Android SDK - 14.1.0</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">Sailthru Mobile Android SDK - 14.1.0</a>&nbsp;/&nbsp;<a href="../index.html">com.sailthru.mobile.sdk.model</a>&nbsp;/&nbsp;<a href="./index.html">Purchase</a><br/>
+<br/>
+<h1>Purchase</h1>
+<code><span class="keyword">class </span><span class="identifier">Purchase</span></code>
+<p>A purchase to log to the platform.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>A purchase to log to the platform.</p>
+<code><span class="identifier">Purchase</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.Purchase$<init>(java.util.ArrayList((kotlin.Any)))/purchaseItems">purchaseItems</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><span class="identifier">*</span><span class="symbol">&gt;</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="incomplete.html">incomplete</a></h4>
+</td>
+<td>
+<p>Whether the purchase is incomplete.</p>
+<code><span class="keyword">var </span><span class="identifier">incomplete</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="message-id.html">messageId</a></h4>
+</td>
+<td>
+<p>Set the message ID associated with the purchase. This is required to have revenue data matched
+to email sends in Sailthru. Pass the identifying message_id of the email the user is coming from;
+this will be the value stored in the sailthru_bid cookie for your domain.Note: In some client
+libraries message_id should be passed as a string. The message attribution will be displayed
+in your Campaign Summary, Transactional Report, Purchase Log, and in Lifecycle Optimizer Metrics.</p>
+<code><span class="keyword">var </span><span class="identifier">messageId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="purchase-adjustments.html">purchaseAdjustments</a></h4>
+</td>
+<td>
+<p>Array of <a href="../-purchase-adjustment/index.html">PurchaseAdjustment</a>s being applied to the purchase.</p>
+<code><span class="keyword">var </span><span class="identifier">purchaseAdjustments</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../-purchase-adjustment/index.html"><span class="identifier">PurchaseAdjustment</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="purchase-items.html">purchaseItems</a></h4>
+</td>
+<td>
+<p>Array of <a href="../-purchase-item/index.html">PurchaseItem</a>s being purchased.</p>
+<code><span class="keyword">var </span><span class="identifier">purchaseItems</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html"><span class="identifier">ArrayList</span></a><span class="symbol">&lt;</span><a href="../-purchase-item/index.html"><span class="identifier">PurchaseItem</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="vars.html">vars</a></h4>
+</td>
+<td>
+<p>Any number of custom variables to attach to the order. These are commonly used with the
+Audience Builder “Purchase Order Var Is” query. For example, you could specify the shipping
+address, estimated delivery date given, credit card type used, whether a deal was used, the
+promo code used, etc. Note that a vars object may also exist at the item level. See the example
+code, and the items definition in this table.You may use any custom order variable name(s).
+Note that the following variable name is reserved at the order level, for a particular purpose:
+st_cost – The client’s cost for the items in the purchase, in cents. The value should be
+an integer, and is recommended if you are using Retention Analytics in order to report
+net revenue.</p>
+<code><span class="keyword">var </span><span class="identifier">vars</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="add-var.html">addVar</a></h4>
+</td>
+<td>
+<p>Add a custom key value pair to the purchase item.</p>
+<code><span class="keyword">fun </span><span class="identifier">addVar</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.Purchase$addVar(kotlin.String, kotlin.Any)/key">key</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">, </span><span class="identifier" id="com.sailthru.mobile.sdk.model.Purchase$addVar(kotlin.String, kotlin.Any)/value">value</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="equals.html">equals</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">equals</span><span class="symbol">(</span><span class="identifier" id="com.sailthru.mobile.sdk.model.Purchase$equals(kotlin.Any)/other">other</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html"><span class="identifier">Any</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="hash-code.html">hashCode</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hashCode</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-j-s-o-n.html">toJSON</a></h4>
+</td>
+<td>
+<p>Converts Purchase to JSON.</p>
+<code><span class="keyword">fun </span><span class="identifier">toJSON</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/org/json/JSONObject.html"><span class="identifier">JSONObject</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="to-string.html">toString</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">toString</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
