@@ -1,0 +1,1 @@
+sourceset_dependencies='{":sailthrumobile:dokkaHtml/androidTestRelease":[],":sailthrumobile:dokkaHtml/androidTestUitestapp":[],":sailthrumobile:dokkaHtml/debug":[],":sailthrumobile:dokkaHtml/main":[],":sailthrumobile:dokkaHtml/release":[],":sailthrumobile:dokkaHtml/uitestapp":[]}'
