@@ -1,0 +1,29 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.sailthru.mobile.sdk.internal.vendor/SwipeDismissTouchListener.DismissCallbacks///PointingToDeclaration/com/sailthru/mobile/sdk/internal/vendor/SwipeDismissTouchListener.DismissCallbacks.html
+$dokka.location:com.sailthru.mobile.sdk.model/AttributeMap.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/model/AttributeMap.Companion.html
+$dokka.location:com.sailthru.mobile.sdk.model/ContentItem.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/model/ContentItem.Companion.html
+$dokka.location:com.sailthru.mobile.sdk.model/Message.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/model/Message.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/MessageActivity.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/MessageActivity.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.MessageDeletedHandler///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.MessageDeletedHandler.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.MessageStreamHandler///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.MessageStreamHandler.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.MessagesHandler///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.MessagesHandler.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.MessagesReadHandler///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.MessagesReadHandler.html
+$dokka.location:com.sailthru.mobile.sdk/MessageStream.OnInAppNotificationDisplayListener///PointingToDeclaration/com/sailthru/mobile/sdk/MessageStream.OnInAppNotificationDisplayListener.html
+$dokka.location:com.sailthru.mobile.sdk/NotificationBundle.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/NotificationBundle.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/NotificationCategory.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/NotificationCategory.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/NotificationExtender.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/NotificationExtender.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/SailthruMobile.AttributesHandler///PointingToDeclaration/com/sailthru/mobile/sdk/SailthruMobile.AttributesHandler.html
+$dokka.location:com.sailthru.mobile.sdk/SailthruMobile.Companion///PointingToDeclaration/com/sailthru/mobile/sdk/SailthruMobile.Companion.html
+$dokka.location:com.sailthru.mobile.sdk/SailthruMobile.RecommendationsHandler///PointingToDeclaration/com/sailthru/mobile/sdk/SailthruMobile.RecommendationsHandler.html
+$dokka.location:com.sailthru.mobile.sdk/SailthruMobile.SailthruMobileHandler///PointingToDeclaration/com/sailthru/mobile/sdk/SailthruMobile.SailthruMobileHandler.html
+$dokka.location:com.sailthru.mobile.sdk/SailthruMobile.TrackHandler///PointingToDeclaration/com/sailthru/mobile/sdk/SailthruMobile.TrackHandler.html
+com.sailthru.mobile.sdk
+com.sailthru.mobile.sdk.enums
+com.sailthru.mobile.sdk.interfaces
+com.sailthru.mobile.sdk.internal.coroutines
+com.sailthru.mobile.sdk.internal.extensions
+com.sailthru.mobile.sdk.internal.vendor
+com.sailthru.mobile.sdk.model
+
