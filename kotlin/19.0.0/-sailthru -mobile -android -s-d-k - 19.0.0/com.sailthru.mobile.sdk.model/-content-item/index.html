@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ContentItem</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>Sailthru Mobile Android SDK - 19.0.0</span>
+            </a>
+    </div>
+    <div>
+19.0.0    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sailthrumobile:dokkaHtml/uitestapp">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Sailthru Mobile Android SDK - 19.0.0::com.sailthru.mobile.sdk.model/ContentItem///PointingToDeclaration//169661872">
+  <div class="breadcrumbs"><a href="../../../index.html">Sailthru Mobile Android SDK - 19.0.0</a><span class="delimiter">/</span><a href="../index.html">com.sailthru.mobile.sdk.model</a><span class="delimiter">/</span><span class="current">ContentItem</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Content</span><wbr></wbr><span><span>Item</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">ContentItem</a> : <a href="https://developer.android.com/reference/kotlin/java/io/Serializable.html">Serializable</a>, <a href="https://developer.android.com/reference/kotlin/android/os/Parcelable.html">Parcelable</a></div><p class="paragraph">Class representing recommendation items from the Sailthru platform.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="839736257%2FConstructors%2F169661872" anchor-label="ContentItem" id="839736257%2FConstructors%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-content-item.html"><span>Content</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="839736257%2FConstructors%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="441741972%2FClasslikes%2F169661872" anchor-label="Companion" id="441741972%2FClasslikes%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="441741972%2FClasslikes%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1550659842%2FProperties%2F169661872" anchor-label="author" id="1550659842%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="author.html"><span><span>author</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1550659842%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="author.html">author</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1559616575%2FProperties%2F169661872" anchor-label="date" id="1559616575%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="date.html"><span><span>date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1559616575%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="date.html">date</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1437609169%2FProperties%2F169661872" anchor-label="description" id="1437609169%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="description.html"><span><span>description</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1437609169%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="description.html">description</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-702930080%2FProperties%2F169661872" anchor-label="expireDate" id="-702930080%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="expire-date.html"><span>expire</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-702930080%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="expire-date.html">expireDate</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="378581636%2FProperties%2F169661872" anchor-label="extraFields" id="378581636%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="extra-fields.html"><span>extra</span><wbr></wbr><span><span>Fields</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="378581636%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="extra-fields.html">extraFields</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-521670236%2FProperties%2F169661872" anchor-label="hashID" id="-521670236%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-i-d.html"><span>hash</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-521670236%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="hash-i-d.html">hashID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1390238862%2FProperties%2F169661872" anchor-label="ID" id="-1390238862%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-d.html"><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1390238862%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-i-d.html">ID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="192605266%2FProperties%2F169661872" anchor-label="image" id="192605266%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image.html"><span><span>image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="192605266%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="image.html">image</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1052916555%2FProperties%2F169661872" anchor-label="images" id="-1052916555%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="images.html"><span><span>images</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1052916555%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="images.html">images</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1887467663%2FProperties%2F169661872" anchor-label="inventory" id="-1887467663%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="inventory.html"><span><span>inventory</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1887467663%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="inventory.html">inventory</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-655181288%2FProperties%2F169661872" anchor-label="location" id="-655181288%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="location.html"><span><span>location</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-655181288%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="location.html">location</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2147021788%2FProperties%2F169661872" anchor-label="price" id="-2147021788%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="price.html"><span><span>price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2147021788%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="price.html">price</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1849581825%2FProperties%2F169661872" anchor-label="purchaseQuantity" id="1849581825%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="purchase-quantity.html"><span>purchase</span><wbr></wbr><span><span>Quantity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1849581825%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="purchase-quantity.html">purchaseQuantity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1395992059%2FProperties%2F169661872" anchor-label="siteName" id="1395992059%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="site-name.html"><span>site</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1395992059%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="site-name.html">siteName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="376894192%2FProperties%2F169661872" anchor-label="SKU" id="376894192%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-k-u.html"><span><span>SKU</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="376894192%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-s-k-u.html">SKU</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="582538804%2FProperties%2F169661872" anchor-label="tags" id="582538804%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tags.html"><span><span>tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="582538804%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="tags.html">tags</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1807718901%2FProperties%2F169661872" anchor-label="title" id="1807718901%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1807718901%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="title.html">title</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-132517186%2FProperties%2F169661872" anchor-label="url" id="-132517186%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="url.html"><span><span>url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-132517186%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="url.html">url</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-338405503%2FProperties%2F169661872" anchor-label="vars" id="-338405503%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="vars.html"><span><span>vars</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-338405503%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="vars.html">vars</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html">HashMap</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span><span class="token operator">&gt;</span><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-516438369%2FProperties%2F169661872" anchor-label="views" id="-516438369%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="views.html"><span><span>views</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-516438369%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="views.html">views</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-29308728%2FFunctions%2F169661872" anchor-label="describeContents" id="-29308728%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="describe-contents.html"><span>describe</span><wbr></wbr><span><span>Contents</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29308728%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="describe-contents.html"><span class="token function">describeContents</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2112100852%2FFunctions%2F169661872" anchor-label="equals" id="2112100852%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2112100852%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-139375502%2FFunctions%2F169661872" anchor-label="hashCode" id="-139375502%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-139375502%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-256563286%2FFunctions%2F169661872" anchor-label="toJSON" id="-256563286%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-j-s-o-n.html"><span>to</span><wbr></wbr><span><span>JSON</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-256563286%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-j-s-o-n.html"><span class="token function">toJSON</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a></div><div class="brief "><p class="paragraph">Converts ContentItem to JSON. Do not alter the signature of this method without updating the Cordova/Unity/etc wrappers. Wrappers use reflection to access this method.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-317541567%2FFunctions%2F169661872" anchor-label="toString" id="-317541567%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-317541567%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-445857255%2FFunctions%2F169661872" anchor-label="writeToParcel" id="-445857255%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="write-to-parcel.html"><span>write</span><wbr></wbr><span>To</span><wbr></wbr><span><span>Parcel</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-445857255%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="write-to-parcel.html"><span class="token function">writeToParcel</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dest<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Parcel.html">Parcel</a><span class="token punctuation">, </span></span><span class="parameter ">flags<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

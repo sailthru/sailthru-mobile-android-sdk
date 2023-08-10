@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>AttributeMap</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>Sailthru Mobile Android SDK - 19.0.0</span>
+            </a>
+    </div>
+    <div>
+19.0.0    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sailthrumobile:dokkaHtml/uitestapp">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Sailthru Mobile Android SDK - 19.0.0::com.sailthru.mobile.sdk.model/AttributeMap///PointingToDeclaration//169661872">
+  <div class="breadcrumbs"><a href="../../../index.html">Sailthru Mobile Android SDK - 19.0.0</a><span class="delimiter">/</span><a href="../index.html">com.sailthru.mobile.sdk.model</a><span class="delimiter">/</span><span class="current">AttributeMap</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Attribute</span><wbr></wbr><span><span>Map</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">AttributeMap</a></div><p class="paragraph">A map containing the attributes to set on a device.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-627642802%2FConstructors%2F169661872" anchor-label="AttributeMap" id="-627642802%2FConstructors%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-attribute-map.html"><span>Attribute</span><wbr></wbr><span><span>Map</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-627642802%2FConstructors%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">jsonAttributes<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Constructs a new map containing the values described in a JSONObject. Only Number, String, Boolean, and Array types are supported. <code class="lang-kotlin">null</code> values, nested arrays, and unsupported data types will be ignored.</p></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="-2034390490%2FClasslikes%2F169661872" anchor-label="Companion" id="-2034390490%2FClasslikes%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2034390490%2FClasslikes%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="239977522%2FFunctions%2F169661872" anchor-label="clear" id="239977522%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="clear.html"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="239977522%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="clear.html"><span class="token function">clear</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Removes all elements from this map.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1812042562%2FFunctions%2F169661872" anchor-label="containsKey" id="-1812042562%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="contains-key.html"><span>contains</span><wbr></wbr><span><span>Key</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1812042562%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="contains-key.html"><span class="token function">containsKey</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns true if the given key is contained in the map.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-534927397%2FFunctions%2F169661872" anchor-label="get" id="-534927397%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get.html"><span><span>get</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-534927397%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">operator </span><span class="token keyword">fun </span><a href="get.html"><span class="token function">get</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the entry with the given key as an object.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1077006761%2FFunctions%2F169661872" anchor-label="getBoolean" id="1077006761%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-boolean.html"><span>get</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1077006761%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-boolean.html"><span class="token function">getBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">defaultValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="502919244%2FFunctions%2F169661872" anchor-label="getBooleanArray" id="502919244%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-boolean-array.html"><span>get</span><wbr></wbr><span>Boolean</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="502919244%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-boolean-array.html"><span class="token function">getBooleanArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1381112023%2FFunctions%2F169661872" anchor-label="getDate" id="-1381112023%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-date.html"><span>get</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1381112023%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-date.html"><span class="token function">getDate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2118491554%2FFunctions%2F169661872" anchor-label="getDateArray" id="-2118491554%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-date-array.html"><span>get</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2118491554%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-date-array.html"><span class="token function">getDateArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="421219137%2FFunctions%2F169661872" anchor-label="getFloat" id="421219137%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-float.html"><span>get</span><wbr></wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="421219137%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-float.html"><span class="token function">getFloat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">defaultValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="965424792%2FFunctions%2F169661872" anchor-label="getFloatArray" id="965424792%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-float-array.html"><span>get</span><wbr></wbr><span>Float</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="965424792%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-float-array.html"><span class="token function">getFloatArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1446016795%2FFunctions%2F169661872" anchor-label="getInt" id="1446016795%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-int.html"><span>get</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1446016795%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-int.html"><span class="token function">getInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">defaultValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-750077915%2FFunctions%2F169661872" anchor-label="getIntArray" id="-750077915%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-int-array.html"><span>get</span><wbr></wbr><span>Int</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-750077915%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-int-array.html"><span class="token function">getIntArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1765829098%2FFunctions%2F169661872" anchor-label="getMergeRules" id="1765829098%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-merge-rules.html"><span>get</span><wbr></wbr><span>Merge</span><wbr></wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1765829098%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-merge-rules.html"><span class="token function">getMergeRules</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns the merge rules for this set of attributes.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2141577292%2FFunctions%2F169661872" anchor-label="getString" id="2141577292%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-string.html"><span>get</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2141577292%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-string.html"><span class="token function">getString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1955571483%2FFunctions%2F169661872" anchor-label="getStringArray" id="1955571483%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-string-array.html"><span>get</span><wbr></wbr><span>String</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1955571483%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-string-array.html"><span class="token function">getStringArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1572964476%2FFunctions%2F169661872" anchor-label="isEmpty" id="1572964476%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-empty.html"><span>is</span><wbr></wbr><span><span>Empty</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1572964476%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-empty.html"><span class="token function">isEmpty</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Test if mapping is empty.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-488741448%2FFunctions%2F169661872" anchor-label="keySet" id="-488741448%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="key-set.html"><span>key</span><wbr></wbr><span><span>Set</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-488741448%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="key-set.html"><span class="token function">keySet</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html">Set</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a Set containing the Strings used as keys in this map.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="337932770%2FFunctions%2F169661872" anchor-label="putBoolean" id="337932770%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-boolean.html"><span>put</span><wbr></wbr><span><span>Boolean</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="337932770%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-boolean.html"><span class="token function">putBoolean</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a boolean value into this map, replacing any existing value for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="990749305%2FFunctions%2F169661872" anchor-label="putBooleanArray" id="990749305%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-boolean-array.html"><span>put</span><wbr></wbr><span>Boolean</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="990749305%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-boolean-array.html"><span class="token function">putBooleanArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a boolean array value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1536247852%2FFunctions%2F169661872" anchor-label="putDate" id="-1536247852%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-date.html"><span>put</span><wbr></wbr><span><span>Date</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1536247852%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-date.html"><span class="token function">putDate</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a Date value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1092471494%2FFunctions%2F169661872" anchor-label="putDateArray" id="1092471494%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-date-array.html"><span>put</span><wbr></wbr><span>Date</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1092471494%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-date-array.html"><span class="token function">putDateArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://developer.android.com/reference/kotlin/java/util/Date.html">Date</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a Date array value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2119233530%2FFunctions%2F169661872" anchor-label="putFloat" id="2119233530%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-float.html"><span>put</span><wbr></wbr><span><span>Float</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2119233530%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-float.html"><span class="token function">putFloat</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a float value into this map, replacing any existing value for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-572833991%2FFunctions%2F169661872" anchor-label="putFloatArray" id="-572833991%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-float-array.html"><span>put</span><wbr></wbr><span>Float</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-572833991%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-float-array.html"><span class="token function">putFloatArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a float array value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1809801300%2FFunctions%2F169661872" anchor-label="putInt" id="1809801300%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-int.html"><span>put</span><wbr></wbr><span><span>Int</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1809801300%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-int.html"><span class="token function">putInt</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts an int value into this map, replacing any existing value for the given key.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="653471833%2FFunctions%2F169661872" anchor-label="putIntArray" id="653471833%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-int-array.html"><span>put</span><wbr></wbr><span>Int</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="653471833%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-int-array.html"><span class="token function">putIntArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a int array value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-466213206%2FFunctions%2F169661872" anchor-label="putString" id="-466213206%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-string.html"><span>put</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-466213206%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-string.html"><span class="token function">putString</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a String value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="272881673%2FFunctions%2F169661872" anchor-label="putStringArray" id="272881673%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-string-array.html"><span>put</span><wbr></wbr><span>String</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="272881673%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-string-array.html"><span class="token function">putStringArray</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">array<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-array-list/index.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Inserts a String array value into this map, replacing any existing value for the given key. Value may be null.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="69095565%2FFunctions%2F169661872" anchor-label="remove" id="69095565%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove.html"><span><span>remove</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="69095565%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove.html"><span class="token function">remove</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Removes any entry with the given key from this map.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="876748156%2FFunctions%2F169661872" anchor-label="setMergeRules" id="876748156%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-merge-rules.html"><span>set</span><wbr></wbr><span>Merge</span><wbr></wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="876748156%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-merge-rules.html"><span class="token function">setMergeRules</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">mergeRule<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the merge rules for the attributes in this map when they are saved to the device.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1398426502%2FFunctions%2F169661872" anchor-label="size" id="-1398426502%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="size.html"><span><span>size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1398426502%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="size.html"><span class="token function">size</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Returns the number of mappings contained in this map.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>

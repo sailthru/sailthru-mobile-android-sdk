@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>NotificationBundle</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>Sailthru Mobile Android SDK - 19.0.0</span>
+            </a>
+    </div>
+    <div>
+19.0.0    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":sailthrumobile:dokkaHtml/uitestapp">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Sailthru Mobile Android SDK - 19.0.0::com.sailthru.mobile.sdk/NotificationBundle///PointingToDeclaration//169661872">
+  <div class="breadcrumbs"><a href="../../../index.html">Sailthru Mobile Android SDK - 19.0.0</a><span class="delimiter">/</span><a href="../index.html">com.sailthru.mobile.sdk</a><span class="delimiter">/</span><span class="current">NotificationBundle</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Notification</span><wbr></wbr><span><span>Bundle</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">NotificationBundle</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>bundle<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Wrapper with helpers to load data from the bundle received with a notification sent using Sailthru Mobile Platform</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-999550559%2FConstructors%2F169661872" anchor-label="NotificationBundle" id="-999550559%2FConstructors%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-notification-bundle.html"><span>Notification</span><wbr></wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-999550559%2FConstructors%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">remoteMessage<span class="token operator">: </span><span data-unresolved-link="com.google.firebase.messaging/RemoteMessage///PointingToDeclaration/">RemoteMessage</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Construct a new instance of <code class="lang-kotlin">NotificationBundle</code>, from the provided RemoteMessage</p></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">bundle<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="1363079262%2FClasslikes%2F169661872" anchor-label="Companion" id="1363079262%2FClasslikes%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1363079262%2FClasslikes%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1589674911%2FProperties%2F169661872" anchor-label="bundle" id="-1589674911%2FProperties%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="bundle.html"><span><span>bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1589674911%2FProperties%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="bundle.html">bundle</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1828639298%2FFunctions%2F169661872" anchor-label="equals" id="-1828639298%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1828639298%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1297823107%2FFunctions%2F169661872" anchor-label="generateAndroidNotificationActionID" id="1297823107%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-android-notification-action-i-d.html"><span>generate</span><wbr></wbr><span>Android</span><wbr></wbr><span>Notification</span><wbr></wbr><span>Action</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1297823107%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-android-notification-action-i-d.html"><span class="token function">generateAndroidNotificationActionID</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">actionName<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Generates unique IDs for Notification Actions to so that unique PendingIntents can be created for them.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1487424265%2FFunctions%2F169661872" anchor-label="generateAndroidNotificationID" id="-1487424265%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="generate-android-notification-i-d.html"><span>generate</span><wbr></wbr><span>Android</span><wbr></wbr><span>Notification</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1487424265%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="generate-android-notification-i-d.html"><span class="token function">generateAndroidNotificationID</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Build an id to be used to identify the notification while calling <a href="https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify">android.app.NotificationManager.notify</a>. This ID is used by the Android OS to collapse notifications, if necessary.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="656092348%2FFunctions%2F169661872" anchor-label="getActions" id="656092348%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-actions.html"><span>get</span><wbr></wbr><span><span>Actions</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="656092348%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-actions.html"><span class="token function">getActions</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="457894973%2FFunctions%2F169661872" anchor-label="getAlert" id="457894973%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-alert.html"><span>get</span><wbr></wbr><span><span>Alert</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="457894973%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-alert.html"><span class="token function">getAlert</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-763353130%2FFunctions%2F169661872" anchor-label="getBadge" id="-763353130%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-badge.html"><span>get</span><wbr></wbr><span><span>Badge</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-763353130%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-badge.html"><span class="token function">getBadge</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2052759715%2FFunctions%2F169661872" anchor-label="getCategory" id="2052759715%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-category.html"><span>get</span><wbr></wbr><span><span>Category</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2052759715%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-category.html"><span class="token function">getCategory</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="664379483%2FFunctions%2F169661872" anchor-label="getChannelId" id="664379483%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-channel-id.html"><span>get</span><wbr></wbr><span>Channel</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="664379483%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-channel-id.html"><span class="token function">getChannelId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-415175781%2FFunctions%2F169661872" anchor-label="getDeepLink" id="-415175781%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-deep-link.html"><span>get</span><wbr></wbr><span>Deep</span><wbr></wbr><span><span>Link</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-415175781%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-deep-link.html"><span class="token function">getDeepLink</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1824567479%2FFunctions%2F169661872" anchor-label="getImageUrlFromPayload" id="-1824567479%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-image-url-from-payload.html"><span>get</span><wbr></wbr><span>Image</span><wbr></wbr><span>Url</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Payload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1824567479%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-image-url-from-payload.html"><span class="token function">getImageUrlFromPayload</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1722508673%2FFunctions%2F169661872" anchor-label="getMessageIdFromPayload" id="-1722508673%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-message-id-from-payload.html"><span>get</span><wbr></wbr><span>Message</span><wbr></wbr><span>Id</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Payload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1722508673%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-message-id-from-payload.html"><span class="token function">getMessageIdFromPayload</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1147784133%2FFunctions%2F169661872" anchor-label="getNotificationId" id="-1147784133%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-notification-id.html"><span>get</span><wbr></wbr><span>Notification</span><wbr></wbr><span><span>Id</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1147784133%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-notification-id.html"><span class="token function">getNotificationId</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="586922515%2FFunctions%2F169661872" anchor-label="getRemoteInputBundle" id="586922515%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-remote-input-bundle.html"><span>get</span><wbr></wbr><span>Remote</span><wbr></wbr><span>Input</span><wbr></wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="586922515%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-remote-input-bundle.html"><span class="token function">getRemoteInputBundle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Return bundle containing remote input results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="21803209%2FFunctions%2F169661872" anchor-label="getSound" id="21803209%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-sound.html"><span>get</span><wbr></wbr><span><span>Sound</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="21803209%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-sound.html"><span class="token function">getSound</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">defaultValue<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1422468801%2FFunctions%2F169661872" anchor-label="getTitle" id="1422468801%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-title.html"><span>get</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1422468801%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-title.html"><span class="token function">getTitle</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1213571113%2FFunctions%2F169661872" anchor-label="getVideoUrlFromPayload" id="1213571113%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-video-url-from-payload.html"><span>get</span><wbr></wbr><span>Video</span><wbr></wbr><span>Url</span><wbr></wbr><span>From</span><wbr></wbr><span><span>Payload</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1213571113%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-video-url-from-payload.html"><span class="token function">getVideoUrlFromPayload</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="167439720%2FFunctions%2F169661872" anchor-label="hashCode" id="167439720%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="167439720%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="975110056%2FFunctions%2F169661872" anchor-label="isDeepLinkNotification" id="975110056%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-deep-link-notification.html"><span>is</span><wbr></wbr><span>Deep</span><wbr></wbr><span>Link</span><wbr></wbr><span><span>Notification</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="975110056%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-deep-link-notification.html"><span class="token function">isDeepLinkNotification</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1989638573%2FFunctions%2F169661872" anchor-label="setRemoteInputBundle" id="1989638573%2FFunctions%2F169661872" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp"></a>
+          <div class="table-row" data-filterable-current=":sailthrumobile:dokkaHtml/uitestapp" data-filterable-set=":sailthrumobile:dokkaHtml/uitestapp">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-remote-input-bundle.html"><span>set</span><wbr></wbr><span>Remote</span><wbr></wbr><span>Input</span><wbr></wbr><span><span>Bundle</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1989638573%2FFunctions%2F169661872"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":sailthrumobile:dokkaHtml/uitestapp"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-remote-input-bundle.html"><span class="token function">setRemoteInputBundle</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">remoteInputBundle<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/os/Bundle.html">Bundle</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Set the bundle containing the remote input results.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
