@@ -15,7 +15,8 @@ Integration
 
 Detailed integration steps can be found in the official [Sailthru Mobile documentation](http://docs.mobile.sailthru.com/docs/android-integration).
 
-Javadoc for the latest version of the SDK can be found [here](http://carnivalmobile.github.io/carnival-android-sdk/javadoc/latest/).
+Javadoc for the latest version of the SDK can be found [here](http://sailthru.github.io/sailthru-mobile-android-sdk/javadoc/latest/).
+KDoc for the latest version of the SDK can be found [here](http://sailthru.github.io/sailthru-mobile-android-sdk/kotlin/latest/).
 
 Android Studio
 -------
@@ -31,6 +32,6 @@ repositories {
 
 dependencies {
     ...
-    compile 'com.sailthru.mobile.sdk:sailthru-mobile:12.+'
+    compile 'com.sailthru.mobile.sdk:sailthru-mobile:19.+'
 }
 ```
