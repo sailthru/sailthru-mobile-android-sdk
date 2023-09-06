@@ -26,7 +26,7 @@ If you are using the Sailthru Mobile SDK in your Android Studio Project, the SDK
 ```Groovy
 repositories {
     maven {
-        url "https://github.com/carnivalmobile/maven-repository/raw/master/"
+        url "https://github.com/sailthru/maven-repository/raw/master/"
     }
 }
 
