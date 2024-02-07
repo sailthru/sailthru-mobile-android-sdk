@@ -1,0 +1,15 @@
+$dokka.format:javadoc-v1
+$dokka.linkExtension:html
+$dokka.location:com.marigold.sdk/EngageBySailthru.AttributesHandler///PointingToDeclaration/com/marigold/sdk/EngageBySailthru.AttributesHandler.html
+$dokka.location:com.marigold.sdk/EngageBySailthru.TrackHandler///PointingToDeclaration/com/marigold/sdk/EngageBySailthru.TrackHandler.html
+$dokka.location:com.marigold.sdk/Marigold.MarigoldHandler///PointingToDeclaration/com/marigold/sdk/Marigold.MarigoldHandler.html
+$dokka.location:com.marigold.sdk/MessageStream.MessageDeletedHandler///PointingToDeclaration/com/marigold/sdk/MessageStream.MessageDeletedHandler.html
+$dokka.location:com.marigold.sdk/MessageStream.MessageStreamHandler///PointingToDeclaration/com/marigold/sdk/MessageStream.MessageStreamHandler.html
+$dokka.location:com.marigold.sdk/MessageStream.MessagesHandler///PointingToDeclaration/com/marigold/sdk/MessageStream.MessagesHandler.html
+$dokka.location:com.marigold.sdk/MessageStream.MessagesReadHandler///PointingToDeclaration/com/marigold/sdk/MessageStream.MessagesReadHandler.html
+$dokka.location:com.marigold.sdk/MessageStream.OnInAppNotificationDisplayListener///PointingToDeclaration/com/marigold/sdk/MessageStream.OnInAppNotificationDisplayListener.html
+com.marigold.sdk
+com.marigold.sdk.enums
+com.marigold.sdk.interfaces
+com.marigold.sdk.model
+
