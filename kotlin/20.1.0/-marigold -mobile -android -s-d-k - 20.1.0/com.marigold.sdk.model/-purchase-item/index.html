@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PurchaseItem</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/jetbrains-mono.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+<div class="navigation-wrapper" id="navigation-wrapper">
+    <div id="leftToggler"><span class="icon-toggler"></span></div>
+    <div class="library-name">
+            <a href="../../../index.html">
+                    <span>Marigold Mobile Android SDK - 20.1.0</span>
+            </a>
+    </div>
+    <div>
+20.1.0    </div>
+    <div class="pull-right d-flex">
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":marigold:dokkaHtml/release">androidJvm</button>
+        </div>
+        <button id="theme-toggle-button"><span id="theme-toggle"></span></button>
+        <div id="searchBar"></div>
+    </div>
+</div>
+<div id="container">
+    <div id="leftColumn">
+        <div id="sideMenu"></div>
+    </div>
+    <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Marigold Mobile Android SDK - 20.1.0::com.marigold.sdk.model/PurchaseItem///PointingToDeclaration//2010670685">
+  <div class="breadcrumbs"><a href="../../../index.html">Marigold Mobile Android SDK - 20.1.0</a><span class="delimiter">/</span><a href="../index.html">com.marigold.sdk.model</a><span class="delimiter">/</span><span class="current">PurchaseItem</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Purchase</span><wbr></wbr><span><span>Item</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">PurchaseItem</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">quantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">price<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">ID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">An item being purchased.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="273949935%2FConstructors%2F2010670685" anchor-label="PurchaseItem" id="273949935%2FConstructors%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-purchase-item.html"><span>Purchase</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="273949935%2FConstructors%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">quantity<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">title<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">price<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">ID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1587194327%2FProperties%2F2010670685" anchor-label="ID" id="1587194327%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-d.html"><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1587194327%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="-i-d.html">ID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Your unique identifier (for example, SKU) for the item.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1355944090%2FProperties%2F2010670685" anchor-label="images" id="1355944090%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="images.html"><span><span>images</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1355944090%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="images.html">images</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Set a map of image types full and/or thumb to objects specifying the URL for each image. Use the name “full” to denote the full-sized image, and “thumb” to denote the thumbnail-sized image. For example, the value of images might be: { “full” : { “url” : “http://example.com/f.jpg” }, “thumb” : { “url” : “http://example.com/t.jpg” } } This allows you to easily include product images when messaging users with order confirmations and abandoned-cart reminders.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1099485281%2FProperties%2F2010670685" anchor-label="price" id="-1099485281%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="price.html"><span><span>price</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1099485281%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="price.html">price</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Price of one item, in cents (e.g. $10.99 is 1099).</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1931814745%2FProperties%2F2010670685" anchor-label="quantity" id="-1931814745%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="quantity.html"><span><span>quantity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1931814745%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="quantity.html">quantity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Quantity of the item purchased.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1447614297%2FProperties%2F2010670685" anchor-label="tags" id="1447614297%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="tags.html"><span><span>tags</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1447614297%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="tags.html">tags</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/util/ArrayList.html">ArrayList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span><span class="token operator">?</span></div><div class="brief "><p class="paragraph">A list of tags applicable to the product.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1439711888%2FProperties%2F2010670685" anchor-label="title" id="-1439711888%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title.html"><span><span>title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1439711888%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="title.html">title</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Short user-readable name/title of the item purchased.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1973598457%2FProperties%2F2010670685" anchor-label="url" id="1973598457%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="url.html"><span><span>url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1973598457%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="url.html">url</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></div><div class="brief "><p class="paragraph">The URL of the item. Note: The domain and scheme are case sensitive but paths are not. For example, if the stored URL is https://sailthru.com/Product, then Https://Sailthru.com/product would fail to match the product, but https://sailthru.com/product would.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="526669990%2FProperties%2F2010670685" anchor-label="vars" id="526669990%2FProperties%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="vars.html"><span><span>vars</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="526669990%2FProperties%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="vars.html">vars</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Vars can be any number of custom fields and values to attach to each item for later retrieval in templates or use in Audience Builder or Lifecycle Optimizer. For example, you may want to specify item attributes such as color, size, material, or an item-specific coupon code that was used.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="514338475%2FFunctions%2F2010670685" anchor-label="addTag" id="514338475%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-tag.html"><span>add</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="514338475%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-tag.html"><span class="token function">addTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add a tag to the purchase item.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1748062363%2FFunctions%2F2010670685" anchor-label="addVar" id="1748062363%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-var.html"><span>add</span><wbr></wbr><span><span>Var</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1748062363%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-var.html"><span class="token function">addVar</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">key<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Add a custom key value pair to the purchase item.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="388750575%2FFunctions%2F2010670685" anchor-label="equals" id="388750575%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="388750575%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-211668201%2FFunctions%2F2010670685" anchor-label="hashCode" id="-211668201%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-211668201%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-281367084%2FFunctions%2F2010670685" anchor-label="setFullImageUrl" id="-281367084%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-full-image-url.html"><span>set</span><wbr></wbr><span>Full</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-281367084%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-full-image-url.html"><span class="token function">setFullImageUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the URL string to use for the full item image.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1321573893%2FFunctions%2F2010670685" anchor-label="setThumbImageUrl" id="-1321573893%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-thumb-image-url.html"><span>set</span><wbr></wbr><span>Thumb</span><wbr></wbr><span>Image</span><wbr></wbr><span><span>Url</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1321573893%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="set-thumb-image-url.html"><span class="token function">setThumbImageUrl</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">url<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/java/net/URI.html">URI</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Sets the URL string to use for the thumb item image.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2142669937%2FFunctions%2F2010670685" anchor-label="toJSON" id="-2142669937%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-j-s-o-n.html"><span>to</span><wbr></wbr><span><span>JSON</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2142669937%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="to-j-s-o-n.html"><span class="token function">toJSON</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/org/json/JSONObject.html">JSONObject</a></div><div class="brief "><p class="paragraph">Converts PurchaseItem to JSON.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-389834266%2FFunctions%2F2010670685" anchor-label="toString" id="-389834266%2FFunctions%2F2010670685" data-filterable-set=":marigold:dokkaHtml/release"></a>
+          <div class="table-row" data-filterable-current=":marigold:dokkaHtml/release" data-filterable-set=":marigold:dokkaHtml/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-389834266%2FFunctions%2F2010670685"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold:dokkaHtml/release"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+    </div>
+</div>
+</body>
+</html>
