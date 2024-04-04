@@ -1,0 +1,1 @@
+sourceset_dependencies='{":marigold:dokkaHtml/debug":[],":marigold:dokkaHtml/generatedByKspDebugKotlin":[],":marigold:dokkaHtml/generatedByKspReleaseKotlin":[],":marigold:dokkaHtml/main":[],":marigold:dokkaHtml/release":[]}'
