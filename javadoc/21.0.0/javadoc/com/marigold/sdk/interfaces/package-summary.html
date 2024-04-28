@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+<!-- NewPage -->
+<html lang="en"><head>
+    <title>Package com.marigold.sdk.interfaces </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="dc.created" content="2020-03-25">
+    <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../../dokka-javadoc-stylesheet.css" title="Style">
+    <link rel="stylesheet" type="text/css" href="../../../../jquery/jquery-ui.css" title="Style">
+    <script type="text/javascript" src="../../../../jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../../../../jquery/jquery-migrate-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../../../../jquery/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="../../../../search.js"></script>
+    <script async type="text/javascript" src="../../../../module-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../package-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../type-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../member-search-index.js"></script>
+    <script async type="text/javascript" src="../../../../tag-search-index.js"></script>
+</head><body>
+<script type="text/javascript">
+var pathtoroot = "../../../../";
+</script>
+<noscript>
+    <div>JavaScript is disabled on your browser.</div>
+</noscript><header role="banner">
+    <nav role="navigation">
+        <div class="fixedNav">
+            <!-- ========= START OF TOP NAVBAR ======= -->
+            <div class="topNav"><a id="navbar.top">
+                <!--   -->
+            </a>
+                <div class="skipNav"><a href="#skip.navbar.top" title="Skip navigation links">Skip navigation links</a>
+                </div>
+                <a id="navbar.top.firstrow">
+                    <!--   -->
+                </a>
+                <ul class="navList" title="Navigation">
+    <li><a href="../../../../index.html">Overview</a></li>
+    
+    <li class="navBarCell1Rev">Package</li>
+    
+    <li>Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+            <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+
+<ul class="navListSearch">
+<li><label for="search">SEARCH:</label>
+<input type="text" id="search" value="search" class="ui-autocomplete-input" autocomplete="off" placeholder="Search">
+<input type="reset" id="reset" value="reset">
+</li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ========= END OF TOP NAVBAR ========= -->
+        </div>
+        <div class="navPadding">&nbsp;</div>
+        <script type="text/javascript"><!--
+        $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
+        //-->
+        </script>
+    </nav>
+</header>
+<main role="main">
+    <div class="header">
+        <h1 title="Package" class="title">Package com.marigold.sdk.interfaces </h1>
+    </div>
+        <div class="header">
+            <div class="subtitle">
+                <div class="block"></div>
+            </div>
+            <p>See: <a href="#overview_description">Description</a></p>
+        </div>
+    <div class="contentContainer">
+        
+            <ul class="blockList">
+                
+                <li class="blockList">
+                    
+                    
+                    
+                    
+                    
+    <div class="typeSummary">
+
+<table>
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=ContentIntentBuilder.html>ContentIntentBuilder</a></th><td class="colLast">Implement this interface to build a custom intent to be executed when the notification is tapped &lt;br/&gt;&lt;br/&gt; Note: Direct to URI notifications using the &lt;code&gt;_u&lt;/code&gt; parameter will never call {@link #build(Context, Bundle)}&lt;br/&gt;&lt;br/&gt;Example of usage directing users to &lt;code&gt;SaleActivity&lt;/code&gt; when a notification has the custom field <code>special_price</code> defined.</td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=InAppNotificationTappedListener.html>InAppNotificationTappedListener</a></th><td class="colLast"></td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=Logger.html>Logger</a></th><td class="colLast">Logging interface to capture logging coming from the Marigold SDK.</td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=NotificationActionTappedListener.html>NotificationActionTappedListener</a></th><td class="colLast">Listener used to identify when a notification action was tapped &lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;For example, if you want to log when a notification action with title 'OK' is tapped.</td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=NotificationReceivedListener.html>NotificationReceivedListener</a></th><td class="colLast">Listener used to identify when a notification was received &lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;For example, if we want to log when receiving notifications with the custom field 'special_price' present, you could implement a listener:&lt;pre&gt;
+`
+class MyNotificationReceivedListener: NotificationReceivedListener {
+private val TAG = &quot;NotificationLogger&quot;
+
+override onNotificationReceived(context: Context?, bundle: Bundle) {
+if(bundle.containsKey(&quot;special_price&quot;)) {
+Log.i(TAG, &quot;Sale Notification received&quot;)
+}
+}
+}
+` *
+&lt;/pre&gt; *Add your implementation using <a href=../Marigold.html#addNotificationReceivedListener(com.marigold.sdk.interfaces.NotificationReceivedListener)>Marigold.addNotificationReceivedListener</a>&lt;pre&gt;
+`
+...
+val marigold = Marigold()
+marigold.startEngine(getApplicationContext(), &quot;your sdk key&quot;)
+marigold.addNotificationReceivedListener(MyNotificationReceivedListener())
+...
+` *
+&lt;/pre&gt; *</td></tr>
+
+    <tr class="rowColor"><th class="colFirst" scope="row"><a href=NotificationSilencer.html>NotificationSilencer</a></th><td class="colLast">Implement NotificationSilencer if you want to suppress any received notification to be presented by Marigold&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt; Note: Direct to URI notifications using the <code>_u</code> parameter will never call <a href=NotificationSilencer.html#isSilent(android.content.Context,android.os.Bundle)>isSilent</a>&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt; You could use this to silence notifications from other providers or Receive a notification to start a special background service&lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt; Example of usage to silent notifications when the custom key <code>silent</code> is present.</td></tr>
+
+    <tr class="altColor"><th class="colFirst" scope="row"><a href=NotificationTappedListener.html>NotificationTappedListener</a></th><td class="colLast">Listener used to identify when a notification was tapped &lt;br&gt;&lt;/br&gt;&lt;br&gt;&lt;/br&gt;For example, if you want to log when a notification with the custom field 'special_price' present is tapped.</td></tr>
+</tbody>
+</table>
+
+    </div>
+
+                </li>
+                
+            </ul>
+        
+    </div>
+</main>
+<footer role="contentinfo">
+    <nav role="navigation">
+        <!-- ======= START OF BOTTOM NAVBAR ====== -->
+        <div class="bottomNav"><a id="navbar.bottom">
+            <!--   -->
+        </a>
+            <div class="skipNav"><a href="#skip.navbar.bottom" title="Skip navigation links">Skip navigation links</a>
+            </div>
+            <a id="navbar.bottom.firstrow">
+                <!--   -->
+            </a>
+            <ul class="navList" title="Navigation">
+    <li><a href="../../../../index.html">Overview</a></li>
+    
+    <li class="navBarCell1Rev">Package</li>
+    
+    <li>Class</li>
+    
+    <li><a href="package-tree.html">Tree</a></li>
+    
+    <li><a href="../../../../deprecated.html">Deprecated</a></li>
+    <li><a href="../../../../index-files/index-1.html">Index</a></li>
+    <li>Help</li>
+</ul></div>
+        <a id="skip.navbar.bottom">
+            <!--   -->
+        </a>
+        <div class="subNav">
+<ul class="navList" id="allclasses_navbar_top" style="display: block;">
+    <li><a href="../../../../allclasses.html">All&nbsp;Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+</div>
+<a id="skip.navbar.top">
+<!--   -->
+</a></div><!-- ======== END OF BOTTOM NAVBAR ======= -->
+    </nav>
+</footer><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0"
+    style="display: none;"></ul>
+<span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span>
+</body>
+</html>
