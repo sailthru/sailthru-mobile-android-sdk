@@ -1,0 +1,1 @@
+sourceset_dependencies='{":marigold/debug":[],":marigold/main":[],":marigold/release":[]}'
