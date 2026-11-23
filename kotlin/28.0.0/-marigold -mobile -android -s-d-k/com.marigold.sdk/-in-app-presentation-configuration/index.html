@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>InAppPresentationConfiguration</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+        <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js", "js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+      if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      } else {
+        const savedDarkMode = JSON.parse(storage)
+        if (savedDarkMode === true) {
+          document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+      }
+    </script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/safe-local-storage_blocking.js"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../ui-kit/ui-kit.min.js" defer="defer"></script>
+</head>
+<body>
+<div class="root">
+    <header class="navigation theme-dark" id="navigation-wrapper" role="banner">
+            <a class="library-name--link" href="../../../index.html" tabindex="1">
+                    Marigold Mobile Android SDK
+            </a>
+        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle"
+                type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+28.0.0        </div>
+        <div class="navigation-controls">
+        <ul class="filter-section filter-section_loading" id="filter-section" aria-label="Target filter">
+                <button class="platform-tag platform-selector jvm-like" data-active="" aria-pressed="true"
+                        data-filter=":marigold/release">Android</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox"
+                        data-role="dropdown-toggle"
+                        aria-controls="platform-tags-listbox"
+                        aria-haspopup="listbox"
+                        aria-expanded="false"
+                        aria-label="Toggle source sets"
+                ></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox" aria-label="Target filter">
+                    <div class="dropdown--header"><span>Target filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close target filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":marigold/release"
+                                       data-filter=":marigold/release"/>
+                                <span class="checkbox--icon"></span>
+                                Android
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </ul>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button"
+                    type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <nav id="leftColumn" class="sidebar" data-item-type="SECTION" data-item-config='{"defaultSize": 280, "minSize": 200, "maxSize": 400}'>
+            <a class="toc--skip-link" href="#main">Skip to content</a>
+            <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list"
+                    data-role="dropdown-listbox" aria-label="Table of contents">
+                    <div class="dropdown--header">
+                            <span>
+                                    Marigold Mobile Android SDK
+                            </span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                    <div class="sidebar--inner" id="sideMenu"></div>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </nav>
+        <div id="resizer" class="resizer" data-item-type="BAR"></div>
+        <div id="main" data-item-type="SECTION" role="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="Marigold Mobile Android SDK::com.marigold.sdk/InAppPresentationConfiguration///PointingToDeclaration//-419407835">
+  <div class="breadcrumbs"><a href="../../../index.html">Marigold Mobile Android SDK</a><span class="delimiter">/</span><a href="../index.html">com.marigold.sdk</a><span class="delimiter">/</span><span class="current">InAppPresentationConfiguration</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>In</span><wbr></wbr><span>App</span><wbr></wbr><span>Presentation</span><wbr></wbr><span><span>Configuration</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">InAppPresentationConfiguration</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>presentationStyle<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-presentation-style/index.html">InAppPresentationStyle</a><span class="token operator"> = </span>InAppPresentationStyle.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bannerPosition<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-banner-position/index.html">InAppBannerPosition</a><span class="token operator"> = </span>InAppBannerPosition.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>linkBehavior<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-link-behavior/index.html">InAppLinkBehavior</a><span class="token operator"> = </span>InAppLinkBehavior.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>linkButtonTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>backgroundColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>titleColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bodyTextColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>closeButtonColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>backdropColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>backdropOpacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>titleFont<span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>bodyFont<span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>cornerRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>outerSpacing<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>imageContentMode<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-image-content-mode/index.html">InAppImageContentMode</a><span class="token operator"> = </span>InAppImageContentMode.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>showsImage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>showsCloseButton<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>allowsGestureDismissal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>displayDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">Native UI settings. Null and AUTOMATIC inherit. Valid fields resolve in this order: message payload, callback overrides, app defaults, SDK defaults. Dimensions are dp; displayDuration is seconds, with zero meaning manual dismissal. Full-screen settings style the native frame, preserving campaign HTML.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="tableheader">Constructors</h2>
+        <div class="table"><a data-name="490556619%2FConstructors%2F-419407835" anchor-label="InAppPresentationConfiguration" id="490556619%2FConstructors%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-togglable="CONSTRUCTOR" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-in-app-presentation-configuration.html"><span>In</span><wbr></wbr><span>App</span><wbr></wbr><span>Presentation</span><wbr></wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="490556619%2FConstructors%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">presentationStyle<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-presentation-style/index.html">InAppPresentationStyle</a><span class="token operator"> = </span>InAppPresentationStyle.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter ">bannerPosition<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-banner-position/index.html">InAppBannerPosition</a><span class="token operator"> = </span>InAppBannerPosition.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter ">linkBehavior<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-link-behavior/index.html">InAppLinkBehavior</a><span class="token operator"> = </span>InAppLinkBehavior.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter ">linkButtonTitle<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">backgroundColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">titleColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">bodyTextColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">closeButtonColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">backdropColor<span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">backdropOpacity<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">titleFont<span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">bodyFont<span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">cornerRadius<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">outerSpacing<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">imageContentMode<span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-image-content-mode/index.html">InAppImageContentMode</a><span class="token operator"> = </span>InAppImageContentMode.AUTOMATIC<span class="token punctuation">, </span></span><span class="parameter ">showsImage<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">showsCloseButton<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">allowsGestureDismissal<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">displayDuration<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="tableheader">Types</h2>
+        <div class="table"><a data-name="-2123365848%2FClasslikes%2F-419407835" anchor-label="Companion" id="-2123365848%2FClasslikes%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2123365848%2FClasslikes%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="tableheader">Properties</h2>
+        <div class="table"><a data-name="1224228483%2FProperties%2F-419407835" anchor-label="allowsGestureDismissal" id="1224228483%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="allows-gesture-dismissal.html"><span>allows</span><wbr></wbr><span>Gesture</span><wbr></wbr><span><span>Dismissal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1224228483%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="allows-gesture-dismissal.html">allowsGestureDismissal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-690942252%2FProperties%2F-419407835" anchor-label="backdropColor" id="-690942252%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="backdrop-color.html"><span>backdrop</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-690942252%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="backdrop-color.html">backdropColor</a><span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1597961388%2FProperties%2F-419407835" anchor-label="backdropOpacity" id="1597961388%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="backdrop-opacity.html"><span>backdrop</span><wbr></wbr><span><span>Opacity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1597961388%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="backdrop-opacity.html">backdropOpacity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="915454124%2FProperties%2F-419407835" anchor-label="backgroundColor" id="915454124%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="background-color.html"><span>background</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="915454124%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="background-color.html">backgroundColor</a><span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="254351940%2FProperties%2F-419407835" anchor-label="bannerPosition" id="254351940%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="banner-position.html"><span>banner</span><wbr></wbr><span><span>Position</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="254351940%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="banner-position.html">bannerPosition</a><span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-banner-position/index.html">InAppBannerPosition</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2082106920%2FProperties%2F-419407835" anchor-label="bodyFont" id="2082106920%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body-font.html"><span>body</span><wbr></wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2082106920%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="body-font.html">bodyFont</a><span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-444799315%2FProperties%2F-419407835" anchor-label="bodyTextColor" id="-444799315%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="body-text-color.html"><span>body</span><wbr></wbr><span>Text</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-444799315%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="body-text-color.html">bodyTextColor</a><span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="561209856%2FProperties%2F-419407835" anchor-label="closeButtonColor" id="561209856%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="close-button-color.html"><span>close</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="561209856%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="close-button-color.html">closeButtonColor</a><span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="834030258%2FProperties%2F-419407835" anchor-label="cornerRadius" id="834030258%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="corner-radius.html"><span>corner</span><wbr></wbr><span><span>Radius</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="834030258%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="corner-radius.html">cornerRadius</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1225731627%2FProperties%2F-419407835" anchor-label="displayDuration" id="1225731627%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="display-duration.html"><span>display</span><wbr></wbr><span><span>Duration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1225731627%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="display-duration.html">displayDuration</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1766703064%2FProperties%2F-419407835" anchor-label="imageContentMode" id="1766703064%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="image-content-mode.html"><span>image</span><wbr></wbr><span>Content</span><wbr></wbr><span><span>Mode</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1766703064%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="image-content-mode.html">imageContentMode</a><span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-image-content-mode/index.html">InAppImageContentMode</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="290240813%2FProperties%2F-419407835" anchor-label="linkBehavior" id="290240813%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="link-behavior.html"><span>link</span><wbr></wbr><span><span>Behavior</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="290240813%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="link-behavior.html">linkBehavior</a><span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-link-behavior/index.html">InAppLinkBehavior</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1592440181%2FProperties%2F-419407835" anchor-label="linkButtonTitle" id="1592440181%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="link-button-title.html"><span>link</span><wbr></wbr><span>Button</span><wbr></wbr><span><span>Title</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1592440181%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="link-button-title.html">linkButtonTitle</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="122694097%2FProperties%2F-419407835" anchor-label="outerSpacing" id="122694097%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="outer-spacing.html"><span>outer</span><wbr></wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="122694097%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="outer-spacing.html">outerSpacing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-double/index.html">Double</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1070164490%2FProperties%2F-419407835" anchor-label="presentationStyle" id="1070164490%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="presentation-style.html"><span>presentation</span><wbr></wbr><span><span>Style</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1070164490%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="presentation-style.html">presentationStyle</a><span class="token operator">: </span><a href="../../com.marigold.sdk.enums/-in-app-presentation-style/index.html">InAppPresentationStyle</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-735626171%2FProperties%2F-419407835" anchor-label="showsCloseButton" id="-735626171%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shows-close-button.html"><span>shows</span><wbr></wbr><span>Close</span><wbr></wbr><span><span>Button</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-735626171%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="shows-close-button.html">showsCloseButton</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-875674412%2FProperties%2F-419407835" anchor-label="showsImage" id="-875674412%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="shows-image.html"><span>shows</span><wbr></wbr><span><span>Image</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-875674412%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="shows-image.html">showsImage</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1884329358%2FProperties%2F-419407835" anchor-label="titleColor" id="1884329358%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-color.html"><span>title</span><wbr></wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1884329358%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="title-color.html">titleColor</a><span class="token operator">: </span><a href="../-in-app-presentation-color/index.html">InAppPresentationColor</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1120851962%2FProperties%2F-419407835" anchor-label="titleFont" id="1120851962%2FProperties%2F-419407835" data-filterable-set=":marigold/release"></a>
+          <div class="table-row table-row_content" data-filterable-current=":marigold/release" data-filterable-set=":marigold/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="title-font.html"><span>title</span><wbr></wbr><span><span>Font</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1120851962%2FProperties%2F-419407835"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":marigold/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="title-font.html">titleFont</a><span class="token operator">: </span><a href="../-in-app-presentation-font/index.html">InAppPresentationFont</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <div class="footer--container">
+            <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+            <div class="footer--content">
+                <div>
+                    <span>Generated by </span>
+                    <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                        Dokka
+                    </a>
+                    <div>© 2026 Copyright</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
